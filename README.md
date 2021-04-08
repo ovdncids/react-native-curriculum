@@ -12,10 +12,10 @@ stores/CommonStore.js
 ```js
 import { configure, makeAutoObservable } from 'mobx';
 
-// configure: 가장 처음에 호출 되는 스토어에서 한번만 설정하면 된다.
+// configure: 가장 처음에 호출 되는 스토어에서 한번만 설정해야 한다.
 configure({
-  // enforceActions: 'never',
-  // useProxies: "never"
+  enforceActions: 'never',
+  useProxies: "never"
 });
 
 export default class CommonStore {
@@ -72,4 +72,46 @@ import { Button } from 'react-native';
   title={String(commonStore.common)}
   onPress={() => commonStore.commonSet(!commonStore.common)}
 ></Button>
+```
+
+## AsyncStorage
+https://github.com/react-native-async-storage/async-storage
+```sh
+npm install @react-native-async-storage/async-storage
+```
+
+stores/CommonStore.js
+```js
+import { configure, makeAutoObservable } from 'mobx';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+
+configure({
+  enforceActions: 'never',
+  useProxies: "never"
+});
+
+export default class CommonStore {
+  constructor() {
+    makeAutoObservable(this);
+    this.commonGet();
+  }
+
+  common = false;
+
+  commonSet(common) {
+    this.common = common;
+    AsyncStorage.setItem('common', JSON.stringify(this.common)).then(() => {
+      console.log('AsyncStorage set: common', this.common);
+    });
+  }
+
+  commonGet() {
+    AsyncStorage.getItem('common').then(common => {
+      this.common = JSON.parse(common || 'false');
+      console.log('AsyncStorage get: common', this.common);
+    });
+  }
+}
+
+export const commonStore = new CommonStore();
 ```
