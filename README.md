@@ -13,6 +13,43 @@ npm start
 ### 단축키
 ```sh
 ctrl + command + z: iOS 제어창
+command + m: Android 제어창
+```
+
+### Android Studio Emulator 설치
+* https://docs.expo.dev/workflow/android-studio-emulator
+```sh
+Android Studio > Preferences > Appearance & Behavior > System Settings > SDK Tools > Android SDK Build-Tools 체크
+Android SDK Location: `path copy`
+```
+```sh
+vi ~/.zshenv
+
+# 저장
+ANDROID_SDK=`path paste`
+
+# 실행
+[ -d "$HOME/Library/Android/sdk" ] && ANDROID_SDK=$HOME/Library/Android/sdk || ANDROID_SDK=$HOME/Android/Sdk
+echo "export ANDROID_SDK=$ANDROID_SDK" >> ~/`[[ $SHELL == *"zsh" ]] && echo '.zshenv' || echo '.bash_profile'`
+
+# 실행
+echo "export PATH=$HOME/Library/Android/sdk/platform-tools:\$PATH" >> ~/`[[ $SHELL == *"zsh" ]] && echo '.zshenv' || echo '.bash_profile'`
+
+# 터미널 재시작
+
+# 확인
+adb version
+```
+
+#### Andtoid virtual device 생성
+```sh
+Andtoid virtual device
+
+# 실행 후
+
+npm start
+
+# open Android
 ```
 
 ## MobX 설치
