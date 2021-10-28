@@ -1,5 +1,20 @@
 # React Native
 
+## 설치
+```sh
+npm install -g expo-cli
+expo init react-native-study
+
+cd react-native-study
+code .
+npm start
+```
+
+### 단축키
+```sh
+ctrl + command + z: iOS 제어창
+```
+
 ## MobX 설치
 https://github.com/mobxjs/mobx
 
