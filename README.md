@@ -43,7 +43,7 @@ adb version
 
 #### Android virtual device 생성
 ```sh
-# Android 실행 후
+# Android  virtual device 실행 후
 
 npm start
 
