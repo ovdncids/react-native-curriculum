@@ -41,11 +41,9 @@ echo "export PATH=$HOME/Library/Android/sdk/platform-tools:\$PATH" >> ~/`[[ $SHE
 adb version
 ```
 
-#### Andtoid virtual device 생성
+#### Android virtual device 생성
 ```sh
-Andtoid virtual device
-
-# 실행 후
+# Android 실행 후
 
 npm start
 
