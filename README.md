@@ -19,7 +19,7 @@ command + m: Android 제어창
 ### Android Studio Emulator 설치
 * https://docs.expo.dev/workflow/android-studio-emulator
 ```sh
-Android Studio > Preferences > Appearance & Behavior > System Settings > SDK Tools > Android SDK Build-Tools 체크
+Android Studio > Preferences > Appearance & Behavior > System Settings > Android SDK > SDK Tools > Android SDK Build-Tools 체크
 Android SDK Location: `path copy`
 ```
 ```sh
