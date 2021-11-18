@@ -13,7 +13,8 @@ import { StatusBar } from 'expo-status-bar';
 
 ## SafeAreaView
 * https://reactnative.dev/docs/safeareaview
-* iOSX 노치(Notch Design) 부분은 빼고 영역을 잡는다.
+* StatusBar은 빼고 영역을 잡는다.
+<!-- * iOSX 노치(Notch Design) 부분 -->
 ```js
 import { SafeAreaView } from 'react-native';
 
@@ -21,3 +22,6 @@ import { SafeAreaView } from 'react-native';
   <View></View>
 </SafeAreaView>
 ```
+
+## SplashScreen
+* 앱이 켜지기 전에 나오는 화면
