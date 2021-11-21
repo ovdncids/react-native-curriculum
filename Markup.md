@@ -25,3 +25,15 @@ import { SafeAreaView } from 'react-native';
 
 ## SplashScreen
 * 앱이 켜지기 전에 나오는 화면
+
+## Navigation
+* https://reactnative.dev/docs/navigation#installation-and-setup
+```sh
+npm install @react-navigation/native @react-navigation/native-stack
+npm install react-native-screens react-native-safe-area-context
+```
+
+### Floating 메뉴 만들기
+```sh
+npm install @react-navigation/bottom-tabs
+```
