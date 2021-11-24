@@ -94,6 +94,7 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
   <View></View>
 </SafeAreaProvider>
 ```
+* ❕ `Navigation`을 사용하는 경우 이미 적용 되어 있다.
 
 ## SplashScreen
 * 앱이 켜지기 전에 나오는 로고 화면
