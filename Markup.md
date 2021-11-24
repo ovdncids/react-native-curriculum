@@ -33,7 +33,7 @@ npm install @react-navigation/native @react-navigation/native-stack
 npm install react-native-screens react-native-safe-area-context
 ```
 
-### Floating와 Screen 연결
+### Floating menu와 Screen 연결
 ```sh
 npm install @react-navigation/bottom-tabs
 ```
@@ -88,3 +88,4 @@ export default function App() {
   );
 }
 ```
+* ❔`스크린3`을 만들고 `Floating menu`와 연결하기
