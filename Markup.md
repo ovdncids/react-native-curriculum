@@ -1,31 +1,5 @@
 # Markup
 
-## StatusBar
-* https://reactnative.dev/docs/statusbar
-* 상단의 메뉴(뒤로가기, 시계, 베터리 ...)를 사라지게 한다.
-```js
-import { StatusBar } from 'expo-status-bar';
-
-<View>
-  <StatusBar hidden={true} />
-</View>
-```
-
-## SafeAreaView
-* https://reactnative.dev/docs/safeareaview
-* StatusBar은 빼고 영역을 잡는다.
-<!-- * iOSX 노치(Notch Design) 부분 -->
-```js
-import { SafeAreaView } from 'react-native';
-
-<SafeAreaView>
-  <View></View>
-</SafeAreaView>
-```
-
-## SplashScreen
-* 앱이 켜지기 전에 나오는 화면
-
 ## Navigation
 * https://reactnative.dev/docs/navigation#installation-and-setup
 ```sh
@@ -89,3 +63,36 @@ export default function App() {
 }
 ```
 * ❔`스크린3`, `스크린4`, `스크린5`를 만들고 `Floating menu`와 연결하기
+
+## StatusBar
+* https://reactnative.dev/docs/statusbar
+* 상단의 메뉴(뒤로가기, 시계, 베터리 ...)를 사라지게 한다.
+```js
+import { StatusBar } from 'expo-status-bar';
+
+<View>
+  <StatusBar hidden={true} />
+</View>
+```
+
+## SafeAreaView
+* https://reactnative.dev/docs/safeareaview
+* StatusBar은 빼고 영역을 잡는다.
+<!-- * iOSX 노치(Notch Design) 부분 -->
+```js
+import { SafeAreaView } from 'react-native';
+
+<SafeAreaView>
+  <View></View>
+</SafeAreaView>
+
+// or
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+
+<SafeAreaProvider>
+  <View></View>
+</SafeAreaProvider>
+```
+
+## SplashScreen
+* 앱이 켜지기 전에 나오는 로고 화면
