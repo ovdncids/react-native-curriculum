@@ -86,7 +86,8 @@ import { SafeAreaView } from 'react-native';
   <View></View>
 </SafeAreaView>
 
-// or
+/* or */
+
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 <SafeAreaProvider>
