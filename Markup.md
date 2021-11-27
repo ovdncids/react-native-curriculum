@@ -68,8 +68,46 @@ export default function App() {
   );
 }
 ```
+* https://reactnavigation.org/docs/native-stack-navigator#headertitlealign
 * ❕ 기본 `headerTitleAlign`는 iOS는 `center`이고 Android는 `left`이다.
-* ❔`스크린3`, `스크린4`, `스크린5`를 만들고 `Floating menu`와 연결하기
+* ❔ `스크린3`, `스크린4`, `스크린5`를 만들고 `Floating menu`와 연결하기
+* ❔ 스크린 마다 파일로 나누기
+
+### 다른 Screen으로 Navigator이동
+#### 새로운 Screen 추가
+```js
+function Tab1Detail() {
+  return (
+    <View>
+      <Text>Tab1Detail</Text>
+    </View>
+  );
+}
+```
+
+#### Navigator에 화면 추가
+```js
+<Stack.Screen name="Tab1Detail" component={Tab1Detail} />
+```
+
+#### Tab1에서 Tab1Detail으로 Navigator이동
+```diff
+- function Tab1Screen({ navigation }) {
+```
+```js
+function Tab1Screen({ navigation }) {
+  return (
+    <View>
+      <Text>
+        <Button
+          title="Tab1Detail"
+          onPress={() => navigation.navigate('Tab1Detail')}
+        />
+      </Text>
+    </View>
+  );
+}
+```
 
 ## StatusBar
 * https://reactnative.dev/docs/statusbar
