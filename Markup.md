@@ -8,6 +8,7 @@ npm install react-native-screens react-native-safe-area-context
 ```
 
 ### Floating menu와 Screen 연결
+* https://reactnavigation.org/docs/bottom-tab-navigator
 ```sh
 npm install @react-navigation/bottom-tabs
 ```
@@ -46,6 +47,11 @@ function BottomTabNavigator() {
       <BottomTab.Screen
         name="Tab2"
         component={Tab2Screen}
+        options={{
+          title: 'Title2',
+          tabBarLabel: 'TabBarLabel2',
+          headerTitleAlign: 'center'
+        }}
       />
     </BottomTab.Navigator>
   );
