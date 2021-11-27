@@ -68,6 +68,7 @@ export default function App() {
   );
 }
 ```
+* ❕ 기본 `headerTitleAlign`는 iOS는 `center`이고 Android는 `left`이다.
 * ❔`스크린3`, `스크린4`, `스크린5`를 만들고 `Floating menu`와 연결하기
 
 ## StatusBar
