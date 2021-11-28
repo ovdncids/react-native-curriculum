@@ -109,6 +109,23 @@ function Tab1Screen({ navigation }) {
 }
 ```
 
+### Font Awesome
+```js
+import { FontAwesome } from '@expo/vector-icons';
+```
+```js
+<BottomTab.Screen
+  name="Tab1"
+  component={Tab1Screen}
+  options={{
+    tabBarIcon: () => <FontAwesome
+      name="code"
+      size={30}
+    />,
+  }}
+/>
+```
+
 ## StatusBar
 * https://reactnative.dev/docs/statusbar
 * 상단의 메뉴(뒤로가기, 시계, 베터리 ...)를 사라지게 한다.
