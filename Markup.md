@@ -110,6 +110,7 @@ function Tab1Screen({ navigation }) {
 ```
 
 ### Font Awesome
+* https://icons.expo.fyi
 ```js
 import { FontAwesome } from '@expo/vector-icons';
 ```
