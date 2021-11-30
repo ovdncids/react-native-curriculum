@@ -109,6 +109,24 @@ function Tab1Screen({ navigation }) {
 }
 ```
 
+### Font Awesome
+* https://icons.expo.fyi
+```js
+import { FontAwesome } from '@expo/vector-icons';
+```
+```js
+<BottomTab.Screen
+  name="Tab1"
+  component={Tab1Screen}
+  options={{
+    tabBarIcon: () => <FontAwesome
+      name="code"
+      size={30}
+    />,
+  }}
+/>
+```
+
 ### Modal창 띄우기
 #### 새로운 Screen 추가
 ```js
@@ -131,7 +149,7 @@ function Modal1Screen({ navigation }) {
 </Stack.Group>
 ```
 
-#### Tab2에서 Modal창 
+#### Tab2에서 Modal창
 ```diff
 - function Tab2Screen() {
 ```
@@ -151,21 +169,24 @@ function Tab2Screen({ navigation }) {
 ```
 * ❔ `Modal창` 헤더 이름 변경과 가운데 정렬
 
-### Font Awesome
-* https://icons.expo.fyi
-```js
-import { FontAwesome } from '@expo/vector-icons';
+#### 헤더 좌측 뒤로가기 빼고, 헤더 우측에 X버튼 만들기
+```diff
++ import { Pressable } from 'react-native';
+- <Stack.Screen name="Modal1" component={Modal1Screen} />
 ```
 ```js
-<BottomTab.Screen
-  name="Tab1"
-  component={Tab1Screen}
-  options={{
-    tabBarIcon: () => <FontAwesome
-      name="code"
-      size={30}
-    />,
-  }}
+<Stack.Screen name="Modal1" component={Modal1Screen}
+  options={({ navigation }) => ({
+    headerLeft: () => (<></>),
+    headerRight: () => (
+      <Pressable onPress={() => navigation.goBack()}>
+        <FontAwesome
+          name="close"
+          size={25}
+        />
+      </Pressable>
+    )
+  })}
 />
 ```
 
