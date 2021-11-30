@@ -92,7 +92,7 @@ function Tab1Detail() {
 
 #### Tab1에서 Tab1Detail으로 Navigator이동
 ```diff
-- function Tab1Screen({ navigation }) {
+- function Tab1Screen() {
 ```
 ```js
 function Tab1Screen({ navigation }) {
@@ -108,6 +108,48 @@ function Tab1Screen({ navigation }) {
   );
 }
 ```
+
+### Modal창 띄우기
+#### 새로운 Screen 추가
+```js
+function Modal1Screen({ navigation }) {
+  return (
+    <View>
+      <Button
+        title="Close Modal1"
+        onPress={() => navigation.goBack()}
+      />
+    </View>
+  );
+}
+```
+
+#### Navigator에 화면 추가
+```js
+<Stack.Group screenOptions={{ presentation: 'modal' }}>
+  <Stack.Screen name="Modal1" component={Modal1Screen} />
+</Stack.Group>
+```
+
+#### Tab2에서 Modal창 
+```diff
+- function Tab2Screen() {
+```
+```js
+function Tab2Screen({ navigation }) {
+  return (
+    <View>
+      <Text>
+        <Button
+          title="Open Modal1"
+          onPress={() => navigation.navigate('Modal1')}
+        />
+      </Text>
+    </View>
+  );
+}
+```
+* ❔ `Modal창` 헤더 이름 변경과 가운데 정렬
 
 ### Font Awesome
 * https://icons.expo.fyi
