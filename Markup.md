@@ -233,6 +233,7 @@ import { ScrollView } from 'react-native';
 - <View></View>
 + <ScrollView></ScrollView>
 ```
+* ❕ 스크린의 높이가 일정하지 않을때 사용한다.
 
 ## SplashScreen
 * 앱이 켜지기 전에 나오는 로고 화면
