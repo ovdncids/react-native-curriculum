@@ -120,7 +120,7 @@ import { FontAwesome } from '@expo/vector-icons';
     tabBarIcon: () => <FontAwesome
       name="code"
       size={30}
-    />,
+    />
   }}
 />
 ```
