@@ -1,13 +1,11 @@
-# Markup
-
-## Navigation
+# Navigation
 * https://reactnative.dev/docs/navigation#installation-and-setup
 ```sh
 npm install @react-navigation/native @react-navigation/native-stack
 npm install react-native-screens react-native-safe-area-context
 ```
 
-### Floating menu와 Screen 연결
+## Floating menu와 Screen 연결
 * https://reactnavigation.org/docs/bottom-tab-navigator
 ```sh
 npm install @react-navigation/bottom-tabs
@@ -73,8 +71,8 @@ export default function App() {
 * ❔ `스크린3`, `스크린4`, `스크린5`를 만들고 `Floating menu`와 연결하기
 * ❔ 스크린 마다 파일로 나누기
 
-### 다른 Screen으로 Navigator이동
-#### 새로운 Screen 추가
+## 다른 Screen으로 Navigator이동
+### 새로운 Screen 추가
 ```js
 function Tab1Detail() {
   return (
@@ -85,12 +83,12 @@ function Tab1Detail() {
 }
 ```
 
-#### Navigator에 화면 추가
+### Navigator에 화면 추가
 ```js
 <Stack.Screen name="Tab1Detail" component={Tab1Detail} />
 ```
 
-#### Tab1에서 Tab1Detail으로 Navigator이동
+### Tab1에서 Tab1Detail으로 Navigator이동
 ```diff
 - function Tab1Screen() {
 ```
@@ -109,7 +107,7 @@ function Tab1Screen({ navigation }) {
 }
 ```
 
-### Font Awesome
+## Font Awesome
 * https://icons.expo.fyi
 ```js
 import { FontAwesome } from '@expo/vector-icons';
@@ -127,8 +125,8 @@ import { FontAwesome } from '@expo/vector-icons';
 />
 ```
 
-### Modal창 띄우기
-#### 새로운 Screen 추가
+## Modal창 띄우기
+### 새로운 Screen 추가
 ```js
 function Modal1Screen({ navigation }) {
   return (
@@ -142,14 +140,14 @@ function Modal1Screen({ navigation }) {
 }
 ```
 
-#### Navigator에 화면 추가
+### Navigator에 화면 추가
 ```js
 <Stack.Group screenOptions={{ presentation: 'modal' }}>
   <Stack.Screen name="Modal1" component={Modal1Screen} />
 </Stack.Group>
 ```
 
-#### Tab2에서 Modal창
+### Tab2에서 Modal창
 ```diff
 - function Tab2Screen() {
 ```
@@ -169,7 +167,7 @@ function Tab2Screen({ navigation }) {
 ```
 * ❔ `Modal창` 헤더 이름 변경과 가운데 정렬
 
-#### 헤더 좌측 뒤로가기 빼고, 헤더 우측에 X버튼 만들기
+### 헤더 좌측 뒤로가기 빼고, 헤더 우측에 X버튼 만들기
 ```diff
 + import { Pressable } from 'react-native';
 - <Stack.Screen name="Modal1" component={Modal1Screen} />
@@ -190,7 +188,7 @@ function Tab2Screen({ navigation }) {
 />
 ```
 
-## StatusBar
+# StatusBar
 * https://reactnative.dev/docs/statusbar
 * 상단의 메뉴(뒤로가기, 시계, 베터리 ...)를 사라지게 한다.
 ```js
@@ -201,7 +199,7 @@ import { StatusBar } from 'expo-status-bar';
 </View>
 ```
 
-## SafeAreaView
+# SafeAreaView
 * https://reactnative.dev/docs/safeareaview
 * StatusBar은 빼고 영역을 잡는다. (iOSX 노치(Notch Design) 부분)
 ```js
@@ -220,20 +218,3 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 </SafeAreaProvider>
 ```
 * ❕ `Navigation`을 사용하는 경우 이미 적용 되어 있다.
-
-## ScrollView
-```js
-<Text>스크린3</Text>
-```
-* 50줄 정도 복사한다. (스크롤이 되는지 확인)
-```js
-import { ScrollView } from 'react-native';
-```
-```diff
-- <View></View>
-+ <ScrollView></ScrollView>
-```
-* ❕ 스크린의 높이가 일정하지 않을때 사용한다.
-
-## SplashScreen
-* 앱이 켜지기 전에 나오는 로고 화면
