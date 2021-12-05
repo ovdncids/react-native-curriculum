@@ -2,6 +2,6 @@
 
 * [설치](ReactNativeInstall.md)
 
-* [Navigation](Navigatin.md)
+* [Navigation](Navigation.md)
 
 * [Screen](Screen.md)
