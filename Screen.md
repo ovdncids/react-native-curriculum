@@ -32,7 +32,7 @@ export default function Tab1Screen() {
       </View>
       <View name="section">
         <View name="header">
-          <Text>⛪</Text>
+          <Text name="home">⛪</Text>
           <Text>🤖</Text>
         </View>
         <View name="contents">
@@ -53,13 +53,13 @@ https://www.emojiengine.com/ko
 ```
 ```diff
 - <View name="nav">
-+ <View name="nav" style={{flex: 1}}>
++ <View name="nav" style={{flex: 0}}>
 ```
 ```diff
 - <View name="section">
 + <View name="section" style={{flex: 1}}>
 ```
-* `flexDirection`, `flex: 1` 설명 하기
+* `flexDirection`, `flex` 설명 하기
 
 ### header 좌우 정렬 하기
 ```diff
@@ -70,7 +70,7 @@ https://www.emojiengine.com/ko
 ```
 ```js
 <View name="header" style={{flexDirection: 'row'}}>
-  <Text style={{flex: 1}}>⛪</Text>
+  <Text name="home" style={{flex: 1}}>⛪</Text>
   <Text>🤖</Text>
 </View>
 ```
@@ -90,6 +90,9 @@ const styles = StyleSheet.create({
   wrap: {
     flexDirection: 'row'
   },
+  nav: {
+    // flex: 0,  // `flex: 0`은 web에서 영역이 할당 안 될 수 있으므로 주석 처리 한다.
+  },
   section: {
     flex: 1
   }
@@ -104,6 +107,37 @@ const styles = StyleSheet.create({
 +  style={styles.section}
 ```
 * ❔ 나머지 부분도 `StyleSheet`으로 수정 하기
+
+### border를 이용한 경계선 만들기
+```diff
+nav: {
++ borderRightColor: 'lightgray',
++ borderRightWidth: 1
+}
+```
+```diff
+header: {
++ borderBottomColor: 'lightgray',
++ borderBottomWidth: 1
+}
+```
+
+### 아이콘의 크기와 간격 조정 하기
+```diff
+- <Text>⛪</Text>
++ <Text style={styles.icon}>⛪</Text>
+```
+```js
+icon: {
+  margin: 16,
+  fontSize: 16
+}
+```
+#### 여러게의 style을 넣는 방법
+```diff
+- <Text name="home" style={styles.home}>⛪</Text>
++ <Text name="home" style={[styles.home, styles.icon]}>⛪</Text>
+```
 
 <!--
 ## SplashScreen
