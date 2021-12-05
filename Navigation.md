@@ -71,7 +71,7 @@ export default function App() {
 * ❔ `스크린3`, `스크린4`, `스크린5`를 만들고 `Floating menu`와 연결하기
 * ❔ 스크린 마다 파일로 나누기
 
-## 다른 Screen으로 Navigator이동
+## 다른 Screen으로 Navigator 이동
 ### 새로운 Screen 추가
 ```js
 function Tab1Detail() {
