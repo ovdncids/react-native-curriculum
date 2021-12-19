@@ -104,7 +104,7 @@ const styles = StyleSheet.create({
 ```
 ```diff
 - <View name="section" style={{flex: 1}}>
-+  style={styles.section}
++ <View name="section" style={styles.section}>
 ```
 * ❔ 나머지 부분도 `StyleSheet`으로 수정 하기
 
