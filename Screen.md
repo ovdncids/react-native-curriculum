@@ -19,7 +19,7 @@ import { ScrollView } from 'react-native';
 
 ### 기본 구조
 ```js
-export default function Tab1Screen() {
+export default function Tab4Screen() {
   return (
     <View name="wrap">
       <View name="nav">
