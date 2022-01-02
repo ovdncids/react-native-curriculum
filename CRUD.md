@@ -40,5 +40,13 @@
 </>
 ```
 
+## 구글 색상
+```sh
+파란색: #4285F4
+빨간색: #EA4335
+노란색: #FBBC05
+녹색: #34A853
+```
+
 ## Alert
 * https://reactnative.dev/docs/alert#example
