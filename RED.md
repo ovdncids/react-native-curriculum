@@ -697,3 +697,10 @@ export default Items;
 
 ## MobX
 * https://github.com/ovdncids/react-curriculum#members-store-%EB%A7%8C%EB%93%A4%EA%B8%B0
+
+## onChangeText
+```js
+<TextInput
+  onChangeText={text => console.log(text)}
+/>
+```
