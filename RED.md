@@ -65,7 +65,8 @@ function BottomTabNavigator() {
           tabBarIcon: () => <MaterialIcons
             name="kitchen"
             size={30} style={{ marginBottom: -3 }}
-          />
+          />,
+          tabBarBadge: 1
         }}
       />
       <BottomTab.Screen
