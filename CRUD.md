@@ -60,3 +60,21 @@
   onChangeText={text => console.log(text)}
 />
 ```
+
+## RefreshControl
+* https://reactnative.dev/docs/refreshcontrol
+* `ScrollView`에서 `스크롤 업` 하면 새로고침(스피너 로딩) 한다.
+```js
+import { RefreshControl } from 'react-native';
+```
+```js
+<ScrollView
+  refreshControl={
+    <RefreshControl
+      refreshing={true}
+      onRefresh={() => {console.log('스크롤 업 이벤트 발생')}}
+    />
+  }
+>
+</ScrollView>
+```
