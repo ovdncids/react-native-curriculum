@@ -78,3 +78,10 @@ import { RefreshControl } from 'react-native';
 >
 </ScrollView>
 ```
+
+## TextInput 숫자키만 받기
+```js
+<TextInput
+  keyboardType="number-pad"
+></TextInput>
+```
