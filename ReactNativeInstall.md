@@ -18,6 +18,7 @@ command + m: Android 제어창
 
 ### Android Studio Emulator 설치
 * https://docs.expo.dev/workflow/android-studio-emulator
+* ❕ `AVD`(Android Virtual Device)는 `Play Store` 내장 되어 있는 버전을 설치 해야 `Expo` 설치가능
 ```sh
 Android Studio > Preferences > Appearance & Behavior > System Settings > Android SDK > SDK Tools > Android SDK Build-Tools 체크
 Android SDK Location: `path copy`
