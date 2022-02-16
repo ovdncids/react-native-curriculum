@@ -26,7 +26,7 @@ Android SDK Location: `path copy`
 ```sh
 vi ~/.zshenv
 
-# 저장
+# .zshenv 파일에 저장
 ANDROID_SDK=`path paste`
 
 # shell에서 실행
