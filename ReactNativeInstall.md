@@ -26,9 +26,10 @@ Android SDK Location: `path copy`
 ```sh
 vi ~/.zshenv
 
-# .zshenv 파일에 저장
+# ANDROID_SDK
 ANDROID_SDK=`path paste`
-
+```
+```
 # shell에서 실행
 [ -d "$HOME/Library/Android/sdk" ] && ANDROID_SDK=$HOME/Library/Android/sdk || ANDROID_SDK=$HOME/Android/Sdk
 echo "export ANDROID_SDK=$ANDROID_SDK" >> ~/`[[ $SHELL == *"zsh" ]] && echo '.zshenv' || echo '.bash_profile'`
@@ -49,5 +50,5 @@ adb version
 
 npm start
 
-# open Android
+# Run on Android device/emulator
 ```
