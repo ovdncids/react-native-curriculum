@@ -28,16 +28,17 @@ vi ~/.zshenv
 # 저장
 ANDROID_SDK=`path paste`
 
-# 실행
+# shell에서 실행
 [ -d "$HOME/Library/Android/sdk" ] && ANDROID_SDK=$HOME/Library/Android/sdk || ANDROID_SDK=$HOME/Android/Sdk
 echo "export ANDROID_SDK=$ANDROID_SDK" >> ~/`[[ $SHELL == *"zsh" ]] && echo '.zshenv' || echo '.bash_profile'`
 
-# 실행
+# shell에서 실행
 echo "export PATH=$HOME/Library/Android/sdk/platform-tools:\$PATH" >> ~/`[[ $SHELL == *"zsh" ]] && echo '.zshenv' || echo '.bash_profile'`
 
 # 터미널 재시작
 
 # 확인
+adb 123
 adb version
 ```
 
