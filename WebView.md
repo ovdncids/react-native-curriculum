@@ -85,6 +85,58 @@ webView.current.injectJavaScript(`webFunction('abc'); true;`);
 ```
 
 ### WebView에서 React Native의 함수 호출
+```js
+const html = `
+<button onclick="rnFunction()">React Native 함수 호출</button>
+<script>
+const rnFunction = function() {
+  window.ReactNativeWebView.postMessage('def');
+};
+</script>
+`;
+```
+```js
+<WebView
+  source={{ html }}
+  onMessage={event => alert(event.nativeEvent.data)}
+  style={{
+    width: Dimensions.get('window').width
+  }}
+></WebView>
+```
+### WebView에서 React Native의 함수 다중 호출
+```js
+const html = `
+<button onclick="rnFunction()">React Native 함수 호출</button>
+<script>
+const rnFunction1 = function() {
+  window.ReactNativeWebView.postMessage(JSON.stringify({ key:'key1', value: 'value1' }));
+};
+const rnFunction2 = function() {
+  window.ReactNativeWebView.postMessage(JSON.stringify({ key:'key2', value: 'value2' }));
+};
+</script>
+`;
+```
+```js
+<WebView
+  source={{ html }}
+  onMessage={event => {
+    const { key, value } = JSON.parse(event.nativeEvent.data)
+    switch (key) {
+      case 'key1':
+        alert(value);
+        break;
+      case 'key2':
+        alert(value);
+        break;
+    }
+  }}
+  style={{
+    width: Dimensions.get('window').width
+  }}
+></WebView>
+```
 
 ## 유용한 기능들
 ### Platform
