@@ -17,3 +17,9 @@ import { WebView } from 'react-native-webview';
   ></WebView>
 </View>
 ```
+
+### Platform
+```js
+import { Platform } from 'react-native';
+Platform.OS;  // 'ios', 'android'
+```
