@@ -46,11 +46,47 @@ import indexHTML from '../assets/index.js';
 + source={{ html: indexHTML }}
 ```
 
-## 유용한 기능들
-### injectedJavaScript
-* https://github.com/react-native-webview/react-native-webview/blob/b1c48ce76d9f61f7dc855b86a79b5094ce9717eb/docs/Guide.md#the-injectedjavascript-prop
-* `WebView` 로드전에 `script` 먼저 실행
+## React Native와 WebView 통신
+* https://github.com/react-native-webview/react-native-webview/blob/b1c48ce76d9f61f7dc855b86a79b5094ce9717eb/docs/Guide.md#communicating-between-js-and-native
 
+### WebView 로드전에 `script` 실행 (injectedJavaScript)
+* https://github.com/react-native-webview/react-native-webview/blob/b1c48ce76d9f61f7dc855b86a79b5094ce9717eb/docs/Guide.md#the-injectedjavascript-prop
+
+### React Native에서 WebView의 함수 호출
+```js
+const html = `
+<script>
+const webFunction = function(parameter) {
+  alert(parameter);
+};
+</script>
+`;
+```
+```js
+<WebView
+  ref={webView => this.webView = webView}
+  source={{ html }}
+  style={{
+    width: Dimensions.get('window').width
+  }}
+></WebView>
+<Button
+  title="WebView 함수 호출"
+  onPress={() => {this.webView.injectJavaScript(`webFunction('abc'); true;`)}}
+></Button>
+```
+* ❕ `injectJavaScript` 마지막에 `true`는 꼭 들어가야 한다.
+* ❕ `ref` 부분을 `useRef` 사용해도 상관 없다.
+```js
+import React, { useRef } from 'react';
+const webView = useRef();
+ref={webView}
+webView.current.injectJavaScript(`webFunction('abc'); true;`);
+```
+
+### WebView에서 React Native의 함수 호출
+
+## 유용한 기능들
 ### Platform
 ```js
 import { Platform } from 'react-native';
