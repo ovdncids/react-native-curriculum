@@ -18,12 +18,6 @@ import { WebView } from 'react-native-webview';
 </View>
 ```
 
-### Platform
-```js
-import { Platform } from 'react-native';
-console.log(Platform.OS);  // 'ios', 'android'
-```
-
 ## html 파일 부르기1
 assets/index.html
 ```html
@@ -50,4 +44,15 @@ import indexHTML from '../assets/index.js';
 ```diff
 - source={{ uri: 'https://naver.com' }}
 + source={{ html: indexHTML }}
+```
+
+## 유용한 기능들
+### injectedJavaScript
+* https://github.com/react-native-webview/react-native-webview/blob/b1c48ce76d9f61f7dc855b86a79b5094ce9717eb/docs/Guide.md#the-injectedjavascript-prop
+* `WebView` 로드전에 `script` 먼저 실행
+
+### Platform
+```js
+import { Platform } from 'react-native';
+console.log(Platform.OS);  // 'ios', 'android'
 ```
