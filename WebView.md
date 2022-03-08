@@ -49,8 +49,11 @@ import indexHTML from '../assets/index.js';
 ## React Native와 WebView 통신
 * https://github.com/react-native-webview/react-native-webview/blob/b1c48ce76d9f61f7dc855b86a79b5094ce9717eb/docs/Guide.md#communicating-between-js-and-native
 
-### WebView 로드전에 `script` 실행 (injectedJavaScript)
+### WebView 로드후 바로 `script` 실행
 * https://github.com/react-native-webview/react-native-webview/blob/b1c48ce76d9f61f7dc855b86a79b5094ce9717eb/docs/Guide.md#the-injectedjavascript-prop
+```js
+injectedJavaScript={`alert('injectedJavaScript'); true;`}
+```
 
 ### React Native에서 WebView의 함수 호출
 ```js
