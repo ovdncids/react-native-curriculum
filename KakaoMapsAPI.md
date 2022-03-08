@@ -31,3 +31,7 @@ var options = { //지도를 생성할 때 필요한 기본 옵션
 var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
 </script>
 ```
+
+## 주소로 장소 표시
+* https://apis.map.kakao.com/web/sample/addr2coord
+* 지도의 좌표를 얻을 수 있다.
