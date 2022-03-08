@@ -147,3 +147,24 @@ const rnFunction2 = function() {
 import { Platform } from 'react-native';
 console.log(Platform.OS);  // 'ios', 'android'
 ```
+
+## KakaoPay
+* https://github.com/ovdncids/java-curriculum/blob/master/pay/KakaoPay.md
+* https://velog.io/@760kry/react-native-webview%EC%97%90%EC%84%9C-%EC%99%B8%EB%B6%80-%EC%95%B1-%EC%8B%A4%ED%96%89-pg
+```js
+import { Platform, Linking } from 'react-native';
+import { WebView } from 'react-native-webview';
+
+<WebView
+  originWhitelist={['*']}
+  source={{ html: `<button onclick="window.open('next_redirect_mobile_url')">카카오 페이</button>` }}
+  onShouldStartLoadWithRequest={event => {
+    if (event.url.startsWith('http://') || event.url.startsWith('https://') || event.url.startsWith('about:blank')) return true;
+    if (Platform.OS === 'ios') {
+      Linking.openURL(event.url).catch(() => {
+        Linking.openURL('https://apps.apple.com/kr/app/%EC%B9%B4%EC%B9%B4%EC%98%A4%ED%86%A1-kakaotalk/id362057947');
+      });
+    }
+  }}
+></WebView>
+```
