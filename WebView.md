@@ -168,3 +168,15 @@ import { WebView } from 'react-native-webview';
   }}
 ></WebView>
 ```
+
+### LSApplicationQueriesSchemes 설정
+* 설정 안해도 `Linking.openURL` 동작 잘 되는듯 하다.
+
+app.json
+```json
+"ios": {
+  "infoPlist": {
+    "LSApplicationQueriesSchemes": ["kakaotalk"]
+  }
+}
+```
