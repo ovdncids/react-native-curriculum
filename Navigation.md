@@ -169,8 +169,10 @@ function Tab2Screen({ navigation }) {
 * ❔ `Modal창` 헤더 이름 변경과 가운데 정렬
 
 ### 헤더 좌측 뒤로가기 빼고, 헤더 우측에 X버튼 만들기
+```js
+import { Pressable } from 'react-native';
+```
 ```diff
-+ import { Pressable } from 'react-native';
 - <Stack.Screen name="Modal1" component={Modal1Screen} />
 ```
 ```js
