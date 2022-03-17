@@ -21,8 +21,8 @@ import { ScrollView } from 'react-native';
 ```js
 export default function Tab4Screen() {
   return (
-    <View name="wrap">
-      <View name="nav">
+    <View nativeID="wrap">
+      <View nativeID="nav">
         <Text>⛪</Text>
         <Text>🎡</Text>
         <Text>🎠</Text>
@@ -30,12 +30,12 @@ export default function Tab4Screen() {
         <Text>📷</Text>
         <Text>📼</Text>
       </View>
-      <View name="section">
-        <View name="header">
-          <Text name="home">⛪</Text>
+      <View nativeID="section">
+        <View nativeID="header">
+          <Text nativeID="home">⛪</Text>
           <Text>🤖</Text>
         </View>
-        <View name="contents">
+        <View nativeID="contents">
           <Text>Home</Text>
         </View>
       </View>
@@ -48,29 +48,29 @@ https://www.emojiengine.com/ko
 
 ### nav와 section을 가로정렬 하기
 ```diff
-- <View name="wrap">
-+ <View name="wrap" style={{flexDirection: 'row'}}>
+- <View nativeID="wrap">
++ <View nativeID="wrap" style={{flexDirection: 'row'}}>
 ```
 ```diff
-- <View name="nav">
-+ <View name="nav" style={{flex: 0}}>
+- <View nativeID="nav">
++ <View nativeID="nav" style={{flex: 0}}>
 ```
 ```diff
-- <View name="section">
-+ <View name="section" style={{flex: 1}}>
+- <View nativeID="section">
++ <View nativeID="section" style={{flex: 1}}>
 ```
 * `flexDirection`, `flex` 설명 하기
 
 ### header 좌우 정렬 하기
 ```diff
-- <View name="header">
+- <View nativeID="header">
 -   <Text>⛪</Text>
 -   <Text>🤖</Text>
 - </View>
 ```
 ```js
-<View name="header" style={{flexDirection: 'row'}}>
-  <Text name="home" style={{flex: 1}}>⛪</Text>
+<View nativeID="header" style={{flexDirection: 'row'}}>
+  <Text nativeID="home" style={{flex: 1}}>⛪</Text>
   <Text>🤖</Text>
 </View>
 ```
@@ -78,8 +78,8 @@ https://www.emojiengine.com/ko
 
 ### contents 가운데 정렬 하기
 ```diff
-- <View name="contents">
-+ <View name="contents" style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+- <View nativeID="contents">
++ <View nativeID="contents" style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
 ```
 
 ### StyleSheet 열결 하기
@@ -99,12 +99,12 @@ const styles = StyleSheet.create({
 });
 ```
 ```diff
-- <View name="wrap" style={{flexDirection: 'row'}}>
-+ <View name="wrap" style={styles.wrap}>
+- <View nativeID="wrap" style={{flexDirection: 'row'}}>
++ <View nativeID="wrap" style={styles.wrap}>
 ```
 ```diff
-- <View name="section" style={{flex: 1}}>
-+ <View name="section" style={styles.section}>
+- <View nativeID="section" style={{flex: 1}}>
++ <View nativeID="section" style={styles.section}>
 ```
 * ❔ 나머지 부분도 `StyleSheet`으로 수정 하기
 
@@ -135,8 +135,8 @@ icon: {
 ```
 #### 여러게의 style을 넣는 방법
 ```diff
-- <Text name="home" style={styles.home}>⛪</Text>
-+ <Text name="home" style={[styles.home, styles.icon]}>⛪</Text>
+- <Text nativeID="home" style={styles.home}>⛪</Text>
++ <Text nativeID="home" style={[styles.home, styles.icon]}>⛪</Text>
 ```
 
 ### 과제
