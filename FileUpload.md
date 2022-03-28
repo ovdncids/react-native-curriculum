@@ -8,6 +8,7 @@ npm install expo-document-picker
 ```
 
 App.js
+* https://aboutreact.com/file-uploading-in-react-native
 * https://nobrok.com/tag/file-upload
 ```js
 import * as DocumentPicker from 'expo-document-picker';
