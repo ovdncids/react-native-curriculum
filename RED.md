@@ -22,7 +22,7 @@ app.js
 ```js
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { Alert, Pressable } from 'react-native';
+import { Alert, TouchableOpacity } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -109,12 +109,12 @@ export default function App() {
                 headerTitleAlign: 'center',
                 headerLeft: () => (<></>),
                 headerRight: () => (
-                  <Pressable onPress={() => navigation.goBack()}>
+                  <TouchableOpacity onPress={() => navigation.goBack()}>
                     <FontAwesome
                       name="close"
                       size={25}
                     />
-                  </Pressable>
+                  </TouchableOpacity>
                 )
               })}
             />
@@ -232,7 +232,7 @@ export default Home;
 screens/Items.js
 ```js
 import React from 'react';
-import { Text, TextInput, View, ScrollView, Pressable, Alert } from 'react-native';
+import { Text, TextInput, View, ScrollView, TouchableOpacity, Alert } from 'react-native';
 import { FontAwesome, AntDesign } from '@expo/vector-icons';
 import BouncyCheckbox from "react-native-bouncy-checkbox";
 import { styles } from '../styles/styles'
@@ -246,14 +246,14 @@ function Items() {
           type="number"
           placeholder="Create"
         />
-        <Pressable onPress={() => {}}
+        <TouchableOpacity onPress={() => {}}
           style={styles.flexCenter}>
           <FontAwesome
             name="pencil"
             size={24}
             style={{ marginHorizontal: 16, color: '#4285F4' }}
           />
-        </Pressable>
+        </TouchableOpacity>
       </View>
       <View name="thead" style={styles.thead}>
         <View name="tr" style={styles.rows}>
@@ -261,58 +261,58 @@ function Items() {
           <View style={[styles.flex2, styles.flexCenter, { flexDirection: 'row' }]}>
             <Text>Name</Text>
             <View>
-              <Pressable onPress={() => {}} style={{ position: 'absolute', top: -16, right: -24 }}>
+              <TouchableOpacity onPress={() => {}} style={{ position: 'absolute', top: -16, right: -24 }}>
                 <AntDesign
                   name="caretup"
                   size={20}
                   style={[{ color: 'black' }]}
                 />
-              </Pressable>
-              <Pressable onPress={() => {}} style={{ position: 'absolute', bottom: -16, right: -24 }}>
+              </TouchableOpacity>
+              <TouchableOpacity onPress={() => {}} style={{ position: 'absolute', bottom: -16, right: -24 }}>
                 <AntDesign
                   name="caretdown"
                   size={20}
                   style={{ color: '#EA4335' }}
                 />
-              </Pressable>
+              </TouchableOpacity>
             </View>
           </View>
           <View style={[styles.flex3, styles.flexCenter, { flexDirection: 'row' }]}>
             <Text>Enter</Text>
             <View>
-              <Pressable onPress={() => {}} style={{ position: 'absolute', top: -16, right: -24 }}>
+              <TouchableOpacity onPress={() => {}} style={{ position: 'absolute', top: -16, right: -24 }}>
                 <AntDesign
                   name="caretup"
                   size={20}
                   style={[{ color: 'black' }]}
                 />
-              </Pressable>
-              <Pressable onPress={() => {}} style={{ position: 'absolute', bottom: -16, right: -24 }}>
+              </TouchableOpacity>
+              <TouchableOpacity onPress={() => {}} style={{ position: 'absolute', bottom: -16, right: -24 }}>
                 <AntDesign
                   name="caretdown"
                   size={20}
                   style={[{ color: 'black' }]}
                 />
-              </Pressable>
+              </TouchableOpacity>
             </View>
           </View>
           <View style={[styles.flex3, styles.flexCenter, { flexDirection: 'row' }]}>
             <Text>Expire</Text>
             <View>
-              <Pressable onPress={() => {}} style={{ position: 'absolute', top: -16, right: -24 }}>
+              <TouchableOpacity onPress={() => {}} style={{ position: 'absolute', top: -16, right: -24 }}>
                 <AntDesign
                   name="caretup"
                   size={20}
                   style={[{ color: 'black' }]}
                 />
-              </Pressable>
-              <Pressable onPress={() => {}} style={{ position: 'absolute', bottom: -16, right: -24 }}>
+              </TouchableOpacity>
+              <TouchableOpacity onPress={() => {}} style={{ position: 'absolute', bottom: -16, right: -24 }}>
                 <AntDesign
                   name="caretdown"
                   size={20}
                   style={[{ color: 'black' }]}
                 />
-              </Pressable>
+              </TouchableOpacity>
             </View>
           </View>
           <Text style={[styles.flex1, styles.textAlignCenter]}>Del</Text>
@@ -328,7 +328,7 @@ function Items() {
             placeholder="Expire"
             value="2022-01-15"
           />
-          <Pressable onPress={() => {
+          <TouchableOpacity onPress={() => {
             Alert.alert('Delete member', '삭제 하시겠습니까?', [
               {
                 text: 'Cancel',
@@ -343,7 +343,7 @@ function Items() {
               size={24}
               style={{ color: '#EA4335' }}
             />
-          </Pressable>
+          </TouchableOpacity>
         </View>
         <View name="tr" style={styles.rows}>
           <BouncyCheckbox style={[styles.flex1, styles.textAlignCenter]} fillColor="#4285F4" onPress={() => {}} />
@@ -354,7 +354,7 @@ function Items() {
             placeholder="Expire"
             value="2022-01-15"
           />
-          <Pressable onPress={() => {
+          <TouchableOpacity onPress={() => {
             Alert.alert('Delete member', '삭제 하시겠습니까?', [
               {
                 text: 'Cancel',
@@ -369,7 +369,7 @@ function Items() {
               size={24}
               style={{ color: '#EA4335' }}
             />
-          </Pressable>
+          </TouchableOpacity>
         </View>
         <View name="tr" style={styles.rows}>
           <BouncyCheckbox style={[styles.flex1]} fillColor="#4285F4" onPress={() => {}} />
@@ -380,7 +380,7 @@ function Items() {
             placeholder="Expire"
             value="2022-01-15"
           />
-          <Pressable onPress={() => {
+          <TouchableOpacity onPress={() => {
             Alert.alert('Delete member', '삭제 하시겠습니까?', [
               {
                 text: 'Cancel',
@@ -395,7 +395,7 @@ function Items() {
               size={24}
               style={{ color: '#EA4335' }}
             />
-          </Pressable>
+          </TouchableOpacity>
         </View>
         <View name="tr" style={styles.rows}>
           <BouncyCheckbox style={[styles.flex1]} fillColor="#4285F4" onPress={() => {}} />
@@ -406,7 +406,7 @@ function Items() {
             placeholder="Expire"
             value="2022-01-15"
           />
-          <Pressable onPress={() => {
+          <TouchableOpacity onPress={() => {
             Alert.alert('Delete member', '삭제 하시겠습니까?', [
               {
                 text: 'Cancel',
@@ -421,7 +421,7 @@ function Items() {
               size={24}
               style={{ color: '#EA4335' }}
             />
-          </Pressable>
+          </TouchableOpacity>
         </View>
       </ScrollView>
     </>
@@ -434,7 +434,7 @@ export default Items;
 screens/Groceries.js
 ```js
 import React from 'react';
-import { Text, TextInput, View, ScrollView, Pressable, Alert } from 'react-native';
+import { Text, TextInput, View, ScrollView, TouchableOpacity, Alert } from 'react-native';
 import { FontAwesome, AntDesign } from '@expo/vector-icons';
 import { styles } from '../styles/styles'
 
@@ -447,14 +447,14 @@ function Items({ navigation }) {
           type="number"
           placeholder="Search"
         />
-        <Pressable onPress={() => {}}
+        <TouchableOpacity onPress={() => {}}
           style={styles.flexCenter}>
           <FontAwesome
             name="pencil"
             size={24}
             style={{ marginHorizontal: 16, color: '#34A853' }}
           />
-        </Pressable>
+        </TouchableOpacity>
       </View>
       <View name="thead" style={styles.thead}>
         <View name="tr" style={styles.rows}>
@@ -462,58 +462,58 @@ function Items({ navigation }) {
           <View style={[styles.flex2, styles.flexCenter, { flexDirection: 'row' }]}>
             <Text>Name</Text>
             <View>
-              <Pressable onPress={() => {}} style={{ position: 'absolute', top: -16, right: -24 }}>
+              <TouchableOpacity onPress={() => {}} style={{ position: 'absolute', top: -16, right: -24 }}>
                 <AntDesign
                   name="caretup"
                   size={20}
                   style={[{ color: 'black' }]}
                 />
-              </Pressable>
-              <Pressable onPress={() => {}} style={{ position: 'absolute', bottom: -16, right: -24 }}>
+              </TouchableOpacity>
+              <TouchableOpacity onPress={() => {}} style={{ position: 'absolute', bottom: -16, right: -24 }}>
                 <AntDesign
                   name="caretdown"
                   size={20}
                   style={{ color: '#EA4335' }}
                 />
-              </Pressable>
+              </TouchableOpacity>
             </View>
           </View>
           <View style={[styles.flex3, styles.flexCenter, { flexDirection: 'row' }]}>
             <Text>Enter</Text>
             <View>
-              <Pressable onPress={() => {}} style={{ position: 'absolute', top: -16, right: -24 }}>
+              <TouchableOpacity onPress={() => {}} style={{ position: 'absolute', top: -16, right: -24 }}>
                 <AntDesign
                   name="caretup"
                   size={20}
                   style={[{ color: 'black' }]}
                 />
-              </Pressable>
-              <Pressable onPress={() => {}} style={{ position: 'absolute', bottom: -16, right: -24 }}>
+              </TouchableOpacity>
+              <TouchableOpacity onPress={() => {}} style={{ position: 'absolute', bottom: -16, right: -24 }}>
                 <AntDesign
                   name="caretdown"
                   size={20}
                   style={[{ color: 'black' }]}
                 />
-              </Pressable>
+              </TouchableOpacity>
             </View>
           </View>
           <View style={[styles.flex3, styles.flexCenter, { flexDirection: 'row' }]}>
             <Text>Expire</Text>
             <View>
-              <Pressable onPress={() => {}} style={{ position: 'absolute', top: -16, right: -24 }}>
+              <TouchableOpacity onPress={() => {}} style={{ position: 'absolute', top: -16, right: -24 }}>
                 <AntDesign
                   name="caretup"
                   size={20}
                   style={[{ color: 'black' }]}
                 />
-              </Pressable>
-              <Pressable onPress={() => {}} style={{ position: 'absolute', bottom: -16, right: -24 }}>
+              </TouchableOpacity>
+              <TouchableOpacity onPress={() => {}} style={{ position: 'absolute', bottom: -16, right: -24 }}>
                 <AntDesign
                   name="caretdown"
                   size={20}
                   style={[{ color: 'black' }]}
                 />
-              </Pressable>
+              </TouchableOpacity>
             </View>
           </View>
           <Text style={[styles.flex1, styles.textAlignCenter]}>Edit</Text>
@@ -526,7 +526,7 @@ function Items({ navigation }) {
           <Text style={[styles.flex2, styles.textAlignCenter]}>사과</Text>
           <Text style={[styles.flex3, styles.textAlignCenter]}>2022-01-01</Text>
           <Text style={[styles.flex3, styles.textAlignCenter]}>2022-01-15</Text>
-          <Pressable onPress={() => {
+          <TouchableOpacity onPress={() => {
             navigation.navigate('ModalGroceryUpdate')
           }} style={[styles.flex1, styles.flexCenter]}>
             <FontAwesome
@@ -534,8 +534,8 @@ function Items({ navigation }) {
               size={24}
               style={{ color: '#FBBC05' }}
             />
-          </Pressable>
-          <Pressable onPress={() => {
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => {
             Alert.alert('Delete member', '삭제 하시겠습니까?', [
               {
                 text: 'Cancel',
@@ -550,14 +550,14 @@ function Items({ navigation }) {
               size={24}
               style={{ color: '#EA4335' }}
             />
-          </Pressable>
+          </TouchableOpacity>
         </View>
         <View name="tr" style={[styles.rows, { height: 35 }]}>
           <Text style={[styles.flex1, styles.textAlignCenter]}>2</Text>
           <Text style={[styles.flex2, styles.textAlignCenter]}>바나나</Text>
           <Text style={[styles.flex3, styles.textAlignCenter]}>2022-01-01</Text>
           <Text style={[styles.flex3, styles.textAlignCenter]}>2022-01-15</Text>
-          <Pressable onPress={() => {
+          <TouchableOpacity onPress={() => {
             navigation.navigate('ModalGroceryUpdate')
           }} style={[styles.flex1, styles.flexCenter]}>
             <FontAwesome
@@ -565,8 +565,8 @@ function Items({ navigation }) {
               size={24}
               style={{ color: '#FBBC05' }}
             />
-          </Pressable>
-          <Pressable onPress={() => {
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => {
             Alert.alert('Delete member', '삭제 하시겠습니까?', [
               {
                 text: 'Cancel',
@@ -581,14 +581,14 @@ function Items({ navigation }) {
               size={24}
               style={{ color: '#EA4335' }}
             />
-          </Pressable>
+          </TouchableOpacity>
         </View>
         <View name="tr" style={[styles.rows, { height: 35 }]}>
           <Text style={[styles.flex1, styles.textAlignCenter]}>3</Text>
           <Text style={[styles.flex2, styles.textAlignCenter]}>딸기</Text>
           <Text style={[styles.flex3, styles.textAlignCenter]}>2022-01-01</Text>
           <Text style={[styles.flex3, styles.textAlignCenter]}>2022-01-15</Text>
-          <Pressable onPress={() => {
+          <TouchableOpacity onPress={() => {
             navigation.navigate('ModalGroceryUpdate')
           }} style={[styles.flex1, styles.flexCenter]}>
             <FontAwesome
@@ -596,8 +596,8 @@ function Items({ navigation }) {
               size={24}
               style={{ color: '#FBBC05' }}
             />
-          </Pressable>
-          <Pressable onPress={() => {
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => {
             Alert.alert('Delete member', '삭제 하시겠습니까?', [
               {
                 text: 'Cancel',
@@ -612,14 +612,14 @@ function Items({ navigation }) {
               size={24}
               style={{ color: '#EA4335' }}
             />
-          </Pressable>
+          </TouchableOpacity>
         </View>
         <View name="tr" style={[styles.rows, { height: 35 }]}>
           <Text style={[styles.flex1, styles.textAlignCenter]}>4</Text>
           <Text style={[styles.flex2, styles.textAlignCenter]}>키위</Text>
           <Text style={[styles.flex3, styles.textAlignCenter]}>2022-01-01</Text>
           <Text style={[styles.flex3, styles.textAlignCenter]}>2022-01-15</Text>
-          <Pressable onPress={() => {
+          <TouchableOpacity onPress={() => {
             navigation.navigate('ModalGroceryUpdate')
           }} style={[styles.flex1, styles.flexCenter]}>
             <FontAwesome
@@ -627,8 +627,8 @@ function Items({ navigation }) {
               size={24}
               style={{ color: '#FBBC05' }}
             />
-          </Pressable>
-          <Pressable onPress={() => {
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => {
             Alert.alert('Delete member', '삭제 하시겠습니까?', [
               {
                 text: 'Cancel',
@@ -643,7 +643,7 @@ function Items({ navigation }) {
               size={24}
               style={{ color: '#EA4335' }}
             />
-          </Pressable>
+          </TouchableOpacity>
         </View>
       </ScrollView>
     </>
@@ -679,14 +679,14 @@ export function ModalGroceryUpdate(props) {
             placeholder="Expire"
             value="2022-01-15"
           />
-          <Pressable onPress={() => {}}
+          <TouchableOpacity onPress={() => {}}
             style={[styles.flex2, styles.flexCenter]}>
             <FontAwesome
               name="edit"
               size={24}
               style={{ color: '#FBBC05' }}
             />
-          </Pressable>
+          </TouchableOpacity>
         </View>
       </ScrollView>
     </>
