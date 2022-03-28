@@ -25,8 +25,8 @@ function App() {
       method: 'POST',
       body: formData,
       headers: {
-        'content-type': 'multipart/form-data',
-      },
+        'content-type': 'multipart/form-data'
+      }
     });
   }
   return (
