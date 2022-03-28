@@ -23,18 +23,18 @@
     <View>
       <Text>홍길동</Text>
       <Text>39</Text>
-      <Pressable onPress={() => {}}>
+      <TouchableOpacity onPress={() => {}}>
         <FontAwesome
           name="edit"
           size={24}
         />
-      </Pressable>
-      <Pressable onPress={() => {}}>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={() => {}}>
         <FontAwesome
           name="trash"
           size={24}
         />
-      </Pressable>
+      </TouchableOpacity>
     </View>
   </ScrollView>
 </>
