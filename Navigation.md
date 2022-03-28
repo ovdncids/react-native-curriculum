@@ -190,6 +190,7 @@ import { Pressable } from 'react-native';
   })}
 />
 ```
+* `Pressable`과 `TouchableOpacity`를 비교해 보자
 
 # StatusBar
 * https://reactnative.dev/docs/statusbar
