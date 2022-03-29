@@ -22,14 +22,16 @@ function App() {
       type: fileResult.mimeType,
       name: fileResult.name
     });
-    fetch('http://서버주소:3100/api/v1/files', {
+    const response = await fetch('http://서버주소:3100/api/v1/files', {
       method: 'POST',
       body: formData,
       headers: {
         'content-type': 'multipart/form-data'
       }
     });
-  }
+    const responseJson = await response.json();
+    console.log({responseJson});
+  };
   return (
     <View>
       <Button title="File Update" onPress={() => fileUpdate()} />
