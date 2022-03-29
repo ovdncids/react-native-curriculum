@@ -57,7 +57,7 @@
   screens/Tab5Screen.js
   ```js
   import React from 'react';
-  import { Text, TextInput, View, ScrollView, Pressable, Alert } from 'react-native';
+  import { Text, TextInput, View, ScrollView, TouchableOpacity, Alert } from 'react-native';
   import { FontAwesome } from '@expo/vector-icons';
   import { StyleSheet } from 'react-native';
 
@@ -123,7 +123,7 @@
           <View name="member" style={styles.member}>
             <Text style={styles.memberName}>홍길동</Text>
             <Text style={styles.memberAge}>39</Text>
-            <Pressable onPress={() => {
+            <TouchableOpacity onPress={() => {
               navigation.navigate('ModalUpdate')
             }} style={styles.memberUpdate}>
               <FontAwesome
@@ -131,8 +131,8 @@
                 size={24}
                 style={[styles.memberUpdate, { color: '#FBBC05' }]}
               />
-            </Pressable>
-            <Pressable onPress={() => {
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => {
               Alert.alert(
                 "Delete member",
                 "삭제 하시겠습니까?",
@@ -151,619 +151,619 @@
                 size={24}
                 style={[styles.memberDelete, { color: '#EA4335' }]}
               />
-            </Pressable>
+            </TouchableOpacity>
           </View>
           <View name="member" style={styles.member}>
             <Text style={styles.memberName}>김삼순</Text>
             <Text style={styles.memberAge}>33</Text>
-            <Pressable onPress={() => {}} style={styles.memberUpdate}>
+            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
                 style={[styles.memberUpdate, { color: '#FBBC05' }]}
               />
-            </Pressable>
-            <Pressable onPress={() => {}} style={styles.memberDelete}>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
                 style={[styles.memberDelete, { color: '#EA4335' }]}
               />
-            </Pressable>
+            </TouchableOpacity>
           </View>
           <View name="member" style={styles.member}>
             <Text style={styles.memberName}>홍명보</Text>
             <Text style={styles.memberAge}>44</Text>
-            <Pressable onPress={() => {}} style={styles.memberUpdate}>
+            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
                 style={[styles.memberUpdate, { color: '#FBBC05' }]}
               />
-            </Pressable>
-            <Pressable onPress={() => {}} style={styles.memberDelete}>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
                 style={[styles.memberDelete, { color: '#EA4335' }]}
               />
-            </Pressable>
+            </TouchableOpacity>
           </View>
           <View name="member" style={styles.member}>
             <Text style={styles.memberName}>박지삼</Text>
             <Text style={styles.memberAge}>22</Text>
-            <Pressable onPress={() => {}} style={styles.memberUpdate}>
+            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
                 style={[styles.memberUpdate, { color: '#FBBC05' }]}
               />
-            </Pressable>
-            <Pressable onPress={() => {}} style={styles.memberDelete}>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
                 style={[styles.memberDelete, { color: '#EA4335' }]}
               />
-            </Pressable>
+            </TouchableOpacity>
           </View>
           <View name="member" style={styles.member}>
             <Text style={styles.memberName}>권명순</Text>
             <Text style={styles.memberAge}>10</Text>
-            <Pressable onPress={() => {}} style={styles.memberUpdate}>
+            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
                 style={[styles.memberUpdate, { color: '#FBBC05' }]}
               />
-            </Pressable>
-            <Pressable onPress={() => {}} style={styles.memberDelete}>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
                 style={[styles.memberDelete, { color: '#EA4335' }]}
               />
-            </Pressable>
+            </TouchableOpacity>
           </View>
           <View name="member" style={styles.member}>
             <Text style={styles.memberName}>홍길동</Text>
             <Text style={styles.memberAge}>39</Text>
-            <Pressable onPress={() => {}} style={styles.memberUpdate}>
+            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
                 style={[styles.memberUpdate, { color: '#FBBC05' }]}
               />
-            </Pressable>
-            <Pressable onPress={() => {}} style={styles.memberDelete}>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
                 style={[styles.memberDelete, { color: '#EA4335' }]}
               />
-            </Pressable>
+            </TouchableOpacity>
           </View>
           <View name="member" style={styles.member}>
             <Text style={styles.memberName}>김삼순</Text>
             <Text style={styles.memberAge}>33</Text>
-            <Pressable onPress={() => {}} style={styles.memberUpdate}>
+            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
                 style={[styles.memberUpdate, { color: '#FBBC05' }]}
               />
-            </Pressable>
-            <Pressable onPress={() => {}} style={styles.memberDelete}>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
                 style={[styles.memberDelete, { color: '#EA4335' }]}
               />
-            </Pressable>
+            </TouchableOpacity>
           </View>
           <View name="member" style={styles.member}>
             <Text style={styles.memberName}>홍명보</Text>
             <Text style={styles.memberAge}>44</Text>
-            <Pressable onPress={() => {}} style={styles.memberUpdate}>
+            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
                 style={[styles.memberUpdate, { color: '#FBBC05' }]}
               />
-            </Pressable>
-            <Pressable onPress={() => {}} style={styles.memberDelete}>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
                 style={[styles.memberDelete, { color: '#EA4335' }]}
               />
-            </Pressable>
+            </TouchableOpacity>
           </View>
           <View name="member" style={styles.member}>
             <Text style={styles.memberName}>박지삼</Text>
             <Text style={styles.memberAge}>22</Text>
-            <Pressable onPress={() => {}} style={styles.memberUpdate}>
+            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
                 style={[styles.memberUpdate, { color: '#FBBC05' }]}
               />
-            </Pressable>
-            <Pressable onPress={() => {}} style={styles.memberDelete}>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
                 style={[styles.memberDelete, { color: '#EA4335' }]}
               />
-            </Pressable>
+            </TouchableOpacity>
           </View>
           <View name="member" style={styles.member}>
             <Text style={styles.memberName}>권명순</Text>
             <Text style={styles.memberAge}>10</Text>
-            <Pressable onPress={() => {}} style={styles.memberUpdate}>
+            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
                 style={[styles.memberUpdate, { color: '#FBBC05' }]}
               />
-            </Pressable>
-            <Pressable onPress={() => {}} style={styles.memberDelete}>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
                 style={[styles.memberDelete, { color: '#EA4335' }]}
               />
-            </Pressable>
+            </TouchableOpacity>
           </View>
           <View name="member" style={styles.member}>
             <Text style={styles.memberName}>홍길동</Text>
             <Text style={styles.memberAge}>39</Text>
-            <Pressable onPress={() => {}} style={styles.memberUpdate}>
+            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
                 style={[styles.memberUpdate, { color: '#FBBC05' }]}
               />
-            </Pressable>
-            <Pressable onPress={() => {}} style={styles.memberDelete}>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
                 style={[styles.memberDelete, { color: '#EA4335' }]}
               />
-            </Pressable>
+            </TouchableOpacity>
           </View>
           <View name="member" style={styles.member}>
             <Text style={styles.memberName}>김삼순</Text>
             <Text style={styles.memberAge}>33</Text>
-            <Pressable onPress={() => {}} style={styles.memberUpdate}>
+            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
                 style={[styles.memberUpdate, { color: '#FBBC05' }]}
               />
-            </Pressable>
-            <Pressable onPress={() => {}} style={styles.memberDelete}>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
                 style={[styles.memberDelete, { color: '#EA4335' }]}
               />
-            </Pressable>
+            </TouchableOpacity>
           </View>
           <View name="member" style={styles.member}>
             <Text style={styles.memberName}>홍명보</Text>
             <Text style={styles.memberAge}>44</Text>
-            <Pressable onPress={() => {}} style={styles.memberUpdate}>
+            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
                 style={[styles.memberUpdate, { color: '#FBBC05' }]}
               />
-            </Pressable>
-            <Pressable onPress={() => {}} style={styles.memberDelete}>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
                 style={[styles.memberDelete, { color: '#EA4335' }]}
               />
-            </Pressable>
+            </TouchableOpacity>
           </View>
           <View name="member" style={styles.member}>
             <Text style={styles.memberName}>박지삼</Text>
             <Text style={styles.memberAge}>22</Text>
-            <Pressable onPress={() => {}} style={styles.memberUpdate}>
+            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
                 style={[styles.memberUpdate, { color: '#FBBC05' }]}
               />
-            </Pressable>
-            <Pressable onPress={() => {}} style={styles.memberDelete}>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
                 style={[styles.memberDelete, { color: '#EA4335' }]}
               />
-            </Pressable>
+            </TouchableOpacity>
           </View>
           <View name="member" style={styles.member}>
             <Text style={styles.memberName}>권명순</Text>
             <Text style={styles.memberAge}>10</Text>
-            <Pressable onPress={() => {}} style={styles.memberUpdate}>
+            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
                 style={[styles.memberUpdate, { color: '#FBBC05' }]}
               />
-            </Pressable>
-            <Pressable onPress={() => {}} style={styles.memberDelete}>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
                 style={[styles.memberDelete, { color: '#EA4335' }]}
               />
-            </Pressable>
+            </TouchableOpacity>
           </View>
           <View name="member" style={styles.member}>
             <Text style={styles.memberName}>홍길동</Text>
             <Text style={styles.memberAge}>39</Text>
-            <Pressable onPress={() => {}} style={styles.memberUpdate}>
+            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
                 style={[styles.memberUpdate, { color: '#FBBC05' }]}
               />
-            </Pressable>
-            <Pressable onPress={() => {}} style={styles.memberDelete}>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
                 style={[styles.memberDelete, { color: '#EA4335' }]}
               />
-            </Pressable>
+            </TouchableOpacity>
           </View>
           <View name="member" style={styles.member}>
             <Text style={styles.memberName}>김삼순</Text>
             <Text style={styles.memberAge}>33</Text>
-            <Pressable onPress={() => {}} style={styles.memberUpdate}>
+            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
                 style={[styles.memberUpdate, { color: '#FBBC05' }]}
               />
-            </Pressable>
-            <Pressable onPress={() => {}} style={styles.memberDelete}>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
                 style={[styles.memberDelete, { color: '#EA4335' }]}
               />
-            </Pressable>
+            </TouchableOpacity>
           </View>
           <View name="member" style={styles.member}>
             <Text style={styles.memberName}>홍명보</Text>
             <Text style={styles.memberAge}>44</Text>
-            <Pressable onPress={() => {}} style={styles.memberUpdate}>
+            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
                 style={[styles.memberUpdate, { color: '#FBBC05' }]}
               />
-            </Pressable>
-            <Pressable onPress={() => {}} style={styles.memberDelete}>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
                 style={[styles.memberDelete, { color: '#EA4335' }]}
               />
-            </Pressable>
+            </TouchableOpacity>
           </View>
           <View name="member" style={styles.member}>
             <Text style={styles.memberName}>박지삼</Text>
             <Text style={styles.memberAge}>22</Text>
-            <Pressable onPress={() => {}} style={styles.memberUpdate}>
+            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
                 style={[styles.memberUpdate, { color: '#FBBC05' }]}
               />
-            </Pressable>
-            <Pressable onPress={() => {}} style={styles.memberDelete}>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
                 style={[styles.memberDelete, { color: '#EA4335' }]}
               />
-            </Pressable>
+            </TouchableOpacity>
           </View>
           <View name="member" style={styles.member}>
             <Text style={styles.memberName}>권명순</Text>
             <Text style={styles.memberAge}>10</Text>
-            <Pressable onPress={() => {}} style={styles.memberUpdate}>
+            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
                 style={[styles.memberUpdate, { color: '#FBBC05' }]}
               />
-            </Pressable>
-            <Pressable onPress={() => {}} style={styles.memberDelete}>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
                 style={[styles.memberDelete, { color: '#EA4335' }]}
               />
-            </Pressable>
+            </TouchableOpacity>
           </View>
           <View name="member" style={styles.member}>
             <Text style={styles.memberName}>홍길동</Text>
             <Text style={styles.memberAge}>39</Text>
-            <Pressable onPress={() => {}} style={styles.memberUpdate}>
+            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
                 style={[styles.memberUpdate, { color: '#FBBC05' }]}
               />
-            </Pressable>
-            <Pressable onPress={() => {}} style={styles.memberDelete}>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
                 style={[styles.memberDelete, { color: '#EA4335' }]}
               />
-            </Pressable>
+            </TouchableOpacity>
           </View>
           <View name="member" style={styles.member}>
             <Text style={styles.memberName}>김삼순</Text>
             <Text style={styles.memberAge}>33</Text>
-            <Pressable onPress={() => {}} style={styles.memberUpdate}>
+            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
                 style={[styles.memberUpdate, { color: '#FBBC05' }]}
               />
-            </Pressable>
-            <Pressable onPress={() => {}} style={styles.memberDelete}>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
                 style={[styles.memberDelete, { color: '#EA4335' }]}
               />
-            </Pressable>
+            </TouchableOpacity>
           </View>
           <View name="member" style={styles.member}>
             <Text style={styles.memberName}>홍명보</Text>
             <Text style={styles.memberAge}>44</Text>
-            <Pressable onPress={() => {}} style={styles.memberUpdate}>
+            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
                 style={[styles.memberUpdate, { color: '#FBBC05' }]}
               />
-            </Pressable>
-            <Pressable onPress={() => {}} style={styles.memberDelete}>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
                 style={[styles.memberDelete, { color: '#EA4335' }]}
               />
-            </Pressable>
+            </TouchableOpacity>
           </View>
           <View name="member" style={styles.member}>
             <Text style={styles.memberName}>박지삼</Text>
             <Text style={styles.memberAge}>22</Text>
-            <Pressable onPress={() => {}} style={styles.memberUpdate}>
+            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
                 style={[styles.memberUpdate, { color: '#FBBC05' }]}
               />
-            </Pressable>
-            <Pressable onPress={() => {}} style={styles.memberDelete}>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
                 style={[styles.memberDelete, { color: '#EA4335' }]}
               />
-            </Pressable>
+            </TouchableOpacity>
           </View>
           <View name="member" style={styles.member}>
             <Text style={styles.memberName}>권명순</Text>
             <Text style={styles.memberAge}>10</Text>
-            <Pressable onPress={() => {}} style={styles.memberUpdate}>
+            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
                 style={[styles.memberUpdate, { color: '#FBBC05' }]}
               />
-            </Pressable>
-            <Pressable onPress={() => {}} style={styles.memberDelete}>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
                 style={[styles.memberDelete, { color: '#EA4335' }]}
               />
-            </Pressable>
+            </TouchableOpacity>
           </View>
           <View name="member" style={styles.member}>
             <Text style={styles.memberName}>홍길동</Text>
             <Text style={styles.memberAge}>39</Text>
-            <Pressable onPress={() => {}} style={styles.memberUpdate}>
+            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
                 style={[styles.memberUpdate, { color: '#FBBC05' }]}
               />
-            </Pressable>
-            <Pressable onPress={() => {}} style={styles.memberDelete}>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
                 style={[styles.memberDelete, { color: '#EA4335' }]}
               />
-            </Pressable>
+            </TouchableOpacity>
           </View>
           <View name="member" style={styles.member}>
             <Text style={styles.memberName}>김삼순</Text>
             <Text style={styles.memberAge}>33</Text>
-            <Pressable onPress={() => {}} style={styles.memberUpdate}>
+            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
                 style={[styles.memberUpdate, { color: '#FBBC05' }]}
               />
-            </Pressable>
-            <Pressable onPress={() => {}} style={styles.memberDelete}>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
                 style={[styles.memberDelete, { color: '#EA4335' }]}
               />
-            </Pressable>
+            </TouchableOpacity>
           </View>
           <View name="member" style={styles.member}>
             <Text style={styles.memberName}>홍명보</Text>
             <Text style={styles.memberAge}>44</Text>
-            <Pressable onPress={() => {}} style={styles.memberUpdate}>
+            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
                 style={[styles.memberUpdate, { color: '#FBBC05' }]}
               />
-            </Pressable>
-            <Pressable onPress={() => {}} style={styles.memberDelete}>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
                 style={[styles.memberDelete, { color: '#EA4335' }]}
               />
-            </Pressable>
+            </TouchableOpacity>
           </View>
           <View name="member" style={styles.member}>
             <Text style={styles.memberName}>박지삼</Text>
             <Text style={styles.memberAge}>22</Text>
-            <Pressable onPress={() => {}} style={styles.memberUpdate}>
+            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
                 style={[styles.memberUpdate, { color: '#FBBC05' }]}
               />
-            </Pressable>
-            <Pressable onPress={() => {}} style={styles.memberDelete}>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
                 style={[styles.memberDelete, { color: '#EA4335' }]}
               />
-            </Pressable>
+            </TouchableOpacity>
           </View>
           <View name="member" style={styles.member}>
             <Text style={styles.memberName}>권명순</Text>
             <Text style={styles.memberAge}>10</Text>
-            <Pressable onPress={() => {}} style={styles.memberUpdate}>
+            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
                 style={[styles.memberUpdate, { color: '#FBBC05' }]}
               />
-            </Pressable>
-            <Pressable onPress={() => {}} style={styles.memberDelete}>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
                 style={[styles.memberDelete, { color: '#EA4335' }]}
               />
-            </Pressable>
+            </TouchableOpacity>
           </View>
           <View name="member" style={styles.member}>
             <Text style={styles.memberName}>홍길동</Text>
             <Text style={styles.memberAge}>39</Text>
-            <Pressable onPress={() => {}} style={styles.memberUpdate}>
+            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
                 style={[styles.memberUpdate, { color: '#FBBC05' }]}
               />
-            </Pressable>
-            <Pressable onPress={() => {}} style={styles.memberDelete}>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
                 style={[styles.memberDelete, { color: '#EA4335' }]}
               />
-            </Pressable>
+            </TouchableOpacity>
           </View>
           <View name="member" style={styles.member}>
             <Text style={styles.memberName}>김삼순</Text>
             <Text style={styles.memberAge}>33</Text>
-            <Pressable onPress={() => {}} style={styles.memberUpdate}>
+            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
                 style={[styles.memberUpdate, { color: '#FBBC05' }]}
               />
-            </Pressable>
-            <Pressable onPress={() => {}} style={styles.memberDelete}>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
                 style={[styles.memberDelete, { color: '#EA4335' }]}
               />
-            </Pressable>
+            </TouchableOpacity>
           </View>
           <View name="member" style={styles.member}>
             <Text style={styles.memberName}>홍명보</Text>
             <Text style={styles.memberAge}>44</Text>
-            <Pressable onPress={() => {}} style={styles.memberUpdate}>
+            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
                 style={[styles.memberUpdate, { color: '#FBBC05' }]}
               />
-            </Pressable>
-            <Pressable onPress={() => {}} style={styles.memberDelete}>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
                 style={[styles.memberDelete, { color: '#EA4335' }]}
               />
-            </Pressable>
+            </TouchableOpacity>
           </View>
           <View name="member" style={styles.member}>
             <Text style={styles.memberName}>박지삼</Text>
             <Text style={styles.memberAge}>22</Text>
-            <Pressable onPress={() => {}} style={styles.memberUpdate}>
+            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
                 style={[styles.memberUpdate, { color: '#FBBC05' }]}
               />
-            </Pressable>
-            <Pressable onPress={() => {}} style={styles.memberDelete}>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
                 style={[styles.memberDelete, { color: '#EA4335' }]}
               />
-            </Pressable>
+            </TouchableOpacity>
           </View>
           <View name="member" style={styles.member}>
             <Text style={styles.memberName}>권명순</Text>
             <Text style={styles.memberAge}>10</Text>
-            <Pressable onPress={() => {}} style={styles.memberUpdate}>
+            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
                 style={[styles.memberUpdate, { color: '#FBBC05' }]}
               />
-            </Pressable>
-            <Pressable onPress={() => {}} style={styles.memberDelete}>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
                 style={[styles.memberDelete, { color: '#EA4335' }]}
               />
-            </Pressable>
+            </TouchableOpacity>
           </View>
         </ScrollView>
       </>
@@ -791,13 +791,13 @@
               style={[styles.memberAge, styles.borderStyle]}
               placeholder="Age"
             />
-            <Pressable onPress={() => {}} style={styles.memberUpdate}>
+            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
               <FontAwesome
                 name="pencil"
                 size={24}
                 style={[styles.memberUpdate, { color: '#4285F4', padding: 8 }]}
               />
-            </Pressable>
+            </TouchableOpacity>
           </View>
         </ScrollView>
       </>
@@ -825,13 +825,13 @@
               style={[styles.memberAge, styles.borderStyle]}
               placeholder="Age"
             />
-            <Pressable onPress={() => {}} style={[styles.memberUpdate, { alignItems: 'center', justifyContent: 'center' }]}>
+            <TouchableOpacity onPress={() => {}} style={[styles.memberUpdate, { alignItems: 'center', justifyContent: 'center' }]}>
               <FontAwesome
                 name="edit"
                 size={24}
                 style={[styles.memberUpdate, { color: '#FBBC05', padding: 8 }]}
               />
-            </Pressable>
+            </TouchableOpacity>
           </View>
         </ScrollView>
       </>
@@ -853,13 +853,13 @@
     options={({ navigation }) => ({
       headerTitleAlign: 'center',
       headerRight: () => (
-        <Pressable onPress={() => navigation.navigate('ModalCreate')}>
+        <TouchableOpacity onPress={() => navigation.navigate('ModalCreate')}>
           <FontAwesome
             name="pencil"
             size={24}
             style={{ marginRight: 24, color: '#4285F4' }}
           />
-        </Pressable>
+        </TouchableOpacity>
       ),
       tabBarIcon: () => <FontAwesome
         name="home"
@@ -875,12 +875,12 @@
       options={({ navigation }) => ({
         headerLeft: () => (<></>),
         headerRight: () => (
-          <Pressable onPress={() => navigation.goBack()}>
+          <TouchableOpacity onPress={() => navigation.goBack()}>
             <FontAwesome
               name="close"
               size={25}
             />
-          </Pressable>
+          </TouchableOpacity>
         )
       })}
     />
@@ -888,12 +888,12 @@
       options={({ navigation }) => ({
         headerLeft: () => (<></>),
         headerRight: () => (
-          <Pressable onPress={() => navigation.goBack()}>
+          <TouchableOpacity onPress={() => navigation.goBack()}>
             <FontAwesome
               name="close"
               size={25}
             />
-          </Pressable>
+          </TouchableOpacity>
         )
       })}
     />
