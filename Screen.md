@@ -83,6 +83,7 @@ https://www.emojiengine.com/ko
 ```
 
 ### StyleSheet 열결 하기
+* [다른 방법 - styled-components/native](https://www.google.com/search?q=styled-components%2Fnative&rlz=1C5CHFA_enKR953KR954&oq=styled-components%2Fnative&aqs=chrome..69i57j0i512l6j69i58.303j0j7&sourceid=chrome&ie=UTF-8)
 ```js
 import { StyleSheet } from 'react-native';
 
