@@ -48,13 +48,28 @@ command + shift + h: Home
 command + control + shift + h: App Switcher
 
 # Screenshot 찍기
-Simulator > Device > Trigger Screenshot > 더블 클릭 > 완료 > 사진 앱에 저장 또는 파일 앱에 저장
+Simulator > Device > Trigger Screenshot > 생성될 이미지 더블 클릭 > 완료 > 사진 앱에 저장 또는 파일 앱에 저장
 
 # Screenshot MacBook에 저장
 Simulator 상단에 가운데에 Screenshot 버튼 누르기
 
 # PDF 파일 만들기
-Safari > 옵션(화상표 위 아이콘) > 마크업 또는 프린트 > 완료 > 다음 위치에 파일 저장
+Safari > 옵션(화상표 위 아이콘 버튼) > 마크업 또는 프린트 > 완료 > 다음 위치에 파일 저장
+
+# 파일앱에서 파일 찾기
+둘러보기 > 나의 iPhone > 생성된 파일 선택
+```
+
+### Android
+```sh
+# Screenshot 찍기
+App Switcher(네모 아이콘 버튼) > Screenshot > 생성될 이미지 더블 클릭 > Done > Save
+
+# Screenshot MacBook에 저장
+Simulator 오른쪽 메뉴중에 Screenshot 버튼 누르기
+
+# 파일앱에서 파일 찾기
+메뉴 > Recent로 이동 > 생성된 파일 선택
 ```
 
 ## Express
