@@ -40,5 +40,22 @@ function App() {
 }
 ```
 
+## Simulator에서 Upload에 필요한 파일 생성
+### iOS
+```sh
+# Simulator 이동 단축키
+command + shift + h: Home
+command + control + shift + h: App Switcher
+
+# Screenshot 찍기
+Simulator > Device > Trigger Screenshot > 더블 클릭 > 완료 > 사진 앱에 저장 또는 파일 앱에 저장
+
+# Screenshot MacBook에 저장
+Simulator 상단에 가운데에 Screenshot 버튼 누르기
+
+# PDF 파일 만들기
+Safari > 옵션(화상표 위 아이콘) > 마크업 또는 프린트 > 완료 > 다음 위치에 파일 저장
+```
+
 ## Express
 * [Express](https://github.com/ovdncids/react-curriculum/blob/master/FileUpload.md#express)
