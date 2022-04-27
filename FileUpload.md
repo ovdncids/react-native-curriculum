@@ -40,6 +40,14 @@ function App() {
 }
 ```
 
+### FormData 값 넘기기
+```js
+formData.append('member', JSON.stringify({
+  name: '홍길동',
+  age: 39
+}));
+```
+
 ## Simulator에서 Upload에 필요한 파일 생성
 ### iOS
 ```sh
