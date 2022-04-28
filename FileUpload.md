@@ -47,6 +47,7 @@ formData.append('member', JSON.stringify({
   age: 39
 }));
 ```
+* ❕ `Object`를 넘길때는 `JSON.stringify`를 사용하여 문자형으로 넘겨야 `서버`에서 받을 수 있다.
 
 ## Simulator에서 Upload에 필요한 파일 생성
 ### iOS
