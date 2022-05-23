@@ -35,3 +35,12 @@ var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리
 ## 주소로 장소 표시
 * https://apis.map.kakao.com/web/sample/addr2coord
 * 지도의 좌표를 얻을 수 있다.
+
+## Marker CRUD
+* https://apis.map.kakao.com/web/sample/multipleMarkerControl
+* 마커를 생성 삭제 할 수 있다.
+
+## 확대, 축소 이벤트 등록하기
+* https://apis.map.kakao.com/web/sample/addMapZoomChangedEvent
+* 확대, 축소 할때 이벤트를 발생 시킨다.
+
