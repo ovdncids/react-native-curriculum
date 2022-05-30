@@ -93,6 +93,7 @@ const webFunction = function(parameter) {
 * ❕ `ref` 부분을 `useRef` 사용해도 상관 없다.
 ```js
 import React, { useRef } from 'react';
+
 const webView = useRef();
 // setTimeout 또는 useEffect를 사용 해서 webView.current.injectJavaScript 함수를 호출 한다.
 setTimeout(() => {
