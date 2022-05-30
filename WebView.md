@@ -46,14 +46,25 @@ import indexHTML from '../assets/index.js';
 + source={{ html: indexHTML }}
 ```
 
+## html 파일이 `cache` 되어서 변경 내역이 반영 되지 않을 경우
+* https://github.com/react-native-webview/react-native-webview/issues/880
+```js
+<WebView
+  cacheEnabled={false}
+  cacheMode={'LOAD_NO_CACHE'}
+  incognito={true}
+```
+
 ## React Native와 WebView 통신
 * https://github.com/react-native-webview/react-native-webview/blob/b1c48ce76d9f61f7dc855b86a79b5094ce9717eb/docs/Guide.md#communicating-between-js-and-native
 
 ### WebView 로드 후 바로 `script` 실행
 * https://github.com/react-native-webview/react-native-webview/blob/b1c48ce76d9f61f7dc855b86a79b5094ce9717eb/docs/Guide.md#the-injectedjavascript-prop
 ```js
-injectedJavaScript={`alert('injectedJavaScript'); true;`}
+<WebView
+  injectedJavaScript={`alert('injectedJavaScript'); true;`}
 ```
+* ❕ `injectedJavaScript`는 `iOS`에서 동작 안 할 수 있다. 동작하지 않으면 아래의 `injectJavaScript`를 사용 해야 한다.
 
 ### React Native에서 WebView의 함수 호출
 ```js
@@ -83,8 +94,14 @@ const webFunction = function(parameter) {
 ```js
 import React, { useRef } from 'react';
 const webView = useRef();
-ref={webView}
-webView.current.injectJavaScript(`webFunction('abc'); true;`);
+// setTimeout 또는 useEffect를 사용 해서 webView.current.injectJavaScript 함수를 호출 한다.
+setTimeout(() => {
+  webView.current.injectJavaScript(`webFunction('abc'); true;`);
+}, 1000);
+```
+```js
+<WebView
+  ref={webView}
 ```
 
 ### WebView에서 React Native의 함수 호출
