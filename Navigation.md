@@ -197,6 +197,18 @@ import { Pressable } from 'react-native';
 navigator.getState().index
 ```
 
+<!--
+### Navigator style
+```js
+<BottomTab.Navigator
+  screenOptions={{
+    tabBarStyle: { position: 'absolute' }
+  }}
+/>
+<Stack.Screen name="Root" component={BottomTabNavigator} options={{ tabBarLabelStyle: { position: 'absolute' } }} />
+```
+-->
+
 # StatusBar
 * https://reactnative.dev/docs/statusbar
 * 상단의 메뉴(뒤로가기, 시계, 베터리 ...)를 사라지게 한다.
