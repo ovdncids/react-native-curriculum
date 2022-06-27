@@ -192,6 +192,11 @@ import { Pressable } from 'react-native';
 ```
 * `Pressable`과 `TouchableOpacity`를 비교해 보자
 
+### 현재 navigation ID 확인
+```js
+navigator.getState().index
+```
+
 # StatusBar
 * https://reactnative.dev/docs/statusbar
 * 상단의 메뉴(뒤로가기, 시계, 베터리 ...)를 사라지게 한다.
