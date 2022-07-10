@@ -74,8 +74,9 @@ export default function App() {
 
 ## 다른 Screen으로 Navigator 이동
 ### 새로운 Screen 추가
+components/Tab1Detail.js
 ```js
-function Tab1Detail() {
+export function Tab1Detail() {
   return (
     <View>
       <Text>Tab1Detail</Text>
