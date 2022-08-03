@@ -54,6 +54,7 @@ npm start
 ```
 
 ## React Native CLI
+* https://reactnative.dev/docs/environment-setup
 ```sh
 npx react-native init react-native-study
 cd react-native-study
