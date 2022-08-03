@@ -58,5 +58,10 @@ npm start
 npx react-native init react-native-study
 cd react-native-study
 code .
+# react-native CLI 시작
+npx react-native start
+# react-native iOS 연결
+npx react-native run-ios
+# react-native Android 연결
 npx react-native run-android
 ```
