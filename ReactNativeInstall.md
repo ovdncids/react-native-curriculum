@@ -55,6 +55,14 @@ npm start
 
 ## React Native CLI
 * https://reactnative.dev/docs/environment-setup
+
+### java 버전 확인
+```sh
+/usr/libexec/java_home -V
+```
+* [java 버전 변경](https://ifuwanna.tistory.com/247)
+
+### 프로젝트 설치
 ```sh
 npx react-native init react-native-study
 cd react-native-study
