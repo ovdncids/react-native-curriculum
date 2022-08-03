@@ -1,6 +1,6 @@
 # React Native Install
 
-## 설치
+## Expo CLI 설치
 ```sh
 npm install -g expo-cli
 expo init react-native-study
@@ -51,4 +51,12 @@ adb version
 npm start
 
 # Run on Android device/emulator
+```
+
+## React Native CLI
+```sh
+npx react-native init react-native-study
+cd react-native-study
+code .
+npx react-native run-android
 ```
