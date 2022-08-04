@@ -56,6 +56,12 @@ npm start
 ## React Native CLI
 * https://reactnative.dev/docs/environment-setup
 
+### Android Virtual Device 버전
+```sh
+API Level 31
+Android 12.0
+```
+
 ### java 버전 확인
 ```sh
 /usr/libexec/java_home -V
