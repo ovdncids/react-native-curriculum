@@ -80,3 +80,7 @@ npx react-native run-ios
 # react-native Android 연결
 npx react-native run-android
 ```
+
+## 배포
+* [Android](https://reactnative.dev/docs/signed-apk-android)
+* [iOS](https://reactnative.dev/docs/publishing-to-app-store)
