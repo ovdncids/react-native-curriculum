@@ -81,6 +81,15 @@ npx react-native run-ios
 npx react-native run-android
 ```
 
+### 프로젝트 설치 오류
+#### Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The binary version of its metadata is 1.5.1, expected version is 1.1.16.
+android/build.gradle
+```diff
+- kotlinVersion = "1.3.72"
++ kotlinVersion = "1.4.32"
+```
+* https://newline.tistory.com/164
+
 ## 배포
 * [Android](https://reactnative.dev/docs/signed-apk-android)
 * [iOS](https://reactnative.dev/docs/publishing-to-app-store)
