@@ -99,6 +99,7 @@ cd ios
 rm -fr Podfile.lock
 # 설지되어 있는 iOS 라이브러리 삭제
 rm -fr Pods
+pod install
 ```
 
 #### 빌드중 RNChannelIO 오류
