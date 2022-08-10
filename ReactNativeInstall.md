@@ -102,6 +102,7 @@ rm -fr Pods
 
 #### RNChannelIO 오류
 * 오류가 발생하는 `RNChannelIO.m` 파일에서 오류 부분 주석 처리
+* https://ychcom.tistory.com/entry/채널톡-라이브러리-설치-방법
 
 ## 배포
 * [Android](https://reactnative.dev/docs/signed-apk-android)
