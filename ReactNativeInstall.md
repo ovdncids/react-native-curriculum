@@ -81,7 +81,7 @@ npx react-native run-ios
 npx react-native run-android
 ```
 
-### 프로젝트 설치 오류
+### Android 프로젝트 설치 오류
 #### Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The binary version of its metadata is 1.5.1, expected version is 1.1.16.
 android/build.gradle
 ```diff
@@ -90,6 +90,7 @@ android/build.gradle
 ```
 * https://newline.tistory.com/164
 
+### iOS 프로젝트 설치 오류
 #### pod install 진행중 오류
 * `pod`은 `iOS의 npm`과 같다.
 ```sh
@@ -100,7 +101,7 @@ rm -fr Podfile.lock
 rm -fr Pods
 ```
 
-#### RNChannelIO 오류
+#### 빌드중 RNChannelIO 오류
 * 오류가 발생하는 `RNChannelIO.m` 파일에서 오류 부분 주석 처리
 * https://ychcom.tistory.com/entry/채널톡-라이브러리-설치-방법
 
