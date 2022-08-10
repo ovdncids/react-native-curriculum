@@ -90,6 +90,19 @@ android/build.gradle
 ```
 * https://newline.tistory.com/164
 
+#### pod install 진행중 오류
+* `pod`은 `iOS의 npm`과 같다.
+```sh
+cd ios
+# lock 파일 삭제
+rm -fr Podfile.lock
+# 설지되어 있는 iOS 라이브러리 삭제
+rm -fr Pods
+```
+
+#### RNChannelIO 오류
+* 오류가 발생하는 `RNChannelIO.m` 파일에서 오류 부분 주석 처리
+
 ## 배포
 * [Android](https://reactnative.dev/docs/signed-apk-android)
 * [iOS](https://reactnative.dev/docs/publishing-to-app-store)
