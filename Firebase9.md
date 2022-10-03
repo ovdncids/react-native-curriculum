@@ -1,4 +1,4 @@
-# Firebase9
+# Firebase 9, Expo 46
 
 ## Unable to resolve "idb" from "node_modules/@firebase/app/dist/esm/index.esm2017.js"
 * https://issuehint.com/issue/jakearchibald/idb/267
