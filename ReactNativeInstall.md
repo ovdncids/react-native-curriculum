@@ -102,10 +102,6 @@ rm -fr Pods
 pod install
 ```
 
-#### 빌드중 RNChannelIO 오류
-* 오류가 발생하는 `RNChannelIO.m` 파일에서 오류 부분 주석 처리
-* https://ychcom.tistory.com/entry/채널톡-라이브러리-설치-방법
-
 #### Failed to prepare device for development
 * `XCode`에 해당 하는 `iPhone OS 버전`이 없어서 발생한다.
 * https://github.com/filsv/iPhoneOSDeviceSupport
@@ -114,6 +110,15 @@ pod install
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/
 # 해당 경로에 `iPhone OS 버전`을 다운 받는다.
 ```
+
+#### 신뢰하지 않는 개발자
+```sh
+설정 > 일반 > VPN 및 기기 관리 > 개발자 앱 > 활성화
+```
+
+#### 빌드중 RNChannelIO 오류
+* 오류가 발생하는 `RNChannelIO.m` 파일에서 오류 부분 주석 처리
+* https://ychcom.tistory.com/entry/채널톡-라이브러리-설치-방법
 
 ## 배포
 * [Android](https://reactnative.dev/docs/signed-apk-android)
