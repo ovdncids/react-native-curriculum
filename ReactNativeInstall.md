@@ -106,6 +106,15 @@ pod install
 * 오류가 발생하는 `RNChannelIO.m` 파일에서 오류 부분 주석 처리
 * https://ychcom.tistory.com/entry/채널톡-라이브러리-설치-방법
 
+#### Failed to prepare device for development
+* `XCode`에 해당 하는 `iPhone OS 버전`이 없어서 발생한다.
+* https://github.com/filsv/iPhoneOSDeviceSupport
+* https://velog.io/@jihoson94/xcode-failed-to-prepare-device-for-development-%ED%95%B4%EA%B2%B0%EB%B0%A9%EB%B2%95
+```sh
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/
+# 해당 경로에 `iPhone OS 버전`을 다운 받는다.
+```
+
 ## 배포
 * [Android](https://reactnative.dev/docs/signed-apk-android)
 * [iOS](https://reactnative.dev/docs/publishing-to-app-store)
