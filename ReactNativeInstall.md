@@ -121,5 +121,12 @@ pod install
 * https://ychcom.tistory.com/entry/채널톡-라이브러리-설치-방법
 
 ## 배포
-* [Android](https://reactnative.dev/docs/signed-apk-android)
-* [iOS](https://reactnative.dev/docs/publishing-to-app-store)
+### Android
+* https://reactnative.dev/docs/signed-apk-android
+```sh
+# 배포 버전으로 실행
+npx react-native run-android --variant=release
+```
+
+### iOS
+* https://reactnative.dev/docs/publishing-to-app-store
