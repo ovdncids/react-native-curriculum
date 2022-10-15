@@ -90,6 +90,11 @@ android/build.gradle
 ```
 * https://newline.tistory.com/164
 
+#### 알 수 없는 에러가 발생하는 경우
+```sh
+chmod 755 android/gradlew
+```
+
 ### iOS 프로젝트 설치 오류
 #### pod install 진행중 오류
 * `pod`은 `iOS의 npm`과 같다.
