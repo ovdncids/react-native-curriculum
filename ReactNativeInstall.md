@@ -129,7 +129,7 @@ pod install
 ### Mac M1
 #### Xcode가 통통 튀면서 실행이 안 될 경우
 ```sh
-Launchpad > 기타 > 콘솔 > 시작
+Launchpad > Other (기타) > 콘솔 > 시작
 Xcode 실행
 ```
 
