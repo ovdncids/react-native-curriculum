@@ -62,10 +62,11 @@ API Level 31
 Android 12.0
 ```
 
-### java 버전 확인
+### Java 버전 확인
 ```sh
 /usr/libexec/java_home -V
 ```
+* `Java 11` 버전을 사용 해야 한다.
 * [java 버전 변경](https://ifuwanna.tistory.com/247)
 
 ### 프로젝트 설치
@@ -124,6 +125,23 @@ pod install
 #### 빌드중 RNChannelIO 오류
 * 오류가 발생하는 `RNChannelIO.m` 파일에서 오류 부분 주석 처리
 * https://ychcom.tistory.com/entry/채널톡-라이브러리-설치-방법
+
+### Mac M1
+#### Xcode가 통통 튀면서 실행이 안 될 경우
+```sh
+Launchpad > 기타 > 콘솔 > 시작
+Xcode 실행
+```
+
+#### 빌드 시 node를 못 찾는 경우
+```sh
+# node 경로 확인
+which node
+# Xcode는 node를 `/usr/local/bin/node`에서 찾음
+# /usr/local/bin/node 심볼릭 링크 만들기
+ln -s $(which node) /usr/local/bin/node
+```
+* https://velog.io/@space_dog/mac-m1%EC%B9%A9-Xcode-ios-%EB%B9%8C%EB%93%9C-%EC%97%90%EB%9F%AC
 
 ## 배포
 ### Android
