@@ -133,10 +133,11 @@ Launchpad > 기타 > 콘솔 > 시작
 Xcode 실행
 ```
 
-#### 빌드 시 node를 못 찾는 경우
+#### 빌드 시 Node를 못 찾는 경우
 ```sh
 # node 경로 확인
 which node
+
 # Xcode는 node를 `/usr/local/bin/node`에서 찾음
 # /usr/local/bin/node 심볼릭 링크 만들기
 ln -s $(which node) /usr/local/bin/node
