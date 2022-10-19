@@ -2,6 +2,9 @@
 
 ## Unable to resolve "idb" from "node_modules/@firebase/app/dist/esm/index.esm2017.js"
 * https://issuehint.com/issue/jakearchibald/idb/267
+```sh
+npm install @expo/metro-config
+```
 
 metro.config.js
 ```js
