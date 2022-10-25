@@ -1,5 +1,7 @@
 # React Native Typescript
 ## Navigation
+* https://reactnavigation.org/docs/typescript
+
 servecies/NavServie.tsx
 ```tsx
 import { useNavigation } from "@react-navigation/native";
