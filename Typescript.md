@@ -40,7 +40,7 @@ function Tab1Screen({ navigation }: Props) {
     <View>
       <Button
         title="Tab1Detail"
-        onPress={() => navigation.navigate('Tab1Detail', { a1: 'a1' })}
+        onPress={() => navigation.navigate('Tab1Detail')}
         // onPress={() => navService.navigation.navigate('Tab1Detail', { a1: 'a1' })}
       />
     </View>
