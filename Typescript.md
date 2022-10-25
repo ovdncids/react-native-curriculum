@@ -50,5 +50,6 @@ function Tab1Screen({ navigation }: Props) {
 
 components/Tab1Detail.tsx
 ```tsx
-function Tab1Detail({ a1 }: { a1: string }) {
+function Tab1Detail(props: Props) {
+  console.log(props.route.params.a1);
 ```
