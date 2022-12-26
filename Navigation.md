@@ -239,4 +239,5 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
   <View></View>
 </SafeAreaProvider>
 ```
-* ❕ `Navigation`을 사용하는 경우 이미 적용 되어 있다.
+* ❕ `NavigationContainer`을 사용하는 경우 이미 적용 되어 있다.
+* [SafeArea 간격](https://reactnavigation.org/docs/handling-safe-area/#use-the-hook-for-more-control)
