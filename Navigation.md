@@ -235,9 +235,36 @@ import { SafeAreaView } from 'react-native';
 
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
-<SafeAreaProvider>
-  <View></View>
-</SafeAreaProvider>
+export default function App() {
+  return (
+    <SafeAreaProvider>
+      <NavigationContainer>
+        <Stack.Navigator initialRouteName="Screen1">
+          <Stack.Screen name="Root" component={BottomTabNavigator} options={{ headerShown: false }} />
+          <Stack.Screen name="Screen1" component={Screen1} options={{ headerShown: false }} />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </SafeAreaProvider>
+  );
+}
+
+function Screen1() {
+  const insets = useSafeAreaInsets();
+  return (
+    <View
+      style={{
+        paddingTop: insets.top,
+        paddingBottom: insets.bottom,
+        flex: 1,
+        justifyContent: 'space-between',
+        alignItems: 'center',
+      }}
+    >
+      <Text>상단</Text>
+      <Text>하단</Text>
+    </View>
+  );
+}
 ```
-* ❕ `NavigationContainer`을 사용하는 경우 이미 적용 되어 있다.
+* ❕ `NavigationContainer`안에 `headerShown: true`인 경우 이미 적용 되어 있다.
 * [SafeArea 간격](https://reactnavigation.org/docs/handling-safe-area/#use-the-hook-for-more-control)
