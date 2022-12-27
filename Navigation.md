@@ -268,3 +268,18 @@ function Screen1() {
 ```
 * ❕ `NavigationContainer`안에 `headerShown: true`인 경우 이미 적용 되어 있다.
 * [SafeArea 간격](https://reactnavigation.org/docs/handling-safe-area/#use-the-hook-for-more-control)
+
+# useIsFocused
+```js
+import { useIsFocused } from '@react-navigation/native';
+
+function Tab1Screen({ navigation }) {
+  const isFocused = useIsFocused();
+    useEffect(() => {
+    console.log('Tab1Screen - useEffect');
+  }, []);
+  useEffect(() => {
+    if (isFocused) console.log('Tab1Screen - focused');
+  }, [isFocused]);
+```
+* `Tab1Screen` 스크린이 `Active/Inactive` 될때마다 `Tab1Screen` 함수가 호출된다.
