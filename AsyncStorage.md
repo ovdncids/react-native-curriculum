@@ -37,11 +37,9 @@ const Stack = createNativeStackNavigator();
 export default function App() {
   const [screen, setScreen] = useState(undefined);
   useEffect(() => {
-    setTimeout(async () => {
-      const screen = await AsyncStorage.getItem("screen")
-      setScreen(screen)
-      console.log(screen)
-    }, 0)
+    const screen = await AsyncStorage.getItem("screen")
+    setScreen(screen)
+    console.log(screen)
   }, []);
   return (
     <>
