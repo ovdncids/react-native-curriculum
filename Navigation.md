@@ -283,3 +283,6 @@ function Tab1Screen({ navigation }) {
   }, [isFocused]);
 ```
 * `Tab1Screen` 스크린이 `Active/Inactive` 될때마다 `Tab1Screen` 함수가 호출된다.
+
+# Datepicker
+* https://github.com/react-native-datetimepicker/datetimepicker
