@@ -61,6 +61,8 @@ const MobXProvider = () => {
     </Provider>
   );
 };
+
+export default MobXProvider;
 ```
 
 ### Store 활용
