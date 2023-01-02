@@ -44,3 +44,17 @@ var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리
 * https://apis.map.kakao.com/web/sample/addMapZoomChangedEvent
 * 확대, 축소 할때 이벤트를 발생 시킨다.
 
+# NAVER 지도 API v3 
+* https://www.ncloud.com/product/applicationService/maps
+* https://navermaps.github.io/maps.js.ncp/docs/tutorial-2-Getting-Started.html
+
+```sh
+Application 등록 > Web Dynamic Map
+Application > App 이름 > 인증 정보 > Client ID 확인
+Application > App 이름 > 수정 > 서비스 환경 등록 > Web 서비스 URL > http://localhost
+# port는 넣지 않아도 됨
+```
+```html
+<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=YOUR_CLIENT_ID"></script>
+```
+* ❕ `clientId`아니고 `ncpClientId`
