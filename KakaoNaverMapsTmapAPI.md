@@ -76,5 +76,5 @@ Application > App 이름 > 수정 > 서비스 환경 등록 > Web 서비스 URL 
 ```
 
 ```html
-<script src="https://apis.openapi.sk.com/tmap/jsv2?version=1&appKey=발급받은 App key"></script>
+<script src="https://apis.openapi.sk.com/tmap/jsv2?version=1&appKey=APP_KEY"></script>
 ```
