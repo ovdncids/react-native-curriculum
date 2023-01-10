@@ -58,3 +58,23 @@ Application > App 이름 > 수정 > 서비스 환경 등록 > Web 서비스 URL 
 <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=YOUR_CLIENT_ID"></script>
 ```
 * ❕ `clientId`아니고 `ncpClientId`
+
+# TMAP
+* https://tmapapi.sktelecom.com/main.html#webv2/guide/webGuide.sample1
+
+## 키 발급
+* https://openapi.sk.com/user/login
+```sh
+로그인 > 마이페이지 > 앱 생성 > 앱 > 앱키(appKey) 
+```
+
+## TMAP 구매
+* https://openapi.sk.com/content/API
+```sh
+로그인 > TMAP > FREE 구매하기 > 앱 선택 (생성한 앱) > 구매
+로그인 > 마이페이지 > 앱 > 상품관리 > FREE TMAP 확인
+```
+
+```html
+<script src="https://apis.openapi.sk.com/tmap/jsv2?version=1&appKey=발급받은 App key"></script>
+```
