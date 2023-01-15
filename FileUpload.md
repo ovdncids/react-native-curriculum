@@ -24,10 +24,10 @@ function App() {
     });
     const response = await fetch('http://서버주소:3100/api/v1/files', {
       method: 'POST',
-      body: formData,
       headers: {
         'content-type': 'multipart/form-data'
-      }
+      },
+      body: formData
     });
     const responseJson = await response.json();
     console.log({responseJson});
@@ -38,6 +38,14 @@ function App() {
     </View>
   );
 }
+```
+
+### 일반 JSON 통신
+```js
+headers: {
+  'content-type': 'application/json'
+},
+body: JSON.stringify({})
 ```
 
 ### FormData 값 넘기기
