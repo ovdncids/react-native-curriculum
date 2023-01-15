@@ -233,7 +233,7 @@ import { SafeAreaView } from 'react-native';
 
 /* or */
 
-import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { SafeAreaProvider, useSafeAreaInsets } from 'react-native-safe-area-context';
 
 export default function App() {
   return (
