@@ -69,6 +69,33 @@ Android 12.0
 * `Java 11` 버전을 사용 해야 한다.
 * [java 버전 변경](https://ifuwanna.tistory.com/247)
 
+### Ruby 버전
+* https://2vup.com/mac-ruby-update
+```sh
+# ruby 버전
+ruby -v
+
+# rbenv 설치
+brew install rbenv
+
+# ruby 설치 가능 버전
+rbenv install -l
+
+# ruby 버전 설치
+rbenv install 3.0.2
+
+# 설치된 ruby 버전 확인
+rbenv versions
+
+# ruby 버전 사용
+rbenv global 3.0.2
+
+# ruby 버전 설정
+vi ~/.zshrc
+eval "$(rbenv init -)"
+source ~/.zshrc
+```
+
 ### 프로젝트 설치
 ```sh
 npx react-native init react-native-study
