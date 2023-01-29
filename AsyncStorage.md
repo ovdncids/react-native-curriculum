@@ -37,9 +37,12 @@ const Stack = createNativeStackNavigator();
 export default function App() {
   const [screen, setScreen] = useState(undefined);
   useEffect(() => {
-    const screen = await AsyncStorage.getItem("screen")
-    setScreen(screen)
-    console.log(screen)
+    const init = async () => {
+      const screen = await AsyncStorage.getItem("screen");
+      setScreen(screen);
+      console.log(screen);
+    };
+    init();
   }, []);
   return (
     <>
@@ -64,7 +67,7 @@ export default function App() {
 function Screen1({navigation}) {
   const insets = useSafeAreaInsets();
   const setItem = async (value) => {
-    await AsyncStorage.setItem("screen", value)
+    await AsyncStorage.setItem("screen", value);
   }
   return (
     <View
