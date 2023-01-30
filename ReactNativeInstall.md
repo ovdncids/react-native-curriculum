@@ -72,7 +72,7 @@ Android 12.0
 ### Ruby 버전
 * https://2vup.com/mac-ruby-update
 ```sh
-# ruby 버전
+# ruby 버전 (2.6.3)
 ruby -v
 
 # rbenv 설치
@@ -98,9 +98,16 @@ source ~/.zshrc
 
 ### 프로젝트 설치
 ```sh
+# react-native-cli 버전 (5.0.1)
+npx react-native --version
+
+# 버전별 설치
 npx react-native init react-native-study
+npx react-native init react-native-study --version=0.64.3
+
 cd react-native-study
 code .
+
 # react-native CLI 시작
 npx react-native start
 # react-native iOS 연결
