@@ -82,13 +82,13 @@ brew install rbenv
 rbenv install -l
 
 # ruby 버전 설치
-rbenv install 2.7.7
+rbenv install 2.7.6
 
 # 설치된 ruby 버전 확인
 rbenv versions
 
 # ruby 버전 사용
-rbenv global 2.7.7
+rbenv global 2.7.6
 
 # ruby 버전 설정
 vi ~/.zshrc
@@ -102,9 +102,9 @@ source ~/.zshrc
 npx react-native --version
 
 # 버전별 설치
-npx react-native init react-native-study
 npx react-native init react-native-study --version=0.64.3
-
+# 최신 버전 설치
+npx react-native init react-native-study
 cd react-native-study
 code .
 
