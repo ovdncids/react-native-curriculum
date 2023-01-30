@@ -1,6 +1,6 @@
 # React Native Install
 
-## Expo CLI 설치
+## Expo CLI 설치 (5.3.2)
 ```sh
 npm install -g expo-cli
 expo init react-native-study
@@ -78,17 +78,17 @@ ruby -v
 # rbenv 설치
 brew install rbenv
 
-# ruby 설치 가능 버전
+# ruby 설치 가능 버전 (추천 버전)
 rbenv install -l
 
 # ruby 버전 설치
-rbenv install 3.0.2
+rbenv install 2.7.7
 
 # 설치된 ruby 버전 확인
 rbenv versions
 
 # ruby 버전 사용
-rbenv global 3.0.2
+rbenv global 2.7.7
 
 # ruby 버전 설정
 vi ~/.zshrc
@@ -98,7 +98,7 @@ source ~/.zshrc
 
 ### 프로젝트 설치
 ```sh
-# react-native-cli 버전 (5.0.1)
+# React Native CLI 버전 (5.0.1)
 npx react-native --version
 
 # 버전별 설치
@@ -108,11 +108,13 @@ npx react-native init react-native-study --version=0.64.3
 cd react-native-study
 code .
 
-# react-native CLI 시작
+# React Native CLI 시작
 npx react-native start
-# react-native iOS 연결
+
+# React Native iOS 연결
 npx react-native run-ios
-# react-native Android 연결
+
+# React Native Android 연결
 npx react-native run-android
 ```
 
