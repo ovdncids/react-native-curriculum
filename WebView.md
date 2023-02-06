@@ -45,6 +45,7 @@ import indexHTML from '../assets/index.js';
 - source={{ uri: 'https://naver.com' }}
 + source={{ html: indexHTML }}
 ```
+* ❕ `TMAP`의 경우 `안드로이드`에서 `uri` 방식은 지도 이미지 나오지 안으므로 `html` 방식을 사용해야 한다.
 
 ## html 파일이 `cache` 되어서 변경 내역이 반영 되지 않을 경우
 * https://github.com/react-native-webview/react-native-webview/issues/880
