@@ -329,7 +329,7 @@ function Items() {
             value="2022-01-15"
           />
           <TouchableOpacity onPress={() => {
-            Alert.alert('Delete member', '삭제 하시겠습니까?', [
+            Alert.alert('Delete user', '삭제 하시겠습니까?', [
               {
                 text: 'Cancel',
                 onPress: () => console.log('Cancel Pressed'),
@@ -355,7 +355,7 @@ function Items() {
             value="2022-01-15"
           />
           <TouchableOpacity onPress={() => {
-            Alert.alert('Delete member', '삭제 하시겠습니까?', [
+            Alert.alert('Delete user', '삭제 하시겠습니까?', [
               {
                 text: 'Cancel',
                 onPress: () => console.log('Cancel Pressed'),
@@ -381,7 +381,7 @@ function Items() {
             value="2022-01-15"
           />
           <TouchableOpacity onPress={() => {
-            Alert.alert('Delete member', '삭제 하시겠습니까?', [
+            Alert.alert('Delete user', '삭제 하시겠습니까?', [
               {
                 text: 'Cancel',
                 onPress: () => console.log('Cancel Pressed'),
@@ -407,7 +407,7 @@ function Items() {
             value="2022-01-15"
           />
           <TouchableOpacity onPress={() => {
-            Alert.alert('Delete member', '삭제 하시겠습니까?', [
+            Alert.alert('Delete user', '삭제 하시겠습니까?', [
               {
                 text: 'Cancel',
                 onPress: () => console.log('Cancel Pressed'),
@@ -536,7 +536,7 @@ function Items({ navigation }) {
             />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            Alert.alert('Delete member', '삭제 하시겠습니까?', [
+            Alert.alert('Delete user', '삭제 하시겠습니까?', [
               {
                 text: 'Cancel',
                 onPress: () => console.log('Cancel Pressed'),
@@ -567,7 +567,7 @@ function Items({ navigation }) {
             />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            Alert.alert('Delete member', '삭제 하시겠습니까?', [
+            Alert.alert('Delete user', '삭제 하시겠습니까?', [
               {
                 text: 'Cancel',
                 onPress: () => console.log('Cancel Pressed'),
@@ -598,7 +598,7 @@ function Items({ navigation }) {
             />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            Alert.alert('Delete member', '삭제 하시겠습니까?', [
+            Alert.alert('Delete user', '삭제 하시겠습니까?', [
               {
                 text: 'Cancel',
                 onPress: () => console.log('Cancel Pressed'),
@@ -629,7 +629,7 @@ function Items({ navigation }) {
             />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {
-            Alert.alert('Delete member', '삭제 하시겠습니까?', [
+            Alert.alert('Delete user', '삭제 하시겠습니까?', [
               {
                 text: 'Cancel',
                 onPress: () => console.log('Cancel Pressed'),
@@ -655,7 +655,7 @@ export function ModalGroceryUpdate(props) {
   return (
     <>
       <View name="thead" style={styles.thead}>
-        <View name="member" style={styles.rows}>
+        <View name="user" style={styles.rows}>
           <Text style={[styles.flex2, styles.textAlignCenter]}>Name</Text>
           <Text style={[styles.flex3, styles.textAlignCenter]}>Enter</Text>
           <Text style={[styles.flex3, styles.textAlignCenter]}>Expire</Text>
@@ -663,7 +663,7 @@ export function ModalGroceryUpdate(props) {
         </View>
       </View>
       <ScrollView name="tbody" style={styles.tbody}>
-        <View name="member" style={styles.rows}>
+        <View name="user" style={styles.rows}>
           <TextInput
             style={[styles.flex2, styles.textAlignCenter, styles.borderStyle]}
             placeholder="Name"
@@ -697,7 +697,7 @@ export default Items;
 ```
 
 ## MobX
-* https://github.com/ovdncids/react-curriculum#members-store-%EB%A7%8C%EB%93%A4%EA%B8%B0
+* https://github.com/ovdncids/react-curriculum#users-store-%EB%A7%8C%EB%93%A4%EA%B8%B0
 
 ## onChangeText
 ```js

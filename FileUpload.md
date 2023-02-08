@@ -50,7 +50,7 @@ body: JSON.stringify({})
 
 ### FormData 값 넘기기
 ```js
-formData.append('member', JSON.stringify({
+formData.append('user', JSON.stringify({
   name: '홍길동',
   age: 39
 }));

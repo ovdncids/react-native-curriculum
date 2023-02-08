@@ -72,24 +72,24 @@
     tbody: {
       margin: 16
     },
-    member: {
+    user: {
       margin: 4,
       flexDirection: 'row',
       alignItems: 'center'
     },
-    memberName: {
+    userName: {
       flex: 1,
       textAlign: 'center'
     },
-    memberAge: {
+    userAge: {
       flex: 1,
       textAlign: 'center'
     },
-    memberUpdate: {
+    userUpdate: {
       flex: 1,
       textAlign: 'center'
     },
-    memberDelete: {
+    userDelete: {
       flex: 1,
       textAlign: 'center'
     },
@@ -112,7 +112,7 @@
     return (
       <>
         <View name="thead" style={styles.thead}>
-          <View name="member" style={styles.member}>
+          <View name="user" style={styles.user}>
             <Text style={[styles.flex1, styles.textAlignCenter]}>이름</Text>
             <Text style={[styles.flex1, styles.textAlignCenter]}>나이</Text>
             <Text style={[styles.flex1, styles.textAlignCenter]}>수정</Text>
@@ -120,21 +120,21 @@
           </View>
         </View>
         <ScrollView name="tbody" style={styles.tbody}>
-          <View name="member" style={styles.member}>
-            <Text style={styles.memberName}>홍길동</Text>
-            <Text style={styles.memberAge}>39</Text>
+          <View name="user" style={styles.user}>
+            <Text style={styles.userName}>홍길동</Text>
+            <Text style={styles.userAge}>39</Text>
             <TouchableOpacity onPress={() => {
               navigation.navigate('ModalUpdate')
-            }} style={styles.memberUpdate}>
+            }} style={styles.userUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
-                style={[styles.memberUpdate, { color: '#FBBC05' }]}
+                style={[styles.userUpdate, { color: '#FBBC05' }]}
               />
             </TouchableOpacity>
             <TouchableOpacity onPress={() => {
               Alert.alert(
-                "Delete member",
+                "Delete user",
                 "삭제 하시겠습니까?",
                 [
                   {
@@ -145,623 +145,623 @@
                   { text: "OK", onPress: () => console.log("OK Pressed") }
                 ]
               );
-            }} style={styles.memberDelete}>
+            }} style={styles.userDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
-                style={[styles.memberDelete, { color: '#EA4335' }]}
+                style={[styles.userDelete, { color: '#EA4335' }]}
               />
             </TouchableOpacity>
           </View>
-          <View name="member" style={styles.member}>
-            <Text style={styles.memberName}>김삼순</Text>
-            <Text style={styles.memberAge}>33</Text>
-            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
+          <View name="user" style={styles.user}>
+            <Text style={styles.userName}>김삼순</Text>
+            <Text style={styles.userAge}>33</Text>
+            <TouchableOpacity onPress={() => {}} style={styles.userUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
-                style={[styles.memberUpdate, { color: '#FBBC05' }]}
+                style={[styles.userUpdate, { color: '#FBBC05' }]}
               />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
+            <TouchableOpacity onPress={() => {}} style={styles.userDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
-                style={[styles.memberDelete, { color: '#EA4335' }]}
+                style={[styles.userDelete, { color: '#EA4335' }]}
               />
             </TouchableOpacity>
           </View>
-          <View name="member" style={styles.member}>
-            <Text style={styles.memberName}>홍명보</Text>
-            <Text style={styles.memberAge}>44</Text>
-            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
+          <View name="user" style={styles.user}>
+            <Text style={styles.userName}>홍명보</Text>
+            <Text style={styles.userAge}>44</Text>
+            <TouchableOpacity onPress={() => {}} style={styles.userUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
-                style={[styles.memberUpdate, { color: '#FBBC05' }]}
+                style={[styles.userUpdate, { color: '#FBBC05' }]}
               />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
+            <TouchableOpacity onPress={() => {}} style={styles.userDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
-                style={[styles.memberDelete, { color: '#EA4335' }]}
+                style={[styles.userDelete, { color: '#EA4335' }]}
               />
             </TouchableOpacity>
           </View>
-          <View name="member" style={styles.member}>
-            <Text style={styles.memberName}>박지삼</Text>
-            <Text style={styles.memberAge}>22</Text>
-            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
+          <View name="user" style={styles.user}>
+            <Text style={styles.userName}>박지삼</Text>
+            <Text style={styles.userAge}>22</Text>
+            <TouchableOpacity onPress={() => {}} style={styles.userUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
-                style={[styles.memberUpdate, { color: '#FBBC05' }]}
+                style={[styles.userUpdate, { color: '#FBBC05' }]}
               />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
+            <TouchableOpacity onPress={() => {}} style={styles.userDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
-                style={[styles.memberDelete, { color: '#EA4335' }]}
+                style={[styles.userDelete, { color: '#EA4335' }]}
               />
             </TouchableOpacity>
           </View>
-          <View name="member" style={styles.member}>
-            <Text style={styles.memberName}>권명순</Text>
-            <Text style={styles.memberAge}>10</Text>
-            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
+          <View name="user" style={styles.user}>
+            <Text style={styles.userName}>권명순</Text>
+            <Text style={styles.userAge}>10</Text>
+            <TouchableOpacity onPress={() => {}} style={styles.userUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
-                style={[styles.memberUpdate, { color: '#FBBC05' }]}
+                style={[styles.userUpdate, { color: '#FBBC05' }]}
               />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
+            <TouchableOpacity onPress={() => {}} style={styles.userDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
-                style={[styles.memberDelete, { color: '#EA4335' }]}
+                style={[styles.userDelete, { color: '#EA4335' }]}
               />
             </TouchableOpacity>
           </View>
-          <View name="member" style={styles.member}>
-            <Text style={styles.memberName}>홍길동</Text>
-            <Text style={styles.memberAge}>39</Text>
-            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
+          <View name="user" style={styles.user}>
+            <Text style={styles.userName}>홍길동</Text>
+            <Text style={styles.userAge}>39</Text>
+            <TouchableOpacity onPress={() => {}} style={styles.userUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
-                style={[styles.memberUpdate, { color: '#FBBC05' }]}
+                style={[styles.userUpdate, { color: '#FBBC05' }]}
               />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
+            <TouchableOpacity onPress={() => {}} style={styles.userDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
-                style={[styles.memberDelete, { color: '#EA4335' }]}
+                style={[styles.userDelete, { color: '#EA4335' }]}
               />
             </TouchableOpacity>
           </View>
-          <View name="member" style={styles.member}>
-            <Text style={styles.memberName}>김삼순</Text>
-            <Text style={styles.memberAge}>33</Text>
-            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
+          <View name="user" style={styles.user}>
+            <Text style={styles.userName}>김삼순</Text>
+            <Text style={styles.userAge}>33</Text>
+            <TouchableOpacity onPress={() => {}} style={styles.userUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
-                style={[styles.memberUpdate, { color: '#FBBC05' }]}
+                style={[styles.userUpdate, { color: '#FBBC05' }]}
               />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
+            <TouchableOpacity onPress={() => {}} style={styles.userDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
-                style={[styles.memberDelete, { color: '#EA4335' }]}
+                style={[styles.userDelete, { color: '#EA4335' }]}
               />
             </TouchableOpacity>
           </View>
-          <View name="member" style={styles.member}>
-            <Text style={styles.memberName}>홍명보</Text>
-            <Text style={styles.memberAge}>44</Text>
-            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
+          <View name="user" style={styles.user}>
+            <Text style={styles.userName}>홍명보</Text>
+            <Text style={styles.userAge}>44</Text>
+            <TouchableOpacity onPress={() => {}} style={styles.userUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
-                style={[styles.memberUpdate, { color: '#FBBC05' }]}
+                style={[styles.userUpdate, { color: '#FBBC05' }]}
               />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
+            <TouchableOpacity onPress={() => {}} style={styles.userDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
-                style={[styles.memberDelete, { color: '#EA4335' }]}
+                style={[styles.userDelete, { color: '#EA4335' }]}
               />
             </TouchableOpacity>
           </View>
-          <View name="member" style={styles.member}>
-            <Text style={styles.memberName}>박지삼</Text>
-            <Text style={styles.memberAge}>22</Text>
-            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
+          <View name="user" style={styles.user}>
+            <Text style={styles.userName}>박지삼</Text>
+            <Text style={styles.userAge}>22</Text>
+            <TouchableOpacity onPress={() => {}} style={styles.userUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
-                style={[styles.memberUpdate, { color: '#FBBC05' }]}
+                style={[styles.userUpdate, { color: '#FBBC05' }]}
               />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
+            <TouchableOpacity onPress={() => {}} style={styles.userDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
-                style={[styles.memberDelete, { color: '#EA4335' }]}
+                style={[styles.userDelete, { color: '#EA4335' }]}
               />
             </TouchableOpacity>
           </View>
-          <View name="member" style={styles.member}>
-            <Text style={styles.memberName}>권명순</Text>
-            <Text style={styles.memberAge}>10</Text>
-            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
+          <View name="user" style={styles.user}>
+            <Text style={styles.userName}>권명순</Text>
+            <Text style={styles.userAge}>10</Text>
+            <TouchableOpacity onPress={() => {}} style={styles.userUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
-                style={[styles.memberUpdate, { color: '#FBBC05' }]}
+                style={[styles.userUpdate, { color: '#FBBC05' }]}
               />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
+            <TouchableOpacity onPress={() => {}} style={styles.userDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
-                style={[styles.memberDelete, { color: '#EA4335' }]}
+                style={[styles.userDelete, { color: '#EA4335' }]}
               />
             </TouchableOpacity>
           </View>
-          <View name="member" style={styles.member}>
-            <Text style={styles.memberName}>홍길동</Text>
-            <Text style={styles.memberAge}>39</Text>
-            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
+          <View name="user" style={styles.user}>
+            <Text style={styles.userName}>홍길동</Text>
+            <Text style={styles.userAge}>39</Text>
+            <TouchableOpacity onPress={() => {}} style={styles.userUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
-                style={[styles.memberUpdate, { color: '#FBBC05' }]}
+                style={[styles.userUpdate, { color: '#FBBC05' }]}
               />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
+            <TouchableOpacity onPress={() => {}} style={styles.userDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
-                style={[styles.memberDelete, { color: '#EA4335' }]}
+                style={[styles.userDelete, { color: '#EA4335' }]}
               />
             </TouchableOpacity>
           </View>
-          <View name="member" style={styles.member}>
-            <Text style={styles.memberName}>김삼순</Text>
-            <Text style={styles.memberAge}>33</Text>
-            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
+          <View name="user" style={styles.user}>
+            <Text style={styles.userName}>김삼순</Text>
+            <Text style={styles.userAge}>33</Text>
+            <TouchableOpacity onPress={() => {}} style={styles.userUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
-                style={[styles.memberUpdate, { color: '#FBBC05' }]}
+                style={[styles.userUpdate, { color: '#FBBC05' }]}
               />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
+            <TouchableOpacity onPress={() => {}} style={styles.userDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
-                style={[styles.memberDelete, { color: '#EA4335' }]}
+                style={[styles.userDelete, { color: '#EA4335' }]}
               />
             </TouchableOpacity>
           </View>
-          <View name="member" style={styles.member}>
-            <Text style={styles.memberName}>홍명보</Text>
-            <Text style={styles.memberAge}>44</Text>
-            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
+          <View name="user" style={styles.user}>
+            <Text style={styles.userName}>홍명보</Text>
+            <Text style={styles.userAge}>44</Text>
+            <TouchableOpacity onPress={() => {}} style={styles.userUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
-                style={[styles.memberUpdate, { color: '#FBBC05' }]}
+                style={[styles.userUpdate, { color: '#FBBC05' }]}
               />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
+            <TouchableOpacity onPress={() => {}} style={styles.userDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
-                style={[styles.memberDelete, { color: '#EA4335' }]}
+                style={[styles.userDelete, { color: '#EA4335' }]}
               />
             </TouchableOpacity>
           </View>
-          <View name="member" style={styles.member}>
-            <Text style={styles.memberName}>박지삼</Text>
-            <Text style={styles.memberAge}>22</Text>
-            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
+          <View name="user" style={styles.user}>
+            <Text style={styles.userName}>박지삼</Text>
+            <Text style={styles.userAge}>22</Text>
+            <TouchableOpacity onPress={() => {}} style={styles.userUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
-                style={[styles.memberUpdate, { color: '#FBBC05' }]}
+                style={[styles.userUpdate, { color: '#FBBC05' }]}
               />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
+            <TouchableOpacity onPress={() => {}} style={styles.userDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
-                style={[styles.memberDelete, { color: '#EA4335' }]}
+                style={[styles.userDelete, { color: '#EA4335' }]}
               />
             </TouchableOpacity>
           </View>
-          <View name="member" style={styles.member}>
-            <Text style={styles.memberName}>권명순</Text>
-            <Text style={styles.memberAge}>10</Text>
-            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
+          <View name="user" style={styles.user}>
+            <Text style={styles.userName}>권명순</Text>
+            <Text style={styles.userAge}>10</Text>
+            <TouchableOpacity onPress={() => {}} style={styles.userUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
-                style={[styles.memberUpdate, { color: '#FBBC05' }]}
+                style={[styles.userUpdate, { color: '#FBBC05' }]}
               />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
+            <TouchableOpacity onPress={() => {}} style={styles.userDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
-                style={[styles.memberDelete, { color: '#EA4335' }]}
+                style={[styles.userDelete, { color: '#EA4335' }]}
               />
             </TouchableOpacity>
           </View>
-          <View name="member" style={styles.member}>
-            <Text style={styles.memberName}>홍길동</Text>
-            <Text style={styles.memberAge}>39</Text>
-            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
+          <View name="user" style={styles.user}>
+            <Text style={styles.userName}>홍길동</Text>
+            <Text style={styles.userAge}>39</Text>
+            <TouchableOpacity onPress={() => {}} style={styles.userUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
-                style={[styles.memberUpdate, { color: '#FBBC05' }]}
+                style={[styles.userUpdate, { color: '#FBBC05' }]}
               />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
+            <TouchableOpacity onPress={() => {}} style={styles.userDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
-                style={[styles.memberDelete, { color: '#EA4335' }]}
+                style={[styles.userDelete, { color: '#EA4335' }]}
               />
             </TouchableOpacity>
           </View>
-          <View name="member" style={styles.member}>
-            <Text style={styles.memberName}>김삼순</Text>
-            <Text style={styles.memberAge}>33</Text>
-            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
+          <View name="user" style={styles.user}>
+            <Text style={styles.userName}>김삼순</Text>
+            <Text style={styles.userAge}>33</Text>
+            <TouchableOpacity onPress={() => {}} style={styles.userUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
-                style={[styles.memberUpdate, { color: '#FBBC05' }]}
+                style={[styles.userUpdate, { color: '#FBBC05' }]}
               />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
+            <TouchableOpacity onPress={() => {}} style={styles.userDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
-                style={[styles.memberDelete, { color: '#EA4335' }]}
+                style={[styles.userDelete, { color: '#EA4335' }]}
               />
             </TouchableOpacity>
           </View>
-          <View name="member" style={styles.member}>
-            <Text style={styles.memberName}>홍명보</Text>
-            <Text style={styles.memberAge}>44</Text>
-            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
+          <View name="user" style={styles.user}>
+            <Text style={styles.userName}>홍명보</Text>
+            <Text style={styles.userAge}>44</Text>
+            <TouchableOpacity onPress={() => {}} style={styles.userUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
-                style={[styles.memberUpdate, { color: '#FBBC05' }]}
+                style={[styles.userUpdate, { color: '#FBBC05' }]}
               />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
+            <TouchableOpacity onPress={() => {}} style={styles.userDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
-                style={[styles.memberDelete, { color: '#EA4335' }]}
+                style={[styles.userDelete, { color: '#EA4335' }]}
               />
             </TouchableOpacity>
           </View>
-          <View name="member" style={styles.member}>
-            <Text style={styles.memberName}>박지삼</Text>
-            <Text style={styles.memberAge}>22</Text>
-            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
+          <View name="user" style={styles.user}>
+            <Text style={styles.userName}>박지삼</Text>
+            <Text style={styles.userAge}>22</Text>
+            <TouchableOpacity onPress={() => {}} style={styles.userUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
-                style={[styles.memberUpdate, { color: '#FBBC05' }]}
+                style={[styles.userUpdate, { color: '#FBBC05' }]}
               />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
+            <TouchableOpacity onPress={() => {}} style={styles.userDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
-                style={[styles.memberDelete, { color: '#EA4335' }]}
+                style={[styles.userDelete, { color: '#EA4335' }]}
               />
             </TouchableOpacity>
           </View>
-          <View name="member" style={styles.member}>
-            <Text style={styles.memberName}>권명순</Text>
-            <Text style={styles.memberAge}>10</Text>
-            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
+          <View name="user" style={styles.user}>
+            <Text style={styles.userName}>권명순</Text>
+            <Text style={styles.userAge}>10</Text>
+            <TouchableOpacity onPress={() => {}} style={styles.userUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
-                style={[styles.memberUpdate, { color: '#FBBC05' }]}
+                style={[styles.userUpdate, { color: '#FBBC05' }]}
               />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
+            <TouchableOpacity onPress={() => {}} style={styles.userDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
-                style={[styles.memberDelete, { color: '#EA4335' }]}
+                style={[styles.userDelete, { color: '#EA4335' }]}
               />
             </TouchableOpacity>
           </View>
-          <View name="member" style={styles.member}>
-            <Text style={styles.memberName}>홍길동</Text>
-            <Text style={styles.memberAge}>39</Text>
-            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
+          <View name="user" style={styles.user}>
+            <Text style={styles.userName}>홍길동</Text>
+            <Text style={styles.userAge}>39</Text>
+            <TouchableOpacity onPress={() => {}} style={styles.userUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
-                style={[styles.memberUpdate, { color: '#FBBC05' }]}
+                style={[styles.userUpdate, { color: '#FBBC05' }]}
               />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
+            <TouchableOpacity onPress={() => {}} style={styles.userDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
-                style={[styles.memberDelete, { color: '#EA4335' }]}
+                style={[styles.userDelete, { color: '#EA4335' }]}
               />
             </TouchableOpacity>
           </View>
-          <View name="member" style={styles.member}>
-            <Text style={styles.memberName}>김삼순</Text>
-            <Text style={styles.memberAge}>33</Text>
-            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
+          <View name="user" style={styles.user}>
+            <Text style={styles.userName}>김삼순</Text>
+            <Text style={styles.userAge}>33</Text>
+            <TouchableOpacity onPress={() => {}} style={styles.userUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
-                style={[styles.memberUpdate, { color: '#FBBC05' }]}
+                style={[styles.userUpdate, { color: '#FBBC05' }]}
               />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
+            <TouchableOpacity onPress={() => {}} style={styles.userDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
-                style={[styles.memberDelete, { color: '#EA4335' }]}
+                style={[styles.userDelete, { color: '#EA4335' }]}
               />
             </TouchableOpacity>
           </View>
-          <View name="member" style={styles.member}>
-            <Text style={styles.memberName}>홍명보</Text>
-            <Text style={styles.memberAge}>44</Text>
-            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
+          <View name="user" style={styles.user}>
+            <Text style={styles.userName}>홍명보</Text>
+            <Text style={styles.userAge}>44</Text>
+            <TouchableOpacity onPress={() => {}} style={styles.userUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
-                style={[styles.memberUpdate, { color: '#FBBC05' }]}
+                style={[styles.userUpdate, { color: '#FBBC05' }]}
               />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
+            <TouchableOpacity onPress={() => {}} style={styles.userDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
-                style={[styles.memberDelete, { color: '#EA4335' }]}
+                style={[styles.userDelete, { color: '#EA4335' }]}
               />
             </TouchableOpacity>
           </View>
-          <View name="member" style={styles.member}>
-            <Text style={styles.memberName}>박지삼</Text>
-            <Text style={styles.memberAge}>22</Text>
-            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
+          <View name="user" style={styles.user}>
+            <Text style={styles.userName}>박지삼</Text>
+            <Text style={styles.userAge}>22</Text>
+            <TouchableOpacity onPress={() => {}} style={styles.userUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
-                style={[styles.memberUpdate, { color: '#FBBC05' }]}
+                style={[styles.userUpdate, { color: '#FBBC05' }]}
               />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
+            <TouchableOpacity onPress={() => {}} style={styles.userDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
-                style={[styles.memberDelete, { color: '#EA4335' }]}
+                style={[styles.userDelete, { color: '#EA4335' }]}
               />
             </TouchableOpacity>
           </View>
-          <View name="member" style={styles.member}>
-            <Text style={styles.memberName}>권명순</Text>
-            <Text style={styles.memberAge}>10</Text>
-            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
+          <View name="user" style={styles.user}>
+            <Text style={styles.userName}>권명순</Text>
+            <Text style={styles.userAge}>10</Text>
+            <TouchableOpacity onPress={() => {}} style={styles.userUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
-                style={[styles.memberUpdate, { color: '#FBBC05' }]}
+                style={[styles.userUpdate, { color: '#FBBC05' }]}
               />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
+            <TouchableOpacity onPress={() => {}} style={styles.userDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
-                style={[styles.memberDelete, { color: '#EA4335' }]}
+                style={[styles.userDelete, { color: '#EA4335' }]}
               />
             </TouchableOpacity>
           </View>
-          <View name="member" style={styles.member}>
-            <Text style={styles.memberName}>홍길동</Text>
-            <Text style={styles.memberAge}>39</Text>
-            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
+          <View name="user" style={styles.user}>
+            <Text style={styles.userName}>홍길동</Text>
+            <Text style={styles.userAge}>39</Text>
+            <TouchableOpacity onPress={() => {}} style={styles.userUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
-                style={[styles.memberUpdate, { color: '#FBBC05' }]}
+                style={[styles.userUpdate, { color: '#FBBC05' }]}
               />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
+            <TouchableOpacity onPress={() => {}} style={styles.userDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
-                style={[styles.memberDelete, { color: '#EA4335' }]}
+                style={[styles.userDelete, { color: '#EA4335' }]}
               />
             </TouchableOpacity>
           </View>
-          <View name="member" style={styles.member}>
-            <Text style={styles.memberName}>김삼순</Text>
-            <Text style={styles.memberAge}>33</Text>
-            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
+          <View name="user" style={styles.user}>
+            <Text style={styles.userName}>김삼순</Text>
+            <Text style={styles.userAge}>33</Text>
+            <TouchableOpacity onPress={() => {}} style={styles.userUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
-                style={[styles.memberUpdate, { color: '#FBBC05' }]}
+                style={[styles.userUpdate, { color: '#FBBC05' }]}
               />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
+            <TouchableOpacity onPress={() => {}} style={styles.userDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
-                style={[styles.memberDelete, { color: '#EA4335' }]}
+                style={[styles.userDelete, { color: '#EA4335' }]}
               />
             </TouchableOpacity>
           </View>
-          <View name="member" style={styles.member}>
-            <Text style={styles.memberName}>홍명보</Text>
-            <Text style={styles.memberAge}>44</Text>
-            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
+          <View name="user" style={styles.user}>
+            <Text style={styles.userName}>홍명보</Text>
+            <Text style={styles.userAge}>44</Text>
+            <TouchableOpacity onPress={() => {}} style={styles.userUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
-                style={[styles.memberUpdate, { color: '#FBBC05' }]}
+                style={[styles.userUpdate, { color: '#FBBC05' }]}
               />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
+            <TouchableOpacity onPress={() => {}} style={styles.userDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
-                style={[styles.memberDelete, { color: '#EA4335' }]}
+                style={[styles.userDelete, { color: '#EA4335' }]}
               />
             </TouchableOpacity>
           </View>
-          <View name="member" style={styles.member}>
-            <Text style={styles.memberName}>박지삼</Text>
-            <Text style={styles.memberAge}>22</Text>
-            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
+          <View name="user" style={styles.user}>
+            <Text style={styles.userName}>박지삼</Text>
+            <Text style={styles.userAge}>22</Text>
+            <TouchableOpacity onPress={() => {}} style={styles.userUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
-                style={[styles.memberUpdate, { color: '#FBBC05' }]}
+                style={[styles.userUpdate, { color: '#FBBC05' }]}
               />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
+            <TouchableOpacity onPress={() => {}} style={styles.userDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
-                style={[styles.memberDelete, { color: '#EA4335' }]}
+                style={[styles.userDelete, { color: '#EA4335' }]}
               />
             </TouchableOpacity>
           </View>
-          <View name="member" style={styles.member}>
-            <Text style={styles.memberName}>권명순</Text>
-            <Text style={styles.memberAge}>10</Text>
-            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
+          <View name="user" style={styles.user}>
+            <Text style={styles.userName}>권명순</Text>
+            <Text style={styles.userAge}>10</Text>
+            <TouchableOpacity onPress={() => {}} style={styles.userUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
-                style={[styles.memberUpdate, { color: '#FBBC05' }]}
+                style={[styles.userUpdate, { color: '#FBBC05' }]}
               />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
+            <TouchableOpacity onPress={() => {}} style={styles.userDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
-                style={[styles.memberDelete, { color: '#EA4335' }]}
+                style={[styles.userDelete, { color: '#EA4335' }]}
               />
             </TouchableOpacity>
           </View>
-          <View name="member" style={styles.member}>
-            <Text style={styles.memberName}>홍길동</Text>
-            <Text style={styles.memberAge}>39</Text>
-            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
+          <View name="user" style={styles.user}>
+            <Text style={styles.userName}>홍길동</Text>
+            <Text style={styles.userAge}>39</Text>
+            <TouchableOpacity onPress={() => {}} style={styles.userUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
-                style={[styles.memberUpdate, { color: '#FBBC05' }]}
+                style={[styles.userUpdate, { color: '#FBBC05' }]}
               />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
+            <TouchableOpacity onPress={() => {}} style={styles.userDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
-                style={[styles.memberDelete, { color: '#EA4335' }]}
+                style={[styles.userDelete, { color: '#EA4335' }]}
               />
             </TouchableOpacity>
           </View>
-          <View name="member" style={styles.member}>
-            <Text style={styles.memberName}>김삼순</Text>
-            <Text style={styles.memberAge}>33</Text>
-            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
+          <View name="user" style={styles.user}>
+            <Text style={styles.userName}>김삼순</Text>
+            <Text style={styles.userAge}>33</Text>
+            <TouchableOpacity onPress={() => {}} style={styles.userUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
-                style={[styles.memberUpdate, { color: '#FBBC05' }]}
+                style={[styles.userUpdate, { color: '#FBBC05' }]}
               />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
+            <TouchableOpacity onPress={() => {}} style={styles.userDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
-                style={[styles.memberDelete, { color: '#EA4335' }]}
+                style={[styles.userDelete, { color: '#EA4335' }]}
               />
             </TouchableOpacity>
           </View>
-          <View name="member" style={styles.member}>
-            <Text style={styles.memberName}>홍명보</Text>
-            <Text style={styles.memberAge}>44</Text>
-            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
+          <View name="user" style={styles.user}>
+            <Text style={styles.userName}>홍명보</Text>
+            <Text style={styles.userAge}>44</Text>
+            <TouchableOpacity onPress={() => {}} style={styles.userUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
-                style={[styles.memberUpdate, { color: '#FBBC05' }]}
+                style={[styles.userUpdate, { color: '#FBBC05' }]}
               />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
+            <TouchableOpacity onPress={() => {}} style={styles.userDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
-                style={[styles.memberDelete, { color: '#EA4335' }]}
+                style={[styles.userDelete, { color: '#EA4335' }]}
               />
             </TouchableOpacity>
           </View>
-          <View name="member" style={styles.member}>
-            <Text style={styles.memberName}>박지삼</Text>
-            <Text style={styles.memberAge}>22</Text>
-            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
+          <View name="user" style={styles.user}>
+            <Text style={styles.userName}>박지삼</Text>
+            <Text style={styles.userAge}>22</Text>
+            <TouchableOpacity onPress={() => {}} style={styles.userUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
-                style={[styles.memberUpdate, { color: '#FBBC05' }]}
+                style={[styles.userUpdate, { color: '#FBBC05' }]}
               />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
+            <TouchableOpacity onPress={() => {}} style={styles.userDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
-                style={[styles.memberDelete, { color: '#EA4335' }]}
+                style={[styles.userDelete, { color: '#EA4335' }]}
               />
             </TouchableOpacity>
           </View>
-          <View name="member" style={styles.member}>
-            <Text style={styles.memberName}>권명순</Text>
-            <Text style={styles.memberAge}>10</Text>
-            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
+          <View name="user" style={styles.user}>
+            <Text style={styles.userName}>권명순</Text>
+            <Text style={styles.userAge}>10</Text>
+            <TouchableOpacity onPress={() => {}} style={styles.userUpdate}>
               <FontAwesome
                 name="edit"
                 size={24}
-                style={[styles.memberUpdate, { color: '#FBBC05' }]}
+                style={[styles.userUpdate, { color: '#FBBC05' }]}
               />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => {}} style={styles.memberDelete}>
+            <TouchableOpacity onPress={() => {}} style={styles.userDelete}>
               <FontAwesome
                 name="trash"
                 size={24}
-                style={[styles.memberDelete, { color: '#EA4335' }]}
+                style={[styles.userDelete, { color: '#EA4335' }]}
               />
             </TouchableOpacity>
           </View>
@@ -775,27 +775,27 @@
     return (
       <>
         <View name="thead" style={styles.thead}>
-          <View name="member" style={styles.member}>
+          <View name="user" style={styles.user}>
             <Text style={[styles.flex1, styles.textAlignCenter]}>이름</Text>
             <Text style={[styles.flex1, styles.textAlignCenter]}>나이</Text>
             <Text style={[styles.flex1, styles.textAlignCenter]}>생성</Text>
           </View>
         </View>
         <ScrollView name="tbody" style={styles.tbody}>
-          <View name="member" style={styles.member}>
+          <View name="user" style={styles.user}>
             <TextInput
-              style={[styles.memberName, styles.borderStyle]}
+              style={[styles.userName, styles.borderStyle]}
               placeholder="Name"
             />
             <TextInput
-              style={[styles.memberAge, styles.borderStyle]}
+              style={[styles.userAge, styles.borderStyle]}
               placeholder="Age"
             />
-            <TouchableOpacity onPress={() => {}} style={styles.memberUpdate}>
+            <TouchableOpacity onPress={() => {}} style={styles.userUpdate}>
               <FontAwesome
                 name="pencil"
                 size={24}
-                style={[styles.memberUpdate, { color: '#4285F4', padding: 8 }]}
+                style={[styles.userUpdate, { color: '#4285F4', padding: 8 }]}
               />
             </TouchableOpacity>
           </View>
@@ -809,27 +809,27 @@
     return (
       <>
         <View name="thead" style={styles.thead}>
-          <View name="member" style={styles.member}>
+          <View name="user" style={styles.user}>
             <Text style={[styles.flex1, styles.textAlignCenter]}>이름</Text>
             <Text style={[styles.flex1, styles.textAlignCenter]}>나이</Text>
             <Text style={[styles.flex1, styles.textAlignCenter]}>수정</Text>
           </View>
         </View>
         <ScrollView name="tbody" style={styles.tbody}>
-          <View name="member" style={styles.member}>
+          <View name="user" style={styles.user}>
             <TextInput
-              style={[styles.memberName, styles.borderStyle]}
+              style={[styles.userName, styles.borderStyle]}
               placeholder="Name"
             />
             <TextInput
-              style={[styles.memberAge, styles.borderStyle]}
+              style={[styles.userAge, styles.borderStyle]}
               placeholder="Age"
             />
-            <TouchableOpacity onPress={() => {}} style={[styles.memberUpdate, { alignItems: 'center', justifyContent: 'center' }]}>
+            <TouchableOpacity onPress={() => {}} style={[styles.userUpdate, { alignItems: 'center', justifyContent: 'center' }]}>
               <FontAwesome
                 name="edit"
                 size={24}
-                style={[styles.memberUpdate, { color: '#FBBC05', padding: 8 }]}
+                style={[styles.userUpdate, { color: '#FBBC05', padding: 8 }]}
               />
             </TouchableOpacity>
           </View>
@@ -902,7 +902,7 @@
 </details>
 
 ## MobX
-* https://github.com/ovdncids/react-curriculum#members-store-%EB%A7%8C%EB%93%A4%EA%B8%B0
+* https://github.com/ovdncids/react-curriculum#users-store-%EB%A7%8C%EB%93%A4%EA%B8%B0
 
 ## onChangeText
 ```js
