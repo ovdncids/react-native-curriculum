@@ -16,6 +16,12 @@ ctrl + command + z: iOS 제어창
 command + m: Android 제어창
 ```
 
+### iOS, Xcode needs to be installed (don't worry, you won't have to use it), would you like to continue
+```sh
+Xcode > Preferences... > Locations > Command Line Tools
+> Xcode 버전 선택은 되어 있지만 다시 선택 (암호 요구)
+```
+
 ### Android Studio Emulator 설치
 * https://docs.expo.dev/workflow/android-studio-emulator
 * ❕ `AVD`(Android Virtual Device)는 `Play Store` 내장 되어 있는 버전을 설치 해야 `Expo` 설치가능
