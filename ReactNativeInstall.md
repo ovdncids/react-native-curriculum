@@ -30,6 +30,7 @@ Android Studio > Preferences > Appearance & Behavior > System Settings > Android
 Android SDK Location: `path copy`
 ```
 ```sh
+# ❕ ~/.zshrc 아님
 vi ~/.zshenv
 
 # ANDROID_SDK
@@ -125,7 +126,23 @@ npx react-native run-ios
 npx react-native run-android
 ```
 
+### 단축키
+* https://stackoverflow.com/questions/32914665/how-do-i-shake-an-android-device-within-the-android-emulator-to-bring-up-the-d
+```sh
+command + r: iOS Reload
+command + d: iOS Debug
+r 두번: Android Reload
+command + m: Android Debug (하지만 창이 내려 간다. Mac 기본 단축키가 우선 적용됨)
+adb shell input keyevent 82
+```
+
 ### Android 프로젝트 설치 오류
+#### SDK location not found. Define a valid SDK location with an ANDROID_HOME environment variable or by setting the sdk.
+android/local.properties
+```properties
+sdk.dir=/Users/{사용자}/Library/Android/sdk
+```
+
 #### Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The binary version of its metadata is 1.5.1, expected version is 1.1.16.
 android/build.gradle
 ```diff
