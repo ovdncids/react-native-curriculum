@@ -136,6 +136,14 @@ command + m: Android Debug (하지만 창이 내려 간다. Mac 기본 단축키
 # command + m = shake (adb 명령으로 shake 이벤트 보내기)
 adb shell input keyevent 82
 ```
+package.json
+```json
+{
+  "scripts": {
+    "shake": "adb shell input keyevent 82"
+  }
+}
+```
 
 ### Android 프로젝트 설치 오류
 #### SDK location not found. Define a valid SDK location with an ANDROID_HOME environment variable or by setting the sdk.
