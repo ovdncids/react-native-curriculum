@@ -99,6 +99,7 @@ rbenv global 2.7.6
 # ruby 버전 설정
 vi ~/.zshrc
 eval "$(rbenv init -)"
+
 source ~/.zshrc
 ```
 
