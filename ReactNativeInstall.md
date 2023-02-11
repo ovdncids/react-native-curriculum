@@ -111,6 +111,7 @@ npx react-native --version
 
 # 버전별 설치
 npx react-native init react-native-study --version=0.64.3
+npx react-native init react-native-study --version=0.69
 # 최신 버전 설치
 npx react-native init react-native-study
 cd react-native-study
