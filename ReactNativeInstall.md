@@ -133,7 +133,7 @@ npx react-native run-android
 command + r: iOS Reload
 command + d: iOS Debug
 r 두번: Android Reload
-command + m: Android Debug (하지만 창이 내려 간다. Mac 기본 단축키가 우선 적용됨)
+command + m: Android Debug (Android Studio 안에서 실행한 에뮬레이터라면 Android Studio가 최소한 된다.)
 # command + m = shake (adb 명령으로 shake 이벤트 보내기)
 adb shell input keyevent 82
 ```
