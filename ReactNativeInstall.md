@@ -34,6 +34,7 @@ Android SDK Location: `path copy`
 vi ~/.zshenv
 
 # ANDROID_SDK
+# ANDROID_SDK=/Users/{사용자}/Library/Android/sdk
 ANDROID_SDK=`path paste`
 ```
 ```
