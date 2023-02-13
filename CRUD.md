@@ -154,7 +154,7 @@ function Tab5Screen({ navigation }) {
           <Text style={styles.userName}>홍길동</Text>
           <Text style={styles.userAge}>39</Text>
           <TouchableOpacity onPress={() => {
-            navigation.navigate('ModalUpdate')
+            navigation.navigate('ModalUpdate', 0)
           }} style={styles.userUpdate}>
             <FontAwesome
               name="edit"
@@ -835,7 +835,7 @@ export function ModalCreate(props) {
 }
 
 export function ModalUpdate(props) {
-  console.log(props.route.name);
+  console.log(props.route.name, props.route.params);
   return (
     <>
       <View name="thead" style={styles.thead}>
