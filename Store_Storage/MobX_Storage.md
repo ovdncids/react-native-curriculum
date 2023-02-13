@@ -1,4 +1,4 @@
-# Store & Storage
+# MobX Store & Storage
 
 ## MobX 설치
 https://github.com/mobxjs/mobx
