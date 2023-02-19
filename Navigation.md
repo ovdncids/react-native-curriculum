@@ -275,7 +275,7 @@ import { useIsFocused } from '@react-navigation/native';
 
 function Tab1Screen({ navigation }) {
   const isFocused = useIsFocused();
-    useEffect(() => {
+  useEffect(() => {
     console.log('Tab1Screen - useEffect');
   }, []);
   useEffect(() => {
