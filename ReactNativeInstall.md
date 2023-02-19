@@ -20,6 +20,8 @@ command + m: Android 제어창
 ```sh
 Xcode > Preferences... > Locations > Command Line Tools
 > Xcode 버전 선택은 되어 있지만 다시 선택 (암호 요구)
+
+# Expo 재시작
 ```
 
 ### Android Studio Emulator 설치
