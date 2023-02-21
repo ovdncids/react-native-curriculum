@@ -77,6 +77,8 @@ Android 12.0
 /usr/libexec/java_home -V
 ```
 * `Java 11` 버전을 사용 해야 한다.
+* 설치 `InteliiJ` > 오른쪽 상단 톱니바퀴 > Project Structure... > SDKs > + > Download JDK...
+* 설정 `Android Studio` > 오른쪽 상단 톱니바퀴 > Project Structure... > Modules > Sourece Compatibillity, Target Compatibillity
 * [java 버전 변경](https://ifuwanna.tistory.com/247)
 
 #### macOS에 내장된 JRE 삭제
