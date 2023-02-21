@@ -88,6 +88,7 @@ sudo rm -fr /Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin
 sudo rm -fr /Library/PreferencesPanes/JavaControlPanel.prefPane
 sudo rm -fr ~/Library/Application\ Support/Oracle/Java
 ```
+* JDK 삭제는 `/usr/libexec/java_home -V` 해당하는 폴더 삭제
 
 ### Ruby 버전
 * https://2vup.com/mac-ruby-update
