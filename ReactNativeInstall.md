@@ -79,6 +79,14 @@ Android 12.0
 * `Java 11` 버전을 사용 해야 한다.
 * [java 버전 변경](https://ifuwanna.tistory.com/247)
 
+#### macOS에 내장된 JRE 삭제
+* https://www.java.com/ko/download/help/mac_uninstall_java.html
+```sh
+sudo rm -fr /Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin
+sudo rm -fr /Library/PreferencesPanes/JavaControlPanel.prefPane
+sudo rm -fr ~/Library/Application\ Support/Oracle/Java
+```
+
 ### Ruby 버전
 * https://2vup.com/mac-ruby-update
 ```sh
