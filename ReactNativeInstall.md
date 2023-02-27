@@ -238,3 +238,22 @@ npx react-native run-android --variant=release
 
 ### iOS
 * https://reactnative.dev/docs/publishing-to-app-store
+
+## React Native 70버전 이상부터 디버깅
+https://github.com/facebook/react-native/issues/34615#issuecomment-1445142480
+* 70버전 이상부터는 `Chrome Debugger`를 안쓰고 `hermes` 사용
+
+ios/Podfile
+```diff
+- :hermes_enabled => flags[:hermes_enabled],
+:hermes_enabled => false,
+```
+```sh
+cd ios && rm -rf Pods Podfile.lock
+pod install --repo-update
+cd ..
+npx react-native run-ios
+
+# iOS 에뮬레이터
+control + comman + d > Debug with Chrome
+```
