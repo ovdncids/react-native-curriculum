@@ -112,7 +112,7 @@ const html = `
 <button onclick="rnFunction()">React Native 함수 호출</button>
 <script>
 const rnFunction = function() {
-  window.ReactNativeWebView.postMessage('def');
+  window.ReactNativeWebView.postMessage(JSON.stringify({abc: 123}));
 };
 </script>
 `;
@@ -120,7 +120,7 @@ const rnFunction = function() {
 ```js
 <WebView
   source={{ html }}
-  onMessage={event => alert(event.nativeEvent.data)}
+  onMessage={event => alert(JSON.parse(event.nativeEvent.data))}
   style={{
     width: Dimensions.get('window').width
   }}
