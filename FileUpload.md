@@ -20,6 +20,7 @@ function App() {
     formData.append('file', {
       uri: fileResult.uri,
       type: fileResult.mimeType,
+      // 파일 선택 라이브러리 마다  fileResult.mimeType 다를 수 있다. Android에서 업로드가 안 되면 'image/png'로 하드코딩
       name: fileResult.name
     });
     const response = await fetch('http://서버주소:3100/api/v1/files', {
@@ -29,7 +30,7 @@ function App() {
       },
       body: formData
     });
-    const responseJson = await response.json();
+    const responseJson = await response.json(); // response.text();
     console.log({responseJson});
   };
   return (
