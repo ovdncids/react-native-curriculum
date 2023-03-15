@@ -8,3 +8,8 @@ telnet localhost 5554
 auth {auth_token}
 geo fix {longitude} {latitude}
 ```
+
+```sh
+adb reboot
+adb emu geo fix {longitude} {latitude}
+```
