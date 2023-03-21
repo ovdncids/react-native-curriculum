@@ -4,12 +4,13 @@
 npm install --save react-native-sqlite-storage
 ```
 
-## React Native CLI - iOS
+## React Native CLI (RN 0.68) - iOS
 ```sh
 cd ios
 pod install
 ```
 
+### iOS & Android
 ```js
 import SQLite from 'react-native-sqlite-storage';
 SQLite.enablePromise(true);
@@ -60,7 +61,7 @@ select * from users;
 ```
 
 ## React Native CLI - iOS DB 파일 설정
-* 생성한 `users.db` 파일을 `ios/www/users.db` 이동
+* 생성한 `users.db` 파일을 `ios/www/users.db` 복사
 * Xcode > Open a project or file > `ios/{프로젝트.xcworkspace}`
 * ❕ `ios/{프로젝트.xcodeproj}`을 선택할 경우 알 수 없는 오류를 만날 수 있다.
 * {프로젝트명} > {프로젝트명} > Add files to "{프로젝트명}"... > `ios/www/users.db` 선택 (Copy items if needed, Create folder references 선택)
@@ -80,3 +81,7 @@ console.log(results);
 * 기기에 `users.db` 없을 경우만 한번 복사하고 다음부터는 기기의 `users.db`를 읽는다.
 * 이미 기기에 `users.db`가 생성된 경우라면 `ios/www/users.db`를 읽지 않는다.
 * `(Possible Unhandled Promise Rejection (id: 0): "no such table: users")` 이렇게 경고 발생 할 수 있다.
+
+## React Native CLI - Android DB 파일 설정
+* 생성한 `users.db` 파일을 `android/app/src/main/assets/users.db` 복사
+* 기본 동작은 `iOS`와 동일 `npx react-native run-android`
