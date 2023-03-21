@@ -1,6 +1,6 @@
 # GPS
 
-## Android GPS 강제 설정 (하지만 변경 안됨)
+## Android GPS 강제 설정 (하지만 변경 잘 안됨)
 * https://stackoverflow.com/questions/40700725/android-terminal-telnet-missing-commands-receiving-this-error-ko-unknown-co
 ```sh
 vi ~/.emulator_console_auth_token
