@@ -79,4 +79,4 @@ console.log(results);
 * `프로젝트 앱`을 지우면 기존 DB는 모두 지워진다.
 * 기기에 `users.db` 없을 경우만 한번 복사하고 다음부터는 기기의 `users.db`를 읽는다.
 * 이미 기기에 `users.db`가 생성된 경우라면 `ios/www/users.db`를 읽지 않는다.
-* (Possible Unhandled Promise Rejection (id: 0): "no such table: users") 이렇게 경고 발생 할 수 있다.
+* `(Possible Unhandled Promise Rejection (id: 0): "no such table: users")` 이렇게 경고 발생 할 수 있다.
