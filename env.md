@@ -34,5 +34,6 @@ apply from: project(':react-native-config').projectDir.getPath() + "/dotenv.grad
 
 ## .env 파일 변경 후에 적용이 안 될 경우
 ```sh
-앱을 삭제하고 에뮬레이터를 끄고 > metro 종료 > 다른 에뮬레이터 실행 > .env 파일 변경 되는지 확인
+.env 파일 파일 변경 > 앱을 삭제하고 에뮬레이터 종료 > metro 종료 > 다른 에뮬레이터 실행 > .env 파일 변경 되는지 확인 >
+.env 파일 파일 변경 > 다시 이전 에뮬레이터 실행 > .env 파일 변경 되는지 확인
 ```
