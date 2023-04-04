@@ -31,3 +31,8 @@ project.ext.envConfigFiles = [
 ```gradle
 apply from: project(':react-native-config').projectDir.getPath() + "/dotenv.gradle"
 ```
+
+## .env 파일 변경 후에 적용이 안 될 경우
+```sh
+앱을 삭제하고 에뮬레이터를 끄고 > metro 종료 > 다른 에뮬레이터 실행 > .env 파일 변경 되는지 확인
+```
