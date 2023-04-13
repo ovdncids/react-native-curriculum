@@ -49,6 +49,7 @@ var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리
 * https://navermaps.github.io/maps.js.ncp/docs/tutorial-2-Getting-Started.html
 
 ```sh
+Services > Maps
 Application 등록 > Web Dynamic Map
 Application > App 이름 > 인증 정보 > Client ID 확인
 Application > App 이름 > 수정 > 서비스 환경 등록 > Web 서비스 URL > http://localhost
