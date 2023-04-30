@@ -260,3 +260,20 @@ npx react-native run-ios
 # iOS 에뮬레이터
 control + comman + d > Debug with Chrome
 ```
+
+## localhost 외의 URL 접속시 오류 나오는 문제
+* https://stackoverflow.com/questions/70712090/react-native-axios-request-on-ios-returns-network-error
+
+ios/{프로젝트 명}/Info.plist
+```plist
+<key>localhost</key>
+<dict>
+    <key>NSExceptionAllowsInsecureHTTPLoads</key>
+    <true/>
+</dict>
+<key>도메인.com</key>
+<dict>
+    <key>NSExceptionAllowsInsecureHTTPLoads</key>
+    <true/>
+</dict>
+```
