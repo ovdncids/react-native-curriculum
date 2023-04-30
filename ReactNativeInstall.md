@@ -265,7 +265,7 @@ control + comman + d > Debug with Chrome
 * https://stackoverflow.com/questions/70712090/react-native-axios-request-on-ios-returns-network-error
 
 ios/{프로젝트 명}/Info.plist
-```plist
+```xml
 <key>localhost</key>
 <dict>
     <key>NSExceptionAllowsInsecureHTTPLoads</key>
