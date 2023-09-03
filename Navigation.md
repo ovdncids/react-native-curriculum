@@ -284,6 +284,7 @@ function Screen1() {
 
 # useIsFocused
 ```js
+import { useEffect } from 'react';
 import { useIsFocused } from '@react-navigation/native';
 
 function Tab1Screen({ navigation }) {
