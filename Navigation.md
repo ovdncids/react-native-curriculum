@@ -6,11 +6,10 @@ npm install @react-navigation/native @react-navigation/native-stack
 ```sh
 npm install react-native-screens react-native-safe-area-context
 ```
-<!--
+```sh
 npm install react-native-safe-area-context
-
 npm install react-native-screens
--->
+```
 
 ## Floating menu와 Screen 연결
 * https://reactnavigation.org/docs/bottom-tab-navigator
