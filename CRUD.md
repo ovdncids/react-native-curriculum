@@ -8,6 +8,7 @@
 
 * [Delete](https://ovdncids.github.io/react-native-curriculum/crud/delete.png)
 
+<!--
 ## Markup
 ```js
 <>
@@ -47,6 +48,7 @@
 노란색: #FBBC05
 녹색: #34A853
 ```
+-->
 
 ## Alert
 * https://reactnative.dev/docs/alert#example
