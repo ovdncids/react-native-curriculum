@@ -136,8 +136,11 @@ import { FontAwesome } from '@expo/vector-icons';
 
 ## Modal창 띄우기
 ### 새로운 Screen 추가
+screens/Modal1Screen.js
 ```js
-function Modal1Screen({ navigation }) {
+import { View, Button } from 'react-native';
+
+export default function Modal1Screen({ navigation }) {
   return (
     <View>
       <Button
@@ -151,17 +154,20 @@ function Modal1Screen({ navigation }) {
 
 ### Navigator에 화면 추가
 ```js
-<Stack.Group screenOptions={{ presentation: 'modal' }}>
-  <Stack.Screen name="Modal1" component={Modal1Screen} />
-</Stack.Group>
+<Stack.Navigator>
+  <Stack.Screen ...
+  <Stack.Group screenOptions={{ presentation: 'modal' }}>
+    <Stack.Screen name="Modal1" component={Modal1Screen} />
+  </Stack.Group>
+</Stack.Navigator>
 ```
 
 ### Tab2에서 Modal창
-```diff
-- function Tab2Screen() {
-```
+screens/Tab2Screen.js
 ```js
-function Tab2Screen({ navigation }) {
+import { Text, View, Button } from 'react-native';
+
+export default function Tab2Screen({ navigation }) {
   return (
     <View>
       <Text>
