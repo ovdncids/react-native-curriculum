@@ -3,6 +3,8 @@
 ## Expo CLI 설치 (5.3.2, Xcode 13.2.1)
 * https://docs.expo.dev
 ```sh
+npx create-expo-app react-native-study
+또는
 npm install -g expo-cli
 expo init react-native-study
 
