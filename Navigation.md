@@ -6,19 +6,20 @@ npm install @react-navigation/native @react-navigation/native-stack
 ```sh
 npm install react-native-screens react-native-safe-area-context
 ```
-* RNSScreen 오류인 경우
-* https://yehey-study.tistory.com/entry/RN-React-Native-build-%EC%97%90%EB%9F%AC-Invariant-Violation-requireNativeComponent-RNSScreenStackHeaderConfig-was-not-found-in-the-UIManager-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0
-```sh
-npm install react-native-safe-area-context
-npm install react-native-screens
-cd ios
-pod install
-```
 
 ## Floating menu와 Screen 연결
 * https://reactnavigation.org/docs/bottom-tab-navigator
 ```sh
 npm install @react-navigation/bottom-tabs
+```
+* `React Native CLI` RNSScreen 오류인 경우
+* https://yehey-study.tistory.com/entry/RN-React-Native-build-%EC%97%90%EB%9F%AC-Invariant-Violation-requireNativeComponent-RNSScreenStackHeaderConfig-was-not-found-in-the-UIManager-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0
+```sh
+# iOS의 경우 라이브러리 추가 후 pod install 해야한다.
+cd ios
+pod install
+
+# Android의 경우 라이브러리 추가 앱을 끄고 다시 실행한다. 
 ```
 
 App.js
