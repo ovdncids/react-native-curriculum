@@ -69,6 +69,9 @@ npm start
 # Run on Android device/emulator
 ```
 
+### Expo 배포
+* https://docs.expo.dev/build/setup
+
 ## React Native CLI
 * https://reactnative.dev/docs/environment-setup
 
