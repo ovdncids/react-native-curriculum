@@ -874,6 +874,9 @@ export default Tab5Screen;
 ```
 
 App.js
+```js
+import { TouchableOpacity } from 'react-native';
+```
 ```diff
 - import Tab5Screen from './screens/Tab5Screen'
 + import Tab5Screen, { ModalCreate, ModalUpdate } from './screens/Tab5Screen'
