@@ -5,7 +5,7 @@
 ```sh
 npx expo install expo-font
 ```
-* [NanumGothic.ttf](https://github.com/ovdncids/react-curriculum/blob/master/download/NanumGothic.ttf)
+* [NanumGothic.ttf](https://github.com/ovdncids/react-native-curriculum/blob/master/download/NanumGothic.ttf)
 
 app.js
 ```js
