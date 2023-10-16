@@ -60,6 +60,115 @@ Application > App 이름 > 수정 > 서비스 환경 등록 > Web 서비스 URL 
 ```
 * ❕ `clientId`아니고 `ncpClientId`
 
+## 마커 클러스터화하기
+* https://navermaps.github.io/maps.js.ncp/docs/tutorial-marker-cluster.example.html
+* https://github.com/navermaps/marker-tools.js/tree/master/marker-clustering
+* <details><summary>Next.js</summary>
+
+  * https://github.com/ovdncids/react-native-curriculum/blob/master/download/naver-map/MarkerClustering.js
+
+  pages/map.tsx
+  ```tsx
+  import { useEffect } from 'react'
+  import Script from 'next/script'
+  import accidentDeath from '../data/accidentDeath.json'
+  
+  declare global {
+    interface Window {
+      naver: any
+      N: any
+      MarkerClustering: any
+    }
+  }
+  
+  const Map = () => {
+    useEffect(() => {
+      const { naver, N, MarkerClustering } = window
+      var map = new naver.maps.Map("map", {
+        zoom: 6,
+        center: new naver.maps.LatLng(36.2253017, 127.6460516),
+        zoomControl: true,
+        zoomControlOptions: {
+          position: naver.maps.Position.TOP_LEFT,
+          style: naver.maps.ZoomControlStyle.SMALL
+        }
+      });
+  
+      var markers = [],
+        data = accidentDeath.searchResult.accidentDeath;
+  
+      for (var i = 0, ii = data.length; i < ii; i++) {
+        var spot = data[i],
+          latlng = new naver.maps.LatLng(spot.grd_la, spot.grd_lo),
+          marker = new naver.maps.Marker({
+            position: latlng,
+            draggable: true
+          });
+        markers.push(marker);
+      }
+  
+      var htmlMarker1 = {
+        content: '<div style="cursor:pointer;width:40px;height:40px;line-height:42px;font-size:10px;color:white;text-align:center;font-weight:bold;background:url(../images/cluster-marker-1.png);background-size:contain;"></div>',
+        size: N.Size(40, 40),
+        anchor: N.Point(20, 20)
+      },
+        htmlMarker2 = {
+          content: '<div style="cursor:pointer;width:40px;height:40px;line-height:42px;font-size:10px;color:white;text-align:center;font-weight:bold;background:url(../images/cluster-marker-2.png);background-size:contain;"></div>',
+          size: N.Size(40, 40),
+          anchor: N.Point(20, 20)
+        },
+        htmlMarker3 = {
+          content: '<div style="cursor:pointer;width:40px;height:40px;line-height:42px;font-size:10px;color:white;text-align:center;font-weight:bold;background:url(../images/cluster-marker-3.png);background-size:contain;"></div>',
+          size: N.Size(40, 40),
+          anchor: N.Point(20, 20)
+        },
+        htmlMarker4 = {
+          content: '<div style="cursor:pointer;width:40px;height:40px;line-height:42px;font-size:10px;color:white;text-align:center;font-weight:bold;background:url(../images/cluster-marker-4.png);background-size:contain;"></div>',
+          size: N.Size(40, 40),
+          anchor: N.Point(20, 20)
+        },
+        htmlMarker5 = {
+          content: '<div style="cursor:pointer;width:40px;height:40px;line-height:42px;font-size:10px;color:white;text-align:center;font-weight:bold;background:url(../images/cluster-marker-5.png);background-size:contain;"></div>',
+          size: N.Size(40, 40),
+          anchor: N.Point(20, 20)
+        };
+  
+  
+      var markerClustering = new MarkerClustering({
+        minClusterSize: 2,
+        maxZoom: 13,
+        map: map,
+        markers: markers,
+        disableClickZoom: false,
+        gridSize: 120,
+        icons: [htmlMarker1, htmlMarker2, htmlMarker3, htmlMarker4, htmlMarker5],
+        indexGenerator: [10, 100, 200, 500, 1000],
+        stylingFunction: function (clusterMarker: any, count: number) {
+          clusterMarker.getElement().firstChild.innerHTML = count
+        }
+      });
+  
+    }, [])
+    return (
+      <>
+        <Script
+          src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=qdfvq55x8b"
+          strategy="beforeInteractive"
+        ></Script>
+        <Script
+          src="/MarkerClustering.js"
+          strategy="beforeInteractive"
+        ></Script>
+        <div id="map" style={{ width: '100%', height: '800px' }}></div>
+      </>
+    )
+  }
+  
+  export default Map
+  ```
+</details>
+
+
 # TMAP
 * https://tmapapi.sktelecom.com/main.html#webv2/guide/webGuide.sample1
 
