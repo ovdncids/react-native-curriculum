@@ -66,6 +66,7 @@ Application > App 이름 > 수정 > 서비스 환경 등록 > Web 서비스 URL 
 * <details><summary>Next.js</summary>
 
   * https://github.com/ovdncids/react-native-curriculum/blob/master/download/naver-map/MarkerClustering.js
+  * https://github.com/ovdncids/react-native-curriculum/blob/master/download/naver-map/accidentDeath.json
 
   pages/map.tsx
   ```tsx
