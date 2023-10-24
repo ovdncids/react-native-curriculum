@@ -86,14 +86,14 @@ Android 12.0
 # 깔려있는 모든 자바 확인
 /usr/libexec/java_home -V
 
-# 깔려있는 1.8버전의 자바 경로 확인
+# 깔려있는 1.8 버전의 자바 경로 확인
 /usr/libexec/java_home -v 1.8
 
 # 기본 자바 버전 변경
 vi ~/.zshrc
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 
-# 깔려있는  1.8버전의 자바 삭제
+# 깔려있는 1.8 버전의 자바 삭제
 rm -fr /usr/libexec/java_home -v 1.8
 ```
 * `Java 11` 버전을 사용 해야 한다.
