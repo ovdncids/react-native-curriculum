@@ -81,9 +81,20 @@ API Level 31
 Android 12.0
 ```
 
-### Java 버전 확인
+### Java 버전 확인 (M1은 ARM64(aarch64) 버전 선택)
 ```sh
+# 깔려있는 모든 자바 확인
 /usr/libexec/java_home -V
+
+# 깔려있는 1.8버전의 자바 경로 확인
+/usr/libexec/java_home -v 1.8
+
+# 기본 자바 버전 변경
+vi ~/.zshrc
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+
+# 깔려있는  1.8버전의 자바 삭제
+rm -fr /usr/libexec/java_home -v 1.8
 ```
 * `Java 11` 버전을 사용 해야 한다.
 * 설치 `InteliiJ` > 오른쪽 상단 톱니바퀴 > Project Structure... > SDKs > + > Download JDK...
