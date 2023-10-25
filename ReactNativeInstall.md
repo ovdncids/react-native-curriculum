@@ -82,19 +82,23 @@ Android 12.0
 ```
 
 ### Java 버전 확인 (M1은 ARM64(aarch64) 버전 선택)
+* IntelliJ > File > Project Structure... > + Add SDK > Java 버전 설치
 ```sh
 # 깔려있는 모든 자바 확인
 /usr/libexec/java_home -V
 
 # 깔려있는 1.8 버전의 자바 경로 확인
-/usr/libexec/java_home -v 1.8
+/usr/libexec/java_home -v 11
 
-# 기본 자바 버전 변경
+# 깔려있는 1.8 버전의 자바 삭제 (남겨 있는 버전이 자동으로 기본이 됨)
+rm -fr /usr/libexec/java_home -v 11
+
+# 기본 자바 버전 변경 ($JAVA_HOME 필요한 경우 사용)
 vi ~/.zshrc
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+export JAVA_HOME=$(/usr/libexec/java_home -v 11)
 
-# 깔려있는 1.8 버전의 자바 삭제
-rm -fr /usr/libexec/java_home -v 1.8
+echo $JAVA_HOME
+source ~/.zshrc
 ```
 * `Java 11` 버전을 사용 해야 한다.
 * 설치 `InteliiJ` > 오른쪽 상단 톱니바퀴 > Project Structure... > SDKs > + > Download JDK...
