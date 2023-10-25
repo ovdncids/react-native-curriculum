@@ -97,8 +97,8 @@ rm -fr /usr/libexec/java_home -v 11
 vi ~/.zshrc
 export JAVA_HOME=$(/usr/libexec/java_home -v 11)
 
-echo $JAVA_HOME
 source ~/.zshrc
+echo $JAVA_HOME
 ```
 * `Java 11` 버전을 사용 해야 한다.
 * 설치 `InteliiJ` > 오른쪽 상단 톱니바퀴 > Project Structure... > SDKs > + > Download JDK...
