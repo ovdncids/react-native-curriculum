@@ -1,10 +1,26 @@
 # SQLite
+## Expo (49.0.13)
+* https://docs.expo.dev/versions/latest/sdk/sqlite
+* https://docs.expo.dev/versions/latest/sdk/filesystem
+* https://docs.expo.dev/versions/latest/sdk/asset
+```sh
+npx expo install expo-sqlite
+```
+```js
+// import * as FileSystem from 'expo-file-system';
+// import { Asset } from 'expo-asset';
+import * as SQLite from 'expo-sqlite';
+
+const db = SQLite.openDatabase('users.db');
+const results = await db.execAsync([{ sql: 'select 123;', args: [] }]);
+console.log(results);
+```
+
+## React Native CLI (RN 0.68) - iOS
 * https://github.com/andpor/react-native-sqlite-storage
 ```sh
 npm install --save react-native-sqlite-storage
 ```
-
-## React Native CLI (RN 0.68) - iOS
 ```sh
 cd ios
 pod install
