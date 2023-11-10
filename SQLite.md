@@ -10,7 +10,7 @@ npx expo install expo-sqlite
 import * as SQLite from 'expo-sqlite';
 
 const db = SQLite.openDatabase('users.db');
-const results = await db.execAsync([{ sql: 'select 123;', args: [] }]);
+const results = await db.execAsync([{ sql: 'select 123;', args: [] }], false);
 console.log(results);
 ```
 
