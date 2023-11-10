@@ -7,13 +7,17 @@
 npx expo install expo-sqlite
 ```
 ```js
-// import * as FileSystem from 'expo-file-system';
-// import { Asset } from 'expo-asset';
 import * as SQLite from 'expo-sqlite';
 
 const db = SQLite.openDatabase('users.db');
 const results = await db.execAsync([{ sql: 'select 123;', args: [] }]);
 console.log(results);
+```
+
+* [기존의 SQLite.db 파일 사용](https://docs.expo.dev/versions/latest/sdk/sqlite/#importing-an-existing-database)
+```js
+import * as FileSystem from 'expo-file-system';
+import { Asset } from 'expo-asset';
 ```
 
 ## React Native CLI (RN 0.68) - iOS
