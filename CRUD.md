@@ -60,9 +60,16 @@
 />
 ```
 
+## TextInput 숫자키만 받기
+```js
+<TextInput
+  keyboardType="number-pad"
+></TextInput>
+```
+
 ## RefreshControl
 * https://reactnative.dev/docs/refreshcontrol
-* `ScrollView`에서 `스크롤 업` 하면 새로고침(스피너 로딩) 한다.
+* `ScrollView`에서 `스크롤 업` 하면 새로고침(스피너 로딩) 할 수 있다.
 ```js
 import { RefreshControl } from 'react-native';
 ```
@@ -78,12 +85,21 @@ import { RefreshControl } from 'react-native';
 </ScrollView>
 ```
 
-## TextInput 숫자키만 받기
+## useFocusEffect
 ```js
-<TextInput
-  keyboardType="number-pad"
-></TextInput>
+import { useFocusEffect } from '@react-navigation/native';
+import { useCallback } from 'react';
+
+useFocusEffect(
+  useCallback(() => {
+    console.log('Screen in');
+    return () => {
+      console.log('Screen out');
+    }
+  }, [])
+);
 ```
+* `useFocusEffect`가 받은 함수가 `익명 함수`이면 랜더링이 될때마다 `새로운 익명 함수`를 생성 하므로 `useCallback`을 사용해야 한다.
 
 ## Markup CRUD
 screens/Tab5Screen.js
