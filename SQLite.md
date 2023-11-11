@@ -88,8 +88,8 @@ const uploadFile = async () => {
       fieldName: 'file',
       fileName: 'users.db',
       httpMethod: 'POST',
-      uploadType: FileSystem.FileSystemUploadType.MULTIPART,
-      mimeType: 'multipart/form-data'
+      mimeType: 'multipart/form-data',
+      uploadType: FileSystem.FileSystemUploadType.MULTIPART
     }
   );
 };
