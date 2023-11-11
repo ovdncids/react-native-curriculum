@@ -15,11 +15,81 @@ const results = await db.execAsync([{ sql: 'select 123;', args: [] }], false);
 console.log(results);
 ```
 
-* [기존의 SQLite.db 파일 사용](https://docs.expo.dev/versions/latest/sdk/sqlite/#importing-an-existing-database)
+### 기존의 SQLite.db 파일 사용
+* https://docs.expo.dev/versions/latest/sdk/sqlite/#importing-an-existing-database
+
+metro.config.js
+```js
+const { getDefaultConfig } = require('expo/metro-config');
+const defaultConfig = getDefaultConfig(__dirname);
+
+// Asset.fromModule 사용 가능
+defaultConfig.resolver.assetExts.push('db');
+
+module.exports = defaultConfig;
+```
+
+screens/Screen.js
 ```js
 import * as FileSystem from 'expo-file-system';
 import { Asset } from 'expo-asset';
+import * as SQLite from 'expo-sqlite';
+
+const deleteDbFile = async () => {
+  const dbFile = await FileSystem.getInfoAsync(`${FileSystem.documentDirectory}SQLite/users.db`);
+  if (dbFile.exists) {
+    await FileSystem.deleteAsync(`${FileSystem.documentDirectory}SQLite/users.db`);
+  }
+};
+const deleteDbFolder = async () => {
+  const dbFolder = await FileSystem.getInfoAsync(`${FileSystem.documentDirectory}SQLite`);
+  if (dbFolder.exists) {
+    // `${FileSystem.documentDirectory}SQLite` 폴더와 하위 모든 파일 삭제
+    await FileSystem.deleteAsync(`${FileSystem.documentDirectory}SQLite`);
+  }
+};
+const openDatabase = async () => {
+  const dbFolder = await FileSystem.getInfoAsync(`${FileSystem.documentDirectory}SQLite`);
+  const dbFile = await FileSystem.getInfoAsync(`${FileSystem.documentDirectory}SQLite/users.db`);
+  if (!dbFolder.exists) {
+    await FileSystem.makeDirectoryAsync(`${FileSystem.documentDirectory}SQLite`);
+    console.log(`${FileSystem.documentDirectory}SQLite 폴더 생성`);
+  }
+  if (!dbFile.exists) {
+    await FileSystem.downloadAsync(
+      // 기본 구조의 users.db 파일 Expo에 미리 준비
+      Asset.fromModule(require('../SQLiteExpo/users.db')).uri,
+      `${FileSystem.documentDirectory}SQLite/users.db`
+    )
+    console.log(`${FileSystem.documentDirectory}SQLite/users.db 경로에 SQLiteExpo/users.db 파일 복사`);
+    // 이미 `${FileSystem.documentDirectory}SQLite/users.db`이 있는데 덮어 씌우는 경우
+    // Error code 10: disk I/O error 또는 Error code 1: no such table: users 등을 만날 수 있다.
+    // Reload 하면 해결됨
+  }
+  return SQLite.openDatabase('users.db');
+};
+const queries = async () => {
+  const db = await openDatabase();
+  const results = await db.execAsync([{ sql: 'select * from users;', args: [] }], false);
+  console.warn(results[0]);
+};
 ```
+
+### 디바이스의 users.db 파일 가져오기
+```js
+const uploadFile = async () => {
+  await FileSystem.uploadAsync(
+    `http://192.168.0.2:3100/api/v1/files`,
+    `${FileSystem.documentDirectory}SQLite/users.db`, {
+      fieldName: 'file',
+      fileName: 'users.db',
+      httpMethod: 'POST',
+      uploadType: FileSystem.FileSystemUploadType.MULTIPART,
+    }
+  );
+};
+```
+* [Express File Upload](https://github.com/ovdncids/react-curriculum/blob/master/FileUpload.md#express)
 
 ## React Native CLI (RN 0.68) - iOS
 * https://github.com/andpor/react-native-sqlite-storage
