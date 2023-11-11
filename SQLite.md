@@ -18,6 +18,10 @@ console.log(results[0]);
 ### 기존의 SQLite.db 파일 사용
 * https://docs.expo.dev/versions/latest/sdk/sqlite/#importing-an-existing-database
 
+```sh
+npx expo install expo-file-system expo-asset
+```
+
 metro.config.js
 ```js
 const { getDefaultConfig } = require('expo/metro-config');
