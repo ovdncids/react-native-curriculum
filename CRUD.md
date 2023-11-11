@@ -70,7 +70,7 @@ import { RefreshControl } from 'react-native';
 <ScrollView
   refreshControl={
     <RefreshControl
-      refreshing={true}
+      refreshing={false}
       onRefresh={() => {console.log('스크롤 업 이벤트 발생')}}
     />
   }
