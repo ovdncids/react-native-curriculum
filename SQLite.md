@@ -9,6 +9,7 @@ npx expo install expo-sqlite
 ```js
 import * as SQLite from 'expo-sqlite';
 
+// users.db 파일이 없으면 자동으로 `${FileSystem.documentDirectory}SQLite/users.db` 파일 생성함
 const db = SQLite.openDatabase('users.db');
 const results = await db.execAsync([{ sql: 'select 123;', args: [] }], false);
 console.log(results);
