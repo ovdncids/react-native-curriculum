@@ -69,6 +69,18 @@ npm start
 # Run on Android device/emulator
 ```
 
+### Expo debugger
+```sh
+npm start
+# 폰 또는 에뮬레이터 실행
+
+Press j | open debugger
+## Opening JavaScript inspector in the browser... (정상: 크롬 개발자 모드 열림)
+## No compatible apps connected. JavaScript Debugging can only be used with the Hermes engine. (npm start부터 다시 진행)
+
+# 소스 파일에 debugger 넣기
+```
+
 ### Expo 배포
 * https://docs.expo.dev/build/setup
 
