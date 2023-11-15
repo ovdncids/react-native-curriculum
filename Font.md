@@ -29,3 +29,19 @@ export default function App() {
   );
 }
 ```
+
+## 나눔고딕 폰트
+* https://github.com/item4/kfonts/tree/main
+```sh
+npm install @kfonts/nanum-gothic
+```js
+import '@kfonts/nanum-gothic';
+```
+```css
+body {
+  font-family: '나눔고딕';
+}
+```
+```js
+<Text style={{ fontFamily: 'NanumGothic' }}>나눔고딕</Text>
+```
