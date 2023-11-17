@@ -95,6 +95,7 @@ const uploadFile = async () => {
 };
 ```
 * [Express File Upload](https://github.com/ovdncids/react-curriculum/blob/master/FileUpload.md#express)
+* [React-native-Fetch Upload](https://github.com/ovdncids/react-native-curriculum/blob/master/FileUpload.md#file-upload)
 * 결국 `FileSystem.uploadAsync`는 [File Upload 통신](https://github.com/ovdncids/react-native-curriculum/blob/master/FileUpload.md)과 같다.
 
 ## React Native CLI (RN 0.68) - iOS
