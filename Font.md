@@ -32,6 +32,7 @@ export default function App() {
 
 ## 나눔고딕 폰트
 * https://github.com/item4/kfonts/tree/main
+* [웹폰트 로딩 순서](https://yceffort.kr/2021/06/ways-to-faster-web-fonts)
 ```sh
 npm install @kfonts/nanum-gothic
 ```js
