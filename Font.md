@@ -33,14 +33,14 @@ export default function App() {
 ## 나눔고딕 폰트
 * https://github.com/item4/kfonts/tree/main
 * [웹폰트 로딩 순서](https://yceffort.kr/2021/06/ways-to-faster-web-fonts)
-```sh
-npm install @kfonts/nanum-gothic
-```js
-import '@kfonts/nanum-gothic';
-```
 ```css
+@font-face {
+  font-family: 'NanumGothic';
+  font-display: block; /* 폰트 로딩전까지 폰트 적용된 text는 미출력. 폰트 로딩이 3초가 지나면 시스템 폰트 우선 적용 */
+  src: local('NanumGothic'), url('/fonts/NanumGothic.woff2') format('woff2');
+}
 body {
-  font-family: '나눔고딕';
+  font-family: 'NanumGothic';
 }
 ```
 ```js
