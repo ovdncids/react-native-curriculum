@@ -81,6 +81,26 @@ Press j | open debugger
 # 소스 파일에 debugger 넣기
 ```
 
+### Alias
+babel.config.js
+```js
+{
+  presets: ['babel-preset-expo'],
+  plugins: [
+    ['module-resolver', {
+      alias: {
+        '@/components': './components'
+      }
+    }]
+  ]
+}
+```
+```sh
+npm start -- --reset-cache
+```
+* ❕ `babel.config.js` 설정은 `디바이스`에 캐시되어 수정되지 않는다. 이를 리셋시킴
+* `npm install --save-dev babel-plugin-module-resolver`는 필요 없는 듯
+
 ### Expo 배포
 * https://docs.expo.dev/build/setup
 
