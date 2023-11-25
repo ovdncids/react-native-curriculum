@@ -89,7 +89,8 @@ babel.config.js
   plugins: [
     ['module-resolver', {
       alias: {
-        '@/components': './components'
+        '@': '.'
+        // '@/components': './components'
       }
     }]
   ]
