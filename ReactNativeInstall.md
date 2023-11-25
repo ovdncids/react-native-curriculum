@@ -82,6 +82,8 @@ Press j | open debugger
 ```
 
 ### Alias
+* https://github.com/tleunen/babel-plugin-module-resolver
+
 babel.config.js
 ```js
 {
