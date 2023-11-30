@@ -128,17 +128,19 @@ export default function Tab1Screen({ navigation }) {
 ## Font Awesome
 * https://icons.expo.fyi
 ```js
-import { FontAwesome } from '@expo/vector-icons';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 ```
 ```js
 <BottomTab.Screen
   name="Tab1"
   component={Tab1Screen}
   options={{
-    tabBarIcon: () => <FontAwesome
-      name="code"
-      size={30}
-    />
+    tabBarIcon: () => (
+      <MaterialCommunityIcons
+        name="code-tags"
+        size={30}
+      />
+    )
   }}
 />
 ```
@@ -204,7 +206,7 @@ import { Pressable } from 'react-native';
     headerLeft: () => (<></>),
     headerRight: () => (
       <Pressable onPress={() => navigation.goBack()}>
-        <FontAwesome
+        <MaterialCommunityIcons
           name="close"
           size={25}
         />
