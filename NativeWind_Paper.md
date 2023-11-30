@@ -50,3 +50,6 @@ module.exports = async function (env, argv) {
 ```sh
 npm install -D tailwindcss@3.3.2
 ```
+
+# Paper
+* https://reactnativepaper.com
