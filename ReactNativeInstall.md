@@ -89,12 +89,15 @@ babel.config.js
 {
   presets: ['babel-preset-expo'],
   plugins: [
-    ['module-resolver', {
-      alias: {
-        '@': '.'
-        // '@/components': './components'
+    [
+      'module-resolver',
+      {
+        alias: {
+          '@': '.'
+          // '@/components': './components'
+        }
       }
-    }]
+    ]
   ]
 }
 ```
