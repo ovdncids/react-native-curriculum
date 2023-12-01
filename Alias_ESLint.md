@@ -27,7 +27,7 @@ npm start -- --reset-cache
 # ESLint
 * https://docs.expo.dev/guides/using-eslint
 ```sh
-npm install eslint prettier eslint-config-universe --save-dev
+npm install -D eslint prettier eslint-config-universe
 ```
 
 .eslintrc.js
