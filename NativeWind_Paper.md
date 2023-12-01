@@ -8,7 +8,11 @@ npm install -D tailwindcss@3.3.2
 tailwind.config.js
 ```diff
 - content: [],
-+ content: ["./App.{js,jsx,ts,tsx}", "./<custom directory>/**/*.{js,jsx,ts,tsx}"],
+content: [
+  "./App.{js,jsx,ts,tsx}",
+  "./screens/**/*.{js,jsx,ts,tsx}",
+  "./components/**/*.{js,jsx,ts,tsx}"
+],
 ```
 
 babel.config.js
