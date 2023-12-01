@@ -5,6 +5,12 @@ npm install nativewind
 npm install -D tailwindcss@3.3.2
 ```
 
+package.json
+```diff
+- "tailwindcss": "^3.3.2"
++ "tailwindcss": "3.3.2"
+```
+
 tailwind.config.js
 ```diff
 - content: [],
