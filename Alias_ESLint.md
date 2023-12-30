@@ -38,6 +38,9 @@ jsconfig.json
 ```
 * 안되면 `VSCode > 기본 설정 > 설정 > importModuleSpecifier > non-relative`도 고려해본다.
 
+## import 중괄호 안에 스페이스 넣고 빼기
+* VSCode > 기본 설정 > 설정 > insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces
+
 # ESLint
 * https://docs.expo.dev/guides/using-eslint
 ```sh
