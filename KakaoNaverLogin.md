@@ -1,2 +1,2 @@
-# 카카오 로그인
+# Kakao Login
 * https://developers.kakao.com/docs/latest/ko/kakaologin/rest-api
