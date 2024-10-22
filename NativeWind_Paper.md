@@ -31,6 +31,12 @@ App.js
 <View className='mx-4 flex-row'></View>
 ```
 
+* TS: `className` 오류
+nativewind-env.d.ts
+```ts
+///<reference types="nativewind/types" />
+```
+
 webpack.config.js (옵션)
 ```js
 const createExpoWebpackConfigAsync = require("@expo/webpack-config");
