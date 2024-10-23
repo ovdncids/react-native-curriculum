@@ -1,6 +1,6 @@
 # NativeWind - v2
+* https://www.nativewind.dev/v2/quick-starts/expo
 * [NativeWind - v4](https://www.nativewind.dev/getting-started/expo-router)
-* https://www.nativewind.dev/quick-starts/expo
 ```sh
 npm install nativewind
 npm install -D tailwindcss@3.3.2
