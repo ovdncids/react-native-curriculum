@@ -1,5 +1,5 @@
 # NativeWind
-* [NativeWindv4](https://www.nativewind.dev/getting-started/expo-router)
+* [NativeWind - v4](https://www.nativewind.dev/getting-started/expo-router)
 * https://www.nativewind.dev/quick-starts/expo
 ```sh
 npm install nativewind
