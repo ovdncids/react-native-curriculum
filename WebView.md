@@ -34,6 +34,9 @@ component 파일
 + source={require('../assets/index.html')}
 ```
 * ❕ `Android`에서 `html` 적용이 안되고, `text`처럼 보여진다.
+* `webview@~13.6.3`에서 `Android`도 `html` 적용된다.
+* `document.location.href` = http://192.168.219.100:8081/assets/?unstable_path=.%2Fapp%2Fmap.html&platform=ios&hash=b8a6a8550b06dab61b6104fe0eab61f1
+* `html 파일 부르기2` 방식은 `document.location.href` = about:blank
 
 ## html 파일 부르기2
 assets/index.js
