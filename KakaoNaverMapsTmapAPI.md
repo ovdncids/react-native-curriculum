@@ -45,7 +45,7 @@ var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리
 * 확대, 축소 할때 이벤트를 발생 시킨다.
 
 # NAVER 지도 API v3 
-* https://www.ncloud.com/product/applicationService/maps
+* https://console.ncloud.com/naver-service/application
 * https://navermaps.github.io/maps.js.ncp/docs/tutorial-2-Getting-Started.html
 
 ```sh
