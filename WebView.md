@@ -4,6 +4,11 @@
 ```sh
 npm install react-native-webview
 ```
+### Invariant Violation: TurboModuleRegistry.getEnforcing(...): 'RNCWebViewModule' could not be found.
+* https://github.com/react-native-webview/react-native-webview/issues/3506
+```sh
+npm install react-native-webview@~13.6.3
+```
 ```js
 import { Dimensions } from 'react-native';
 import { WebView } from 'react-native-webview';
