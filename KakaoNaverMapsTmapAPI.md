@@ -48,6 +48,7 @@ var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리
 * https://console.ncloud.com/naver-service/application
 * https://navermaps.github.io/maps.js.ncp/docs/tutorial-2-Getting-Started.html
 
+## Web Dynamic Map
 ```sh
 Services > Maps
 Application 등록 > Web Dynamic Map
@@ -59,6 +60,28 @@ Application > App 이름 > 수정 > 서비스 환경 등록 > Web 서비스 URL 
 <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=YOUR_CLIENT_ID"></script>
 ```
 * ❕ `clientId`아니고 `ncpClientId`
+
+## Mobile Dynamic Map - Expo
+* https://github.com/mym0404/react-native-naver-map?tab=readme-ov-file
+app.json
+```json
+"ios": {
+  "supportsTablet": true,
+  "buildNumber": "1.0.0",
+  "bundleIdentifier": "com.spartahyk.myhoneytip",
+  "config": {
+    "googleMobileAdsAppId": "ca-app-pub-3271224099084995~1755496920"
+  }
+},
+"android": {
+  "package": "com.abc",
+  "versionCode": 1,
+  "config": {
+    "googleMobileAdsAppId": "ca-app-pub-3271224099084995~7199395295"
+  },
+  "permissions": ["ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"]
+}
+```
 
 ## 마커 클러스터화하기
 * https://navermaps.github.io/maps.js.ncp/docs/tutorial-marker-cluster.example.html
