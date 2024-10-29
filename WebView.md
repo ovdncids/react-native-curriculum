@@ -24,6 +24,8 @@ import { WebView } from 'react-native-webview';
 ```
 
 ## html 파일 부르기1
+* https://github.com/react-native-webview/react-native-webview/issues/746
+
 assets/index.html
 ```html
 <h1 style="color: red;">Hello world</h1>
