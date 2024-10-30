@@ -61,28 +61,53 @@ Application > App 이름 > 수정 > 서비스 환경 등록 > Web 서비스 URL 
 ```
 * ❕ `clientId`아니고 `ncpClientId`
 
-## Mobile Dynamic Map - Expo
+## Mobile Dynamic Map - react-native-naver-map - Expo - Expo Development Client
 * https://github.com/mym0404/react-native-naver-map?tab=readme-ov-file
+* [Expo Go 이슈](https://githubissues.com/mym0404/react-native-naver-map/61)
+* [네이버 지도 설치키 발급](https://medium.com/mj-studio/%EB%A6%AC%EC%95%A1%ED%8A%B8-%EB%84%A4%EC%9D%B4%ED%8A%B8%EB%B8%8C%EB%A1%9C-%EB%84%A4%EC%9D%B4%EB%B2%84-%EC%A7%80%EB%8F%84-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0-1-%EC%84%A4%EC%B9%98%EC%99%80-%ED%82%A4-%EB%B0%9C%EA%B8%89-%EB%B0%9B%EA%B8%B0-f826d8c0644d)
 
-app.json
+### Expo Development Client
+* [EAS - Expo Application Service](https://medium.com/crossplatformkorea/expo%EC%9D%98-%EC%83%88%EB%A1%9C%EC%9A%B4-%EB%B9%8C%EB%93%9C-%EC%8B%9C%EC%8A%A4%ED%85%9C-eas-build%EC%99%80-expo-dev-client-4d93f63ada18)
+* https://docs.expo.dev/develop/development-builds/create-a-build
+```sh
+npx expo install expo-dev-client
+```
+
+eas.json
 ```json
-"ios": {
-  "supportsTablet": true,
-  "buildNumber": "1.0.0",
-  "bundleIdentifier": "com.spartahyk.myhoneytip",
-  "config": {
-    "googleMobileAdsAppId": "ca-app-pub-3271224099084995~1755496920"
+{
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "production": {},
+    "development-simulator": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "ios": {
+        "simulator": true
+      }
+    }
   }
-},
-"android": {
-  "package": "com.abc",
-  "versionCode": 1,
-  "config": {
-    "googleMobileAdsAppId": "ca-app-pub-3271224099084995~7199395295"
-  },
-  "permissions": ["ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"]
 }
 ```
+
+Android
+```sh
+eas build --profile development --platform android
+```
+* `app.json` 파일에 `expo.android.package`에 `앱 ID`를 생성하고 Expo 빌드를 실행한다.
+
+iOS
+```sh
+eas build --profile development-simulator --platform ios
+```
+* `app.json` 파일에 `expo.ios.bundleIdentifier`에 `앱 ID`를 생성하고 Expo 빌드를 실행한다.
+* [app.json 추가 정보](https://spartacodingclub.kr/community/fastqna/all/634b982cb9e1b40ed5b73bad/%EA%B5%AC%EA%B8%80%ED%94%8C%EC%97%90%EC%9D%B4%20expo%20%EC%95%B1%EB%B2%88%EB%93%A4%20%ED%8C%A8%ED%82%A4%EC%A7%80%20%EC%9D%B4%EB%A6%84%20%EC%82%AC%EC%9A%A9%20)
 
 ## 마커 클러스터화하기
 * https://navermaps.github.io/maps.js.ncp/docs/tutorial-marker-cluster.example.html
