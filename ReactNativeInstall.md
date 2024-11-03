@@ -27,7 +27,16 @@ Xcode > Preferences... > Locations > Command Line Tools
 # Expo 재시작
 ```
 
-### Android Studio Emulator 설치
+### Error: xcrun simctl boot 해시 exited with non-zero code: 2
+* https://saying-me.tistory.com/147
+```sh
+# Emulator의 해시 코드를 확인 할 수 있다.
+xcrun simctl list
+# iPhone 16을 기본으로 선택
+xcrun simctl boot F7DA36FB-33A8-4EE3-B62C-7063FE5934ED
+```
+
+## Android Studio Emulator 설치
 * https://docs.expo.dev/workflow/android-studio-emulator
 * ❕ `AVD`(Android Virtual Device)는 `Play Store` 내장 되어 있는 버전을 설치 해야 `Expo` 설치가능
 ```sh
