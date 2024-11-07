@@ -68,5 +68,11 @@ module.exports = async function (env, argv) {
 npm install -D tailwindcss@3.3.2
 ```
 
+## 가변값 오류
+```jsx
+<View className={`w-[${Dimensions.get('window').width}px]`}
+```
+* ❕ 이런식으로 넓이가 기기마다 가변 된다면 `NativeWind`에서 적용되지 않을 수 있다. 이때는 `style`을 사용한다.
+
 # Paper
 * https://reactnativepaper.com
