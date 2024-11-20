@@ -1,6 +1,13 @@
+# NativeWind - v4
+* https://www.nativewind.dev/getting-started/expo-router
+### babel.config.js 파일이 없을 경우
+* https://docs.expo.dev/versions/latest/config/babel
+```sh
+npx expo customize
+```
+
 # NativeWind - v2
 * https://www.nativewind.dev/v2/quick-starts/expo
-* [NativeWind - v4](https://www.nativewind.dev/getting-started/expo-router)
 ```sh
 npm install nativewind
 npm install -D tailwindcss@3.3.2
@@ -25,12 +32,6 @@ content: [
 babel.config.js
 ```js
 plugins: ["nativewind/babel"]
-```
-
-### babel.config.js 파일이 없을 경우
-* https://docs.expo.dev/versions/latest/config/babel
-```sh
-npx expo customize
 ```
 
 App.js
