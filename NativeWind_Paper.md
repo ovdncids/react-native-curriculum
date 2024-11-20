@@ -27,6 +27,12 @@ babel.config.js
 plugins: ["nativewind/babel"]
 ```
 
+### babel.config.js 파일이 없을 경우
+* https://docs.expo.dev/versions/latest/config/babel
+```sh
+npx expo customize
+```
+
 App.js
 ```js
 <View className='mx-4 flex-row'></View>
