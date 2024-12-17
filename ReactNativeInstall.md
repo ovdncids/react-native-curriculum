@@ -66,8 +66,11 @@ adb 123
 adb version
 ```
 
-### Android 실행시 Expo 앱은 켜지고, 프로젝트 앱은 자꾸 꺼지거나 정상 동작 하지 않을 경우 (shake도 잘 안되는 경우)
+### Android 실행시 Expo 앱은 켜지고, 프로젝트 앱은 자꾸 꺼지거나 정상 동작 하지 않을 경우
 * Expo 앱에서 `Enter URL manually` > `exp://{ip}:19000`
+
+### Shake(command + m) 잘 안되는 경우
+* `Emulator Play` 버튼 옆에 메뉴에서 `Cold boot`
 
 #### Android virtual device 생성
 ```sh
