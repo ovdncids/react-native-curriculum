@@ -6,9 +6,9 @@
 ```sh
 npx create-expo-app@latest --template
 # Choose a template: Blank 또는 Blank (Typescript)
-# What is your app named? react-native-study
+# What is your app named? expo-blank-study
 
-cd react-native-study
+cd expo-blank-study
 npm start
 ```
 
