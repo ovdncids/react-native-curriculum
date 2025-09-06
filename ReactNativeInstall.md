@@ -1,15 +1,14 @@
 # React Native Install
 
-## Expo CLI 설치 (5.3.2, Xcode 13.2.1)
+## Expo CLI 설치
 * https://docs.expo.dev
+* create-expo-app@3.5.3, expo@53.0.22, Expo Go 2.33.22, Xcode 16.3
 ```sh
-npx create-expo-app react-native-study
-또는
-npm install -g expo-cli
-expo init react-native-study
+npx create-expo-app@latest --template
+# Choose a template: Blank 또는 Blank (Typescript)
+# What is your app named? react-native-study
 
 cd react-native-study
-code .
 npm start
 ```
 
