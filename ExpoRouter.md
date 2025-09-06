@@ -17,18 +17,20 @@ app.json
   "expo": {
     "plugins": [
       "expo-router"
-    ]
+    ],
+    "scheme": "expo-blank-study"
   }
 }
 ```
+* `scheme`은 딥링크, 푸시 알림, 앱 호출 등에 사용되는 `앱의 Router 주소`이다. (expo-blank-study://mypage/password)
 
-* 이제 불필요한 파일 삭제
+이제 불필요한 파일 삭제
 ```diff
 - App.js
 - index.js
 ```
 
-* `assets` 모든 파일을 `assets/images`로 이동 후 `app.json`에서 모든 경로 수정
+`assets` 모든 파일을 `assets/images`로 이동 후 `app.json`에서 모든 경로 수정
 ```diff
 - "icon": "./assets/icon.png",
 + "icon": "./assets/images/icon.png",
