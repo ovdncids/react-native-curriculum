@@ -2,7 +2,7 @@
 
 ## Expo CLI 설치
 * https://docs.expo.dev
-* node@v20.19.4, create-expo-app@3.5.3, expo@53.0.22, Expo Go@2.33.22, Xcode@16.3
+* node@v20.19.4, create-expo-app@3.5.3, react-native@0.79.6, react@19.0.0, expo@53.0.22, Expo Go@2.33.22, Xcode@16.3
 ```sh
 npx create-expo-app@latest --template
 # Choose a template: Blank 또는 Blank (Typescript)
