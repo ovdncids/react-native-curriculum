@@ -18,11 +18,12 @@ app.json
     "plugins": [
       "expo-router"
     ],
-    "scheme": "expo-blank-study"
+    "scheme": "expoblankstudy"
   }
 }
 ```
-* `scheme`은 딥링크, 푸시 알림, 앱 호출 등에 사용되는 `앱의 Router 주소`이다. (expo-blank-study://mypage/password)
+* `scheme`은 딥링크, 푸시 알림, 앱 호출 등에 사용되는 `앱의 Router 주소`이다. (예: `expoblankstudy://mypage/password`)
+* `Expo Go`에서는 바로 확인 할 수 없고 `빌드 후` 가능하다.
 
 이제 불필요한 파일 삭제
 ```diff
