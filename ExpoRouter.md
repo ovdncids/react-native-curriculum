@@ -122,3 +122,35 @@ export default function Flex() {
 * `npm start` > `?` 메뉴 확인 > `j` 키로 크롬 디버깅 창을 바로 열거나 `m` 키로 `제어창`에서 열 수 있다.
 * 스크린 이동 하기
 * 앱을 `Reload`하면 이전 디버깅 창은 `연결이 끊겨서` 쓸모가 없어진다. (다시 열어야 함)
+
+### Group 생성
+* `(tabs)` 폴더 생성 후 `app` 안에 모든 파일을 이동 시킴
+
+app/_layout.js
+```js
+import { Stack } from 'expo-router';
+
+export default function RootLayout() {
+  return (
+    <Stack>
+      <Stack.Screen name="(tabs)" />
+    </Stack>
+  );
+}
+```
+* 폴더 및 파일 구조가 변경되어서 다양한 오류가 발생한다. `Reload`만으로 해결 할 수 없고 `npm start` 재시작 해야한다.
+
+#### Group 헤더 삭제
+```diff
+- <Stack.Screen name="(tabs)" />
++ <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+```
+
+### Tab navigator
+app/(tabs)/_layout.js
+```diff
+- export default function RootLayout() {
++ export default function TabLayout() {
+```
+* `Stack`을 `Tabs`로 변경
+* `Commit` 후 `app/_layout.js` 삭제해 보기
