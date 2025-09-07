@@ -17,6 +17,9 @@ npm start
 ctrl + command + z: iOS 제어창
 command + m: Android 제어창
 ```
+#### Shake(command + m) 잘 안되는 경우
+* `Virtual Device Manager` > `Emulator Play` 버튼 옆에 메뉴에서 `Cold boot`
+* 앱 켜지는 중에 `command + m` 눌러 보기
 
 ### iOS, Xcode needs to be installed (don't worry, you won't have to use it), would you like to continue
 ```sh
@@ -68,9 +71,6 @@ adb version
 
 ### Android 실행시 Expo 앱은 켜지고, 프로젝트 앱은 자꾸 꺼지거나 정상 동작 하지 않을 경우
 * Expo 앱에서 `Enter URL manually` > `exp://{ip}:19000`
-
-### Shake(command + m) 잘 안되는 경우
-* `Virtual Device Manager` > `Emulator Play` 버튼 옆에 메뉴에서 `Cold boot`
 
 #### Android virtual device 생성
 ```sh
