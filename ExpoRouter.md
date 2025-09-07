@@ -55,7 +55,7 @@ export default function Index() {
     <View>
       <Text>Index</Text>
       <Text></Text>
-      <Link href="/screen2/flex">이동 Screen2 Flex</Link>
+      <Link href="/screen2/flex">Screen2 Flex 이동</Link>
     </View>
   );
 }
@@ -72,12 +72,12 @@ export default function Flex() {
     <View>
       <Text>Screen2 Flex</Text>
       <Text></Text>
-      <Link href="/screen3/crud">이동 Screen3 CRUD</Link>
+      <Link href="/screen3/crud">Screen3 CRUD 이동</Link>
     </View>
   );
 }
 ```
-* `Screen3 CRUD` 만들기
+* `Screen3 CRUD` 만들고 `index`로 이동 시키기
 
 ### app/_layout.js 파일 만들기
 ```js
@@ -89,7 +89,7 @@ export default function Layout() {
     <View>
       <Text>Layout</Text>
       <Text></Text>
-      <Link href="/screen2/flex">이동 Screen2 Flex</Link>
+      <Link href="/screen2/flex">Screen2 Flex 이동</Link>
     </View>
   );
 }
