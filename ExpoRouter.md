@@ -43,7 +43,7 @@ npm start
 
 ## Route 생성
 * [File-based routing](https://docs.expo.dev/develop/file-based-routing)
-* 별도의 `Route 설정` 없이 `Expo Router` 규칙을 지키면 자동으로 `Route`가 생성됨
+* 별도의 `Route 설정` 없이 `Expo Router` 규칙을 지키서 `파일을 생성`하면 자동으로 `Route`가 생성됨
 
 app/index.js
 ```js
@@ -121,4 +121,4 @@ export default function Flex() {
 ```
 * `npm start` > `?` 메뉴 확인 > `j` 키로 크롬 디버깅 창을 바로 열거나 `m` 키로 `제어창`에서 열 수 있다.
 * 스크린 이동 하기
-* 앱을 `Reload`하면 이전 디버깅 창은 연결이 끊겨서 쓸모가 없어진다.
+* 앱을 `Reload`하면 이전 디버깅 창은 `연결이 끊겨서` 쓸모가 없어진다. (다시 열어야 함)
