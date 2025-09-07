@@ -20,6 +20,7 @@ command + m: Android 제어창
 #### Shake(command + m) 잘 안되는 경우
 * `Virtual Device Manager` > `Emulator Play` 버튼 옆에 메뉴에서 `Cold boot`
 * 앱 켜지는 중에 `command + m` 눌러 보기
+* `npm start` 후에 `shift + a`로 `Emulator` 선택 후 `r`키 누르면 iOS, Android 모두 `Reload` 가능
 
 ### iOS, Xcode needs to be installed (don't worry, you won't have to use it), would you like to continue
 ```sh
