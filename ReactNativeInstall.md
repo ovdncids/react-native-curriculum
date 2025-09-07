@@ -69,7 +69,7 @@ adb version
 * Expo 앱에서 `Enter URL manually` > `exp://{ip}:19000`
 
 ### Shake(command + m) 잘 안되는 경우
-* `Emulator Play` 버튼 옆에 메뉴에서 `Cold boot`
+* `Virtual Device Manager` > `Emulator Play` 버튼 옆에 메뉴에서 `Cold boot`
 
 #### Android virtual device 생성
 ```sh
