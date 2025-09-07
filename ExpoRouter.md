@@ -53,16 +53,16 @@ import { Link } from 'expo-router';
 export default function Index() {
   return (
     <View>
-      <Text>Index</Text>
+      <Text>Screen1</Text>
       <Text></Text>
-      <Link href="/screen2/flex">Screen2 Flex 이동</Link>
+      <Link href="screen2">Move to Screen2</Link>
     </View>
   );
 }
 ```
 * `npm start` 후 `이동 Screen3 CRUD`
 
-app/screen2/flex.js
+app/screen2.js
 ```js
 import { Text, View } from 'react-native';
 import { Link } from 'expo-router';
@@ -72,14 +72,14 @@ export default function Flex() {
     <View>
       <Text>Screen2 Flex</Text>
       <Text></Text>
-      <Link href="/screen3/crud">Screen3 CRUD 이동</Link>
+      <Link href="/screen3">Move to Screen3</Link>
     </View>
   );
 }
 ```
-* `Screen3 CRUD` 만들고 `index`로 이동 시키기
+* ❔ `screen3.js` 만들고 `screen1`로 이동 시키기
 
-### app/_layout.js 파일 만들기
+## app/_layout.js 생성
 ```js
 import { Text, View } from 'react-native';
 import { Link } from 'expo-router';
@@ -89,7 +89,7 @@ export default function Layout() {
     <View>
       <Text>Layout</Text>
       <Text></Text>
-      <Link href="/screen2/flex">Screen2 Flex 이동</Link>
+      <Link href="screen2">Move to Screen2</Link>
     </View>
   );
 }
@@ -104,8 +104,8 @@ export default function RootLayout() {
   return (
     <Stack>
       <Stack.Screen name="index" />
-      <Stack.Screen name="screen2/flex" />
-      <Stack.Screen name="screen3/crud" />
+      <Stack.Screen name="screen2" />
+      <Stack.Screen name="screen3" />
     </Stack>
   );
 }
@@ -113,7 +113,7 @@ export default function RootLayout() {
 * `Stack` 라이브러리는 `헤더`와 스크린 이동시 `뒤로가기 버튼`을 제공한다.
 
 ### 디버깅
-app/screen2/flex.js
+app/screen2.js
 ```js
 export default function Flex() {
   debugger;
@@ -122,6 +122,28 @@ export default function Flex() {
 * `npm start` > `?` 메뉴 확인 > `j` 키로 크롬 디버깅 창을 바로 열거나 `m` 키로 `제어창`에서 열 수 있다.
 * 스크린 이동 하기
 * 앱을 `Reload`하면 이전 디버깅 창은 `연결이 끊겨서` 쓸모가 없어진다. (다시 열어야 함)
+
+## Header Title 가운데로 수정
+* 기본 `Header Title`은 `iOS`는 center이고 `Android`는 left이다.
+
+app/index.js
+```js
+import { View, Text } from 'react-native';
+import { Stack, Link } from 'expo-router';
+
+export default function Index() {
+  return (
+    <>
+      <Stack.Screen options={{ title: 'Screen1', headerTitleAlign: 'center' }} />
+      <View>
+        <Text>Screen1</Text>
+        <Text></Text>
+        <Link href="screen2">Move to Screen2</Link>
+      </View>
+    </>
+  );
+}
+```
 
 ### Group 생성
 * `(tabs)` 폴더 생성 후 `app` 안에 모든 파일을 이동 시킴
@@ -186,10 +208,3 @@ import FontAwesome from '@expo/vector-icons/FontAwesome';
 />
 ```
 * 나머지 Tab들도 수정해 보기
-
-#### Header Title 가운데로 수정
-```diff
-title: 'Home',
-+ headerTitleAlign: 'center',
-```
-* ❕ 기본 `headerTitleAlign`는 `iOS`는 center이고 `Android`는 left이다.
