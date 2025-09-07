@@ -37,6 +37,7 @@ xcrun simctl boot F7DA36FB-33A8-4EE3-B62C-7063FE5934ED
 
 ## Android Studio Emulator 설치
 * https://docs.expo.dev/workflow/android-studio-emulator
+* `Android Virtual Device 버전`은 `API Level 31`, `Android 12.0` 선택
 * ❕ `AVD`(Android Virtual Device)는 `Play Store` 내장 되어 있는 버전을 설치 해야 `Expo` 설치가능
 ```sh
 Android Studio > Preferences > Appearance & Behavior > System Settings > Android SDK > SDK Tools > Android SDK Build-Tools 체크
@@ -97,12 +98,7 @@ Press j | open debugger
 
 ## React Native CLI
 * https://reactnative.dev/docs/environment-setup
-
-### Android Virtual Device 버전
-```sh
-API Level 31
-Android 12.0
-```
+* `Android Virtual Device 버전`은 `API Level 31`, `Android 12.0` 선택
 
 ### Java 버전 확인 (M1은 ARM64(aarch64) 버전 선택)
 * IntelliJ > File > Project Structure... > + Add SDK > Java 버전 설치
