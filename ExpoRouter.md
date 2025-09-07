@@ -154,3 +154,42 @@ app/(tabs)/_layout.js
 ```
 * `Stack`을 `Tabs`로 변경
 * `Commit` 후 `app/_layout.js` 삭제해 보기
+
+### Font Awesome
+* https://fontawesome.com/v4/icons
+
+app/(tabs)/index.js
+```js
+import FontAwesome from '@expo/vector-icons/FontAwesome';
+
+<FontAwesome.Button
+  name="code"
+  onPress={() => console.log('FontAwesome.Button')}
+>FontAwesome.Button</FontAwesome.Button>
+```
+
+#### Tab 아이콘 수정
+app/(tabs)/_layout.js
+```js
+import FontAwesome from '@expo/vector-icons/FontAwesome';
+```
+```diff
+- <Tabs.Screen name="index" />
+```
+```js
+<Tabs.Screen
+  name="index"
+  options={{
+    title: 'Home',
+    tabBarIcon: () => <FontAwesome name="home" size={24} />
+  }}
+/>
+```
+* 나머지 Tab들도 수정해 보기
+
+#### Header Title 가운데로 수정
+```diff
+title: 'Home',
++ headerTitleAlign: 'center',
+```
+* ❕ 기본 `headerTitleAlign`는 `iOS`는 center이고 `Android`는 left이다.
