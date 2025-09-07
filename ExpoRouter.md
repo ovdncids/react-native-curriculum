@@ -145,6 +145,17 @@ export default function Index() {
 }
 ```
 
+app/_layout.js
+```diff
+- <Stack.Screen name="screen2" />
+```
+```js
+<Stack.Screen
+  name="screen2"
+  options={{ title: 'Screen2', headerTitleAlign: 'center' }}
+/>
+```
+
 ### Group 생성
 * `(tabs)` 폴더 생성 후 `app` 안에 모든 파일을 이동 시킴
 
