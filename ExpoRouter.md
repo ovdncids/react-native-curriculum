@@ -72,12 +72,18 @@ export default function Flex() {
     <View>
       <Text>Screen2 Flex</Text>
       <Text></Text>
-      <Link href="/screen3">Move to Screen3</Link>
+      <Link href="screen3" asChild>
+        <Button
+          title="Move to Screen3"
+          color="sky-blue"
+        />
+      </Link>
     </View>
   );
 }
 ```
-* ❔ `screen3.js` 만들고 `screen1`로 이동 시키기
+* `asChild 속성`은 `<Link ... />` 속성이지만 화면은 `<Button ... />` 처럼 보여줌
+* ❔ `screen3.js` 만들고 `screen1`로 이동 시키고 `Button color`는 다른 색으로 수정
 
 ## app/_layout.js 생성
 ```js
@@ -147,13 +153,47 @@ export default function Index() {
 
 app/_layout.js
 ```diff
+- <Stack.Screen name="screen3" />
+```
+```js
+<Stack.Screen
+  name="screen3"
+  options={{ title: 'Screen3', headerTitleAlign: 'center' }}
+/>
+```
+
+## Modal 설정
+app/_layout.js
+```diff
 - <Stack.Screen name="screen2" />
 ```
 ```js
 <Stack.Screen
   name="screen2"
-  options={{ title: 'Screen2', headerTitleAlign: 'center' }}
+  options={{ presentation: 'modal' }}
 />
+```
+* `iOS`, `Android` 비교하면서 확인
+
+### 헤더 좌측 뒤로가기 빼고, 헤더 우측에 X버튼 만들기
+app/_layout.js
+```js
+import { Button } from 'react-native';
+```
+```diff
+- options={{ presentation: 'modal' }}
+```
+```js
+options={({ navigation }) => ({
+  presentation: 'modal',
+  headerLeft: () => (<></>),
+  headerRight: () => (
+    <Button
+      title="X"
+      onPress={() => navigation.goBack()}
+    />
+  )
+})}
 ```
 
 ### Group 생성
