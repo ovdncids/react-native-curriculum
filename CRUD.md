@@ -102,6 +102,13 @@ useFocusEffect(
 * `useFocusEffect`는 `React.useCallback`에 의존되어 있다.
 * `useFocusEffect`가 받은 함수가 `익명 함수`이면 랜더링이 될때마다 `새로운 익명 함수`를 생성 하므로 `useCallback`을 사용해야 한다.
 
+```log
+ LOG  Screen in  (첫 테스트 실행)
+ LOG  Screen out (첫 테스트 cleanup)
+ LOG  Screen in  (진짜 실행)
+```
+* 다시 들어올때 `LOG  Screen in`이 2번 실행되는건 `React.StrictMode` 때문이다. `build` 후에서는 1번만 호출 된다.
+
 ## Markup CRUD
 CRUD.js
 ```js
