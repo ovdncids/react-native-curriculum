@@ -288,3 +288,11 @@ import FontAwesome from '@expo/vector-icons/FontAwesome';
 />
 ```
 * 나머지 Tab들도 수정해 보기
+
+## Expo CLI 설치 Navigation 프로젝트와 비교
+```sh
+npx create-expo-app@latest --template
+# Choose a template: Navigation (TypeScript)
+# What is your app named? expo-navigation-typescript-study
+```
+* 폴더 구조와 파일이 어떻게 만들어졌는지 `가볍게` 확인해 보자
