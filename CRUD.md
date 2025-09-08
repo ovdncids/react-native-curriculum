@@ -95,10 +95,11 @@ useFocusEffect(
     console.log('Screen in');
     return () => {
       console.log('Screen out');
-    }
+    };
   }, [])
 );
 ```
+* `useFocusEffect`는 `React.useCallback`에 의존되어 있다.
 * `useFocusEffect`가 받은 함수가 `익명 함수`이면 랜더링이 될때마다 `새로운 익명 함수`를 생성 하므로 `useCallback`을 사용해야 한다.
 
 ## Markup CRUD
