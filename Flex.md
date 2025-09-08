@@ -1,4 +1,4 @@
-# Screen
+# Flex
 
 ## ScrollView
 ```js
