@@ -108,7 +108,7 @@ useFocusEffect(
  LOG  Screen in  (진짜 실행)
 ```
 * 다시 들어올때 `LOG  Screen in`이 2번 실행되는건 `React.StrictMode` 때문이다. `build` 후에서는 1번만 호출 된다.
-* [Expo prebuild](https://github.com/ovdncids/react-native-curriculum/blob/master/ReactNativeInstall.md#expo-prebuild)
+* [Expo prebuild](https://github.com/ovdncids/react-native-curriculum/blob/master/ReactNativeInstall.md#expo-prebuild)에서도 `React.StrictMode` 유지되지만 `Build` 때에는 사라진다.
 
 ## Markup CRUD
 CRUD.js
