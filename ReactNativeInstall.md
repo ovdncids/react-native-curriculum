@@ -95,6 +95,12 @@ Press j | open debugger
 # 소스 파일에 debugger 넣기
 ```
 
+### Expo prebuild
+```sh
+npx expo prebuild
+```
+* `ios`, `android` 폴더가 생성된다.
+
 ### Expo 배포
 * https://docs.expo.dev/build/setup
 
