@@ -102,7 +102,7 @@ useFocusEffect(
 * `useFocusEffect`가 받은 함수가 `익명 함수`이면 랜더링이 될때마다 `새로운 익명 함수`를 생성 하므로 `useCallback`을 사용해야 한다.
 
 ## Markup CRUD
-screens/Tab5Screen.js
+CRUD.js
 ```js
 import React from 'react';
 import { Text, TextInput, View, ScrollView, TouchableOpacity, Alert } from 'react-native';
@@ -156,7 +156,7 @@ const styles = StyleSheet.create({
   }
 });
 
-function Tab5Screen({ navigation }) {
+function CRUD({ navigation }) {
   return (
     <>
       <View name="thead" style={styles.thead}>
@@ -886,7 +886,7 @@ export function ModalUpdate(props) {
   );
 }
 
-export default Tab5Screen;
+export default CRUD;
 ```
 
 App.js
@@ -894,13 +894,13 @@ App.js
 import { TouchableOpacity } from 'react-native';
 ```
 ```diff
-- import Tab5Screen from './screens/Tab5Screen'
-+ import Tab5Screen, { ModalCreate, ModalUpdate } from './screens/Tab5Screen'
+- import CRUD from './screens/CRUD'
++ import CRUD, { ModalCreate, ModalUpdate } from './screens/CRUD'
 ```
 ```js
 <BottomTab.Screen
   name="Tab5"
-  component={Tab5Screen}
+  component={CRUD}
   options={({ navigation }) => ({
     headerTitleAlign: 'center',
     headerRight: () => (
