@@ -100,7 +100,6 @@ Press j | open debugger
 npx expo prebuild
 ```
 * `ios`, `android` 폴더가 생성된다.
-* `React.StrictMode` 유지된다.
 
 #### Android Studio에서 Gradle이 node를 못 찾을때
 ```sh
