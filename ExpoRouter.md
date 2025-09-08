@@ -197,7 +197,13 @@ options={({ navigation }) => ({
 ```
 
 ### Group 생성
-* `(tabs)` 폴더 생성 후 `app` 안에 모든 파일을 이동 시킴
+* `(screens)` 폴더 생성 후 `app` 안에 모든 파일을 이동 시킴
+
+app/(screens)/_layout.js
+```diff
+- export default function RootLayout() {
++ export default function ScreenLayout() {
+```
 
 app/_layout.js
 ```js
@@ -206,7 +212,7 @@ import { Stack } from 'expo-router';
 export default function RootLayout() {
   return (
     <Stack>
-      <Stack.Screen name="(tabs)" />
+      <Stack.Screen name="(screens)" />
     </Stack>
   );
 }
@@ -215,20 +221,43 @@ export default function RootLayout() {
 
 #### Group 헤더 삭제
 ```diff
-- <Stack.Screen name="(tabs)" />
-+ <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+- <Stack.Screen name="(screens)" />
++ <Stack.Screen name="(screens)" options={{ headerShown: false }} />
 ```
 
-### Tab navigator
+## Tab navigator
+app/_layout.js
+* 모든 `Stack`을 `Tabs`로 변경
+* ❕ `Android`에서 모달이 `Tab navigator` 부분을 가리지 못 한다.
+* 다시 모든 `Tabs`를 `Stack`으로 변경
+
+app/(screens)/_layout.js
+* 모든 `Stack`을 `Tabs`로 변경
+* ❕ `<Tabs />` 안에서는 `presentation: 'modal'` 모달 옵션이 동작 하지 않는다.
+* `<Tabs.Screen name="screen2" />` 부분을 `app/_layout.js`로 이동 후 `Stack`으로 변경
+* `presentation: 'modal'` 모달 옵션을 빼보면서 비교하기
+
+## Group 이름 변경
+* `app/(screens)`에서 `app/(tabs)`으로 폴더 변경
+
+```diff
+- <Stack.Screen name="(screens)"
++ <Stack.Screen name="(tabs)"
+```
+
+## Tab 이름 변경 및 생성
+* 다음 수업에 `flex.js`, `crud.js` 필요
+*  `app/(tabs)/screen3.js`에서 `app/(tabs)/flex.js`로 파일명 변경
+
 app/(tabs)/_layout.js
 ```diff
-- export default function RootLayout() {
-+ export default function TabLayout() {
+- name="screen3"
++ name="flex"
 ```
-* `Stack`을 `Tabs`로 변경
-* `Commit` 후 `app/_layout.js` 삭제해 보기
 
-### Font Awesome
+* ❔ `app/(tabs)/crud.js`라는 Tab도 추가해 보기
+
+## Font Awesome
 * https://fontawesome.com/v4/icons
 
 app/(tabs)/index.js
