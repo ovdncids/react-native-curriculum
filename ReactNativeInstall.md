@@ -100,6 +100,7 @@ Press j | open debugger
 npx expo prebuild
 ```
 * `ios`, `android` 폴더가 생성된다.
+* `XCode`, `Android Studio`에서 프로젝트를 에뮬레이터로 실행 후 `npm start`
 
 #### Android Studio에서 Gradle이 node를 못 찾을때
 ```sh
