@@ -101,6 +101,7 @@ useFocusEffect(
 ```
 * `useFocusEffect`는 `React.useCallback`에 의존되어 있다.
 * `useFocusEffect`가 받은 함수가 `익명 함수`이면 랜더링이 될때마다 `새로운 익명 함수`를 생성 하므로 `useCallback`을 사용해야 한다.
+* ❕ `<Link />` 태그로 이동하면 `Screen in` 1번만 실행되지만, `navigation.goBack()` 또는 `Tabs`를 누르면 `Screen in, Screen out, Screen in` 이렇게 실행될 수 있다.
 
 ## Markup CRUD
 CRUD.js
