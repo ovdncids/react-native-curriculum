@@ -19,7 +19,7 @@ command + m: Android 제어창
 ```
 #### Shake(command + m) 잘 안되는 경우
 * `Virtual Device Manager` > `Emulator Play` 버튼 옆에 메뉴에서 `Cold boot`
-* ❕ `Expo Router`에서 `app/_layout.js`에 `Stack` 또는 `Tabs`를 사용하면 안될 수 있음
+* ❕ `npm ls`에 `extraneous` 있는지 확인 하고, `node_modules` 삭제 후 `npm install`
 * `npm start` > `a` > 앱 켜지는 중에 `command + m` 눌러 보기
 * `npm start` > `?` 메뉴 확인 > `shift + a`로 `Emulator` 선택 후 > `m`키 누르면 iOS, Android 모두 `제어창` 열림
 
