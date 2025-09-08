@@ -2,7 +2,7 @@
 
 ## ScrollView
 ```js
-<Text>스크린3</Text>
+<Text>Flex</Text>
 ```
 * 50줄 정도 복사한다. (스크롤이 되는지 확인)
 ```js
@@ -19,7 +19,7 @@ import { ScrollView } from 'react-native';
 
 ### 기본 구조
 ```js
-export default function Tab4Screen() {
+export default function Flex() {
   return (
     <View nativeID="wrap">
       <View nativeID="nav">
