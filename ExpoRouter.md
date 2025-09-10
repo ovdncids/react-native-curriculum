@@ -64,13 +64,13 @@ export default function Index() {
 
 app/screen2.js
 ```js
-import { Text, View } from 'react-native';
+import { Text, View, Button } from 'react-native';
 import { Link } from 'expo-router';
 
-export default function Flex() {
+export default function Screen2() {
   return (
     <View>
-      <Text>Screen2 Flex</Text>
+      <Text>Screen2</Text>
       <Text></Text>
       <Link href="screen3" asChild>
         <Button
@@ -121,7 +121,7 @@ export default function RootLayout() {
 ### 디버깅
 app/screen2.js
 ```js
-export default function Flex() {
+export default function Screen2() {
   debugger;
   console.log('디버깅');
 ```
@@ -227,6 +227,10 @@ export default function RootLayout() {
 
 ## Tab navigator
 app/_layout.js
+```diff
+- Stack
++ Tabs
+```
 * 모든 `Stack`을 `Tabs`로 변경
 * ❕ `Android`에서 모달이 `Tab navigator` 부분을 가리지 못 한다.
 * 다시 모든 `Tabs`를 `Stack`으로 변경
