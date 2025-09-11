@@ -36,6 +36,8 @@ Xcode > Preferences... > Locations > Command Line Tools
 ```sh
 # Emulator의 해시 코드를 확인 할 수 있다.
 xcrun simctl list
+# iPhone SE (3rd generation)을 기본으로 선택
+xcrun simctl boot 9FC1F06C-5731-4A35-A548-56379B41000D
 # iPhone 16을 기본으로 선택
 xcrun simctl boot F7DA36FB-33A8-4EE3-B62C-7063FE5934ED
 ```
