@@ -34,12 +34,12 @@ Xcode > Preferences... > Locations > Command Line Tools
 ### Error: xcrun simctl boot 해시 exited with non-zero code: 2
 * https://saying-me.tistory.com/147
 ```sh
-# Emulator의 해시 코드를 확인 할 수 있다.
+# Emulator의 해시 코드를 확인 할 수 있다. (해쉬값은 맥북마다 달라질 수 있다.)
 xcrun simctl list
 # iPhone SE (3rd generation)을 기본으로 선택
 xcrun simctl boot 9FC1F06C-5731-4A35-A548-56379B41000D
 # iPhone 16을 기본으로 선택
-xcrun simctl boot F7DA36FB-33A8-4EE3-B62C-7063FE5934ED
+xcrun simctl boot ADDD0191-7B22-46D0-B61E-CEB5AEAB96DB
 ```
 
 ## Android Studio Emulator 설치
