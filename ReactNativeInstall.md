@@ -22,6 +22,7 @@ command + m: Android 제어창
 * ❕ `npm ls`에 `extraneous` 있는지 확인 하고, `node_modules` 삭제 후 `npm install`
 * `npm start` > `a` > 앱 켜지는 중에 `command + m` 눌러 보기
 * `npm start` > `?` 메뉴 확인 > `shift + a`로 `Emulator` 선택 후 > `m`키 누르면 iOS, Android 모두 `제어창` 열림
+* 정 안되면 `npm start` > `r`
 
 ### iOS, Xcode needs to be installed (don't worry, you won't have to use it), would you like to continue
 ```sh
